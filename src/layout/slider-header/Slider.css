@@ -1,0 +1,85 @@
+.slider-h_container {
+  display: flex;
+  flex-direction: column;
+  /* width: 100%;
+  max-width: 1920px; */
+  /* ------ */
+  justify-content: center;
+
+  padding: 0 200px;
+  height: 100vh;
+}
+
+/* flex para que los cuadros hijos se ajusten */
+.slider-h_container > section {
+  display: flex;
+}
+
+.slider-h-titles {
+  height: 250px;
+}
+
+.slider-h-titles > h1 {
+  font-family: 'Pattaya', 'sans-serif';
+  font-size: 100px;
+  line-height: 100px;
+  font-weight: 700;
+}
+
+.slider-h-titles > h2 {
+  font-family: 'Montserrat', 'sans-serif';
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 500;
+  text-align: end;
+}
+
+.slider-h-section-image {
+  /* background-color: rgba(0, 255, 255, 0.062); */
+}
+
+.slider-h-images {
+  height: 432px;
+  min-width: 760px;
+  flex-wrap: nowrap;
+}
+
+.slider-h-picture {
+  height: 100%;
+}
+
+.slider-h-picture > img {
+  height: 100%;
+}
+
+.slider-h-description {
+  min-width: 200px;
+}
+
+.slider-h-tags {
+  width: 500px;
+}
+
+.slider-h-tags p {
+  font-family: 'Montserrat', 'sans-serif';
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.slider-h-tags span {
+  font-family: 'Montserrat', 'sans-serif';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 0px;
+  color: #bac0c7;
+}
+
+.slider-h-big-description {
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 45px;
+}

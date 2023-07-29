@@ -1,0 +1,6 @@
+.home-container {
+  height: 100vh;
+  background-color: rgba(255, 0, 0, 0.178);
+  max-width: 1920px;
+  width: 100%;
+}

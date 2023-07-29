@@ -4,10 +4,11 @@
   /* width: 100%;
   max-width: 1920px; */
   /* ------ */
-  justify-content: center;
+  justify-content: space-evenly;
 
   padding: 0 200px;
   height: 100vh;
+  background-color: #bac0c744;
 }
 
 /* flex para que los cuadros hijos se ajusten */
@@ -16,7 +17,6 @@
 }
 
 .slider-h-titles {
-  height: 250px;
 }
 
 .slider-h-titles > h1 {
@@ -41,7 +41,6 @@
 .slider-h-images {
   height: 432px;
   min-width: 760px;
-  flex-wrap: nowrap;
 }
 
 .slider-h-picture {
@@ -53,11 +52,12 @@
 }
 
 .slider-h-description {
-  min-width: 200px;
+  display: flex;
+  flex-direction: column;
 }
 
 .slider-h-tags {
-  width: 500px;
+  width: 300px;
 }
 
 .slider-h-tags p {

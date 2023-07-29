@@ -1,7 +1,7 @@
 /* contenido del video y el menu de header */
 .header-video-container{
   height: 100vh;
-  width:1920px;
+  max-width:1920px;
   display: flex;
   justify-content: center;
 }

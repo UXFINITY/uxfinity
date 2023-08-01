@@ -1,9 +1,10 @@
 /* contenido del video y el menu de header */
-.header-video-container{
+.header-video-container {
   height: 100vh;
-  max-width:1920px;
+  max-width: 1920px;
   display: flex;
   justify-content: center;
+  color: #fff;
 }
 
 .header-video-bg {
@@ -18,13 +19,9 @@
   top: 0;
   left: 0;
   z-index: -100;
-  
+  /* display: none; */
 }
-
 
 /* container de todo el contendio del slider */
 .header-container {
-  
 }
-
-

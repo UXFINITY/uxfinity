@@ -1,6 +1,7 @@
 .nav-container {
   display: flex;
   position: fixed;
+  z-index: 1000;
   height: 54px;
   width: 100%;
   max-width: 1920px;
@@ -37,9 +38,27 @@
 .nav-sections > li {
   list-style: none;
   margin-right: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-sections > li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.nav-sections > li:hover::before {
+  width: 100%;
 }
 
 .nav-button {
+  color: #fff;
   background-color: #4040fb;
   border-radius: 8px;
   height: 40px;
@@ -50,4 +69,9 @@
   border: none;
   font-size: 16px;
   letter-spacing: -0.038px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.nav-button:hover {
+  background-color: #0404e2;
 }

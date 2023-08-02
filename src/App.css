@@ -6,9 +6,10 @@
 }
 
 body {
-  color: #000;
+  color: #000000;
   display: flex;
   justify-self: center;
   justify-content: center;
   background-color: #fff;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }

@@ -6,6 +6,7 @@
   width: 100%;
   max-width: 1920px;
   padding: 0 10%;
+  background-color: #00000011;
 }
 
 .nav-container {
@@ -38,6 +39,10 @@
 .nav-sections > li {
   list-style: none;
   margin-right: 20px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+
   position: relative;
   cursor: pointer;
 }
@@ -75,3 +80,38 @@
 .nav-button:hover {
   background-color: #0404e2;
 }
+
+/* dark mode */
+.nav-bg-color {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  border: 1px solid #fff4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-bg-circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+/* .nav-bg-circle:hover {
+  background-color: #000;
+} */
+
+.nav-bg-black {
+  background-color: #000;
+}
+
+/* .nav-bg-black:hover {
+  background-color: #fff;
+} */

@@ -1,7 +1,6 @@
 .home_f_c {
   max-width: 1920px;
   font-family: 'Monserrat', 'Inter', 'sans-serif';
-  color: #000;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -1,0 +1,3 @@
+- habilitar el modo dark en el context
+-hacer la linea movible del digital product
+-tratar de colocar los demas proyectos al slider

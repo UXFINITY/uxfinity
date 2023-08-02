@@ -8,19 +8,19 @@ function Slider() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isPaused, setIsPaused] = useState(false)
   const changeOpacity = useRef(null)
-  const fontStyleTitle = useRef(null)
+  const currentFont = ['Pattaya', 'Bebas Neue', 'Outfit']
   //interval container
   let interval
   //context
   const { AllData } = useLanguage()
   const { headerSlider } = AllData
 
+  //TODO: interval function
   const intervalFunction = () => {
     const { current: element } = changeOpacity
     interval = setInterval(() => {
       element.style.transition = 'opacity 1.2s ease'
       element.style.opacity = 0
-
       //time for change animation
       setTimeout(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % headerSlider.length)
@@ -29,6 +29,7 @@ function Slider() {
     }, 6000)
   }
 
+  //TODO: useEffect for interval
   useEffect(() => {
     if (!isPaused) {
       intervalFunction()
@@ -37,23 +38,13 @@ function Slider() {
     return () => clearInterval(interval)
   }, [isPaused, headerSlider.length])
 
+  
+
+  //TODO: handle click function
   const handleSliderClick = (index) => {
     const { current: element } = changeOpacity
     //conditional for avoid click on the same slide
     if (currentIndex !== index) {
-      switch (index) {
-        case 0:
-          fontStyleTitle.current.style.fontFamily = 'Pattaya'
-          break
-        case 1:
-          fontStyleTitle.current.style.fontFamily = 'Bebas Neue'
-          break
-        case 2:
-          fontStyleTitle.current.style.fontFamily = 'Outfit'
-          break
-        default:
-          break
-      }
       element.style.transition = 'opacity 0s ease'
       element.style.opacity = 0
       setIsPaused(true)
@@ -74,7 +65,11 @@ function Slider() {
       <div ref={changeOpacity} className='slider-h_container'>
         <section>
           <div className='slider-h-titles'>
-            <h1 className='slider-h-title' ref={fontStyleTitle}>
+            <h1
+              className='slider-h-title'
+              
+              style={{ fontFamily: currentFont[currentIndex] }}
+            >
               {headerSlider[currentIndex].name}
             </h1>
             <h2 className='slider-h-subtitle'>

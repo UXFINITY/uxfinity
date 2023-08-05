@@ -5,7 +5,6 @@
   flex-direction: column;
   align-items: center;
   margin-top: 32px;
-  padding-bottom: 32px;
 }
 
 .home_f_title {
@@ -16,15 +15,11 @@
 }
 
 .home_f_list {
-  margin: 40px 0;
   display: flex;
   flex-direction: row;
-  gap: 5px;
+  gap: 15px;
   list-style: none;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin-top: 50px;
+  margin: 50px 0;
 }
 
 .home_f_list li {
@@ -57,7 +52,7 @@
 }
 
 .home_f_section span {
-  border-bottom: 3px solid #4040FB;
+  border-bottom: 3px solid #4040fb;
   color: #4040fb;
 }
 
@@ -67,4 +62,42 @@
   font-weight: 500;
   line-height: 35px;
   align-self: stretch;
+}
+
+/* -------------------- */
+/* !home second section */
+/* -------------------- */
+
+.home_s_section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.home_s_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  gap: 100px;
+  padding: 0 100px;
+}
+
+.home_s_pictures {
+  flex: 1;
+  height: 530px;
+  min-width: 600px;
+  position: relative;
+  background-color: red;
+}
+
+.home_s_pictures img {
+  position: absolute;
+  object-fit: contain;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }

@@ -9,7 +9,7 @@ import Slider from '../../layout/slider-header/Slider'
 function SliderHeader() {
   return (
     <div className='header-video-container'>
-<video className='header-video-bg' src={video} loop autoPlay></video>
+{/* <video className='header-video-bg' src={video} loop autoPlay></video> */}
       
         
         <Nav />

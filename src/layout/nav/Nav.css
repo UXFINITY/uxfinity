@@ -115,3 +115,46 @@
 /* .nav-bg-black:hover {
   background-color: #fff;
 } */
+
+/* LANGUAGE */
+
+.language-selector {
+  position:relative;
+  height: 40px; 
+  width: 40px;
+ 
+}
+
+.language-selector li{
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: top 0.2s ease-in-out;
+}
+
+.language-selector li:nth-child(2){
+  
+  position: absolute;
+  z-index: 999;
+  top: 0px;
+}
+.language-selector li:nth-child(3){
+ 
+  position: absolute;
+  z-index: 998;
+  top: 0px;
+
+}
+.language-selector li:nth-child(4){
+  
+  position: absolute;
+  z-index: 997;
+  top: 0px;
+
+}

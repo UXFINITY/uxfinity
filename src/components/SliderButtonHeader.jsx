@@ -2,7 +2,7 @@ import './SliderButtonHeader.css'
 
 import React from 'react'
 
-function SliderButtonHeader({ img, name, index, currentIndex, eventButton }) {
+function SliderButtonHeader({ name, index, currentIndex, eventButton }) {
   return (
     <div
       onClick={() => eventButton(index)}
@@ -10,7 +10,7 @@ function SliderButtonHeader({ img, name, index, currentIndex, eventButton }) {
         currentIndex === index ? 'select_option_sl_h' : ''
       }`}
     >
-      <img src={img} alt={name} />
+      
       <span>{name}</span>
     </div>
   )

@@ -1,13 +1,12 @@
 import React, { useEffect, useState, useRef } from 'react'
-import './Slider.css'
+import './Slider.txt'
 import SliderButtonHeader from '../../components/SliderButtonHeader'
 import { useLanguage } from '../../helpers/LanguageContext'
 
 function Slider() {
-  const [currentIndex, setCurrentIndex] = useState(0) //for change slide
-  const [isPaused, setIsPaused] = useState(false) //for pause interval
-  const [components, setComponents] = useState([]) //save components ref
-  const headerContainer = useRef(null)
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [isPaused, setIsPaused] = useState(false)
+  const changeOpacity = useRef(null)
   const currentFont = ['Pattaya', 'Bebas Neue', 'Outfit']
   //interval container
   let interval
@@ -17,31 +16,19 @@ function Slider() {
 
   //TODO: interval function
   const intervalFunction = () => {
-    const container = headerContainer.current
-    const sliderTitle = container.querySelector('.slider-h-title')
-    const sliderImages = container.querySelector('.slider-h-images')
-    const sliderDescription = container.querySelector('.slider-h-description')
-    const sliderSubtitle = container.querySelector('.slider-h-subtitle')
-
+    const { current: element } = changeOpacity
     interval = setInterval(() => {
-      sliderTitle.style.animation = 'h_changeScale_out 0.45s linear'
-      sliderImages.style.animation = 'h_leftToRight_out 0.45s linear'
-      sliderDescription.style.animation = 'h_btmToTop_out 0.45s linear'
-      sliderSubtitle.style.animation = 'h_leftToRight_out 0.45s linear'
+      element.style.transition = 'opacity 1.2s ease'
+      element.style.opacity = 0
       //time for change animation
       setTimeout(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % headerSlider.length)
-
-        sliderTitle.style.animation = 'h_changeScale 0.6s linear'
-        sliderImages.style.animation = 'h_leftToRight 0.45s linear'
-        sliderDescription.style.animation = 'h_btmToTop 0.45s linear'
-        sliderSubtitle.style.animation = 'h_leftToRight 0.45s linear'
-      }, 350)
+        element.style.opacity = 1
+      }, 300)
     }, 4000)
   }
 
   //TODO: useEffect for interval
-
   useEffect(() => {
     if (!isPaused) {
       intervalFunction()
@@ -50,10 +37,11 @@ function Slider() {
     return () => clearInterval(interval)
   }, [isPaused, headerSlider.length])
 
+  
+
   //TODO: handle click function
   const handleSliderClick = (index) => {
-    const { current } = headerContainer
-    const element = current.querySelector('.slider-h_container')
+    const { current: element } = changeOpacity
     //conditional for avoid click on the same slide
     if (currentIndex !== index) {
       element.style.transition = 'opacity 0s ease'
@@ -72,12 +60,13 @@ function Slider() {
   }
 
   return (
-    <div className='slider-all-container' ref={headerContainer}>
-      <div className='slider-h_container'>
+    <div className='slider-all-container'>
+      <div ref={changeOpacity} className='slider-h_container'>
         <section>
           <div className='slider-h-titles'>
             <h1
-              className={`slider-h-title`}
+              className='slider-h-title'
+              
               style={{ fontFamily: currentFont[currentIndex] }}
             >
               {headerSlider[currentIndex].name}
@@ -121,6 +110,7 @@ function Slider() {
         {headerSlider.map((item, index) => (
           <SliderButtonHeader
             key={item.id}
+            img={item.img_d}
             name={item.name}
             index={index}
             currentIndex={currentIndex}

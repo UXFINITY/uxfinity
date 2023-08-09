@@ -72,7 +72,7 @@ function Slider() {
   }
 
   return (
-    <div className='slider-all-container' ref={headerContainer}>
+    <div className='slider-all-container' style={{backgroundColor:'red'}} ref={headerContainer}>
       <div className='slider-h_container'>
         <section>
           <div className='slider-h-titles'>

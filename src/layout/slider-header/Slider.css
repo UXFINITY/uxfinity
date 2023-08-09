@@ -20,6 +20,7 @@
 
 .slider-h_container > section {
   display: flex;
+  background-color: blue;
 }
 
 .slider-h-titles {
@@ -178,7 +179,7 @@
   display: flex;
   gap: 10px;
   right: calc(100% / 2 - 550px);
-  bottom: 0;
+  bottom: calc(100% / 2 - 38%);
   animation: h_btmToTop_2 0.45s ease-in;
 }
 

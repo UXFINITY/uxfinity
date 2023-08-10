@@ -2,6 +2,7 @@
   background: url(../../assets/header/Pepitas.png) no-repeat center center;
   background-size: cover;
   height: 80vh;
+  max-height: 800px;
   width: 100%;
   display: flex;
   justify-content: center;

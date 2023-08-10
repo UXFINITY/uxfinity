@@ -1,17 +1,18 @@
 .f_container {
   padding: 0 10%;
-  min-height: 100vh;
+  max-height: 3000px;
+ padding-bottom: 100px;
 }
 
 .f_f_section {
-  height: 30vh;
+  height: 300px;
 }
 
 .f_s_section {
   text-align: justify;
   font-family: Montserrat;
   font-style: normal;
-  margin-bottom: 19vh;
+  margin-bottom: 220px;
 }
 
 .f_s_section h2 {
@@ -53,6 +54,7 @@
   padding: 0 2%;
   max-width: 100%;
   text-align: center;
+  
 }
 
 

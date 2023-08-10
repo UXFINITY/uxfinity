@@ -1,0 +1,85 @@
+.f_container {
+  padding: 0 10%;
+  min-height: 100vh;
+}
+
+.f_f_section {
+  height: 30vh;
+}
+
+.f_s_section {
+  text-align: justify;
+  font-family: Montserrat;
+  font-style: normal;
+  margin-bottom: 19vh;
+}
+
+.f_s_section h2 {
+  margin-bottom: 16px;
+  font-size: 18px;
+
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 3.6px;
+}
+
+.f_s_p_container {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+
+.f_s_p_container span {
+  position: relative;
+  white-space: nowrap;
+}
+
+.f_s_p_container span::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 12px;
+  width: 100%;
+  z-index: -1;
+  background-color: rgba(135, 135, 251, 0.4);
+}
+
+.f_t_section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2%;
+  max-width: 100%;
+  text-align: center;
+}
+
+
+.f_t_section span {
+  font-family: Poppins;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px; /* 100% */
+  letter-spacing: 0.36px;
+  position: relative;
+}
+
+.f_t_section span::before{
+    content: '';
+    position: absolute;
+    bottom: 18px;
+    height: 12px;
+    width: 100%;
+    z-index: -1;
+    background-color: rgba(135, 135, 251, 0.40);
+}
+
+.f_t_section p {
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+}

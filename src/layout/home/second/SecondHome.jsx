@@ -1,18 +1,17 @@
 import React, { useEffect, useState, useRef } from 'react'
-import './Slider.css'
-import SliderButtonHeader from '../../components/SliderButtonHeader'
-import { useLanguage } from '../../helpers/LanguageContext'
+import './SecondHome.css'
+import SliderButtonHeader from '../../../components/SliderButtonHeader'
+import { useBodyContext } from '../../../helpers/BodyContext'
 
-function Slider() {
+function SecondHome() {
   const [currentIndex, setCurrentIndex] = useState(0) //for change slide
   const [isPaused, setIsPaused] = useState(false) //for pause interval
-  const [components, setComponents] = useState([]) //save components ref
   const headerContainer = useRef(null)
   const currentFont = ['Pattaya', 'Bebas Neue', 'Outfit']
   //interval container
   let interval
   //context
-  const { AllData } = useLanguage()
+  const { AllData } = useBodyContext()
   const { headerSlider } = AllData
 
   //TODO: interval function
@@ -37,7 +36,7 @@ function Slider() {
         sliderDescription.style.animation = 'h_btmToTop 0.45s linear'
         sliderSubtitle.style.animation = 'h_leftToRight 0.45s linear'
       }, 350)
-    }, 4000)
+    },  8000)
   }
 
   //TODO: useEffect for interval
@@ -66,14 +65,22 @@ function Slider() {
         //static time animation
         setTimeout(() => {
           setIsPaused(false)
-        }, 2000)
+        }, 500)
       }, 100)
     }
   }
 
   return (
-    <div className='slider-all-container' style={{backgroundColor:'red'}} ref={headerContainer}>
+    <div
+      className='slider-all-container'
+      
+      ref={headerContainer}
+    >
+        <h2 className='slider-all-title'>Tangible Achievements Through UX/UI Design</h2>
       <div className='slider-h_container'>
+        <div className='slider_bg_container'>
+          <h1>AQUI HAY UN VIDEO BIEN PERRON 😎</h1>
+        </div>
         <section>
           <div className='slider-h-titles'>
             <h1
@@ -132,4 +139,4 @@ function Slider() {
   )
 }
 
-export default Slider
+export default SecondHome

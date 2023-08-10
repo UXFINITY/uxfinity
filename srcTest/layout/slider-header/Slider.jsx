@@ -6,7 +6,6 @@ import { useLanguage } from '../../helpers/LanguageContext'
 function Slider() {
   const [currentIndex, setCurrentIndex] = useState(0) //for change slide
   const [isPaused, setIsPaused] = useState(false) //for pause interval
-  const [components, setComponents] = useState([]) //save components ref
   const headerContainer = useRef(null)
   const currentFont = ['Pattaya', 'Bebas Neue', 'Outfit']
   //interval container

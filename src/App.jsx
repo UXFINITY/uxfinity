@@ -1,12 +1,14 @@
+import { useEffect, useState, useRef } from 'react'
 import './App.css'
-// import SliderHeader from './pages/header/SliderHeader'
-// import Home from './pages/home/Home'
+// files and helpers
 import { useBodyContext } from './helpers/BodyContext'
 import video from './assets/uxFinityIntro.mp4'
-import { useEffect, useRef } from 'react'
+// components
 import Nav from './layout/nav/Nav'
 import Header from './layout/header/Header'
-import { useState } from 'react'
+import FirstHome from './layout/home/first/FirstHome'
+import SecondHome from './layout/home/second/SecondHome'
+
 function App() {
   const [render, setRender] = useState(false)
   const { bgColor } = useBodyContext()
@@ -45,6 +47,8 @@ function App() {
         <div className='App'>
           <Nav />
           <Header />
+          <FirstHome />
+          <SecondHome />
         </div>
       )}
     </>

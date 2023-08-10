@@ -76,6 +76,7 @@
   transition: color 0.2s ease-in-out;
   cursor: pointer;
   position: fixed;
+  z-index: 880;
 }
 
 .nav-button img {

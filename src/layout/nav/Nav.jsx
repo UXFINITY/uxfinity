@@ -1,12 +1,13 @@
 import React, { useRef, useState } from 'react'
 import './Nav.css'
-import { useLanguage } from '../../helpers/LanguageContext'
+import { useBodyContext } from '../../helpers/BodyContext'
 import USAimg from '../../assets/nav/USA.png'
 import Spainimg from '../../assets/nav/Spain.png'
 import Germanyimg from '../../assets/nav/Germany.png'
+import arrow from '../../assets/nav/ArrowRight.svg'
 
 function Nav() {
-  const { setLanguage, AllData, setBgColor, bgColor } = useLanguage()
+  const { setLanguage, AllData, setBgColor, bgColor } = useBodyContext()
   //destructuring
   const { navData } = AllData
   // envair a un componente
@@ -47,7 +48,6 @@ function Nav() {
         <li>{navData[1]}</li>
         <li>{navData[2]}</li>
       </ul>
-      <button className='nav-button'>{navData[3]}</button>
       <button className='nav-bg-color'>
         <div
           className={`nav-bg-circle ${bgColor && 'nav-bg-black'}`}
@@ -88,6 +88,12 @@ function Nav() {
           <img src={Germanyimg} alt='' />
         </li>
       </ul>
+      <div className='nav-button-container'>
+        <button className='nav-button'>
+          {navData[3]}
+          <img className='nav-button-arrow' src={arrow} />
+        </button>
+      </div>
     </nav>
   )
 }

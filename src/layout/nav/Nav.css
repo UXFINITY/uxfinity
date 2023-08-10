@@ -1,23 +1,15 @@
 .nav-container {
-  display: flex;
-  position: fixed;
-  z-index: 1000;
-  height: 54px;
-  width: 100%;
-  max-width: 1920px;
-  padding: 0 10%;
-  background-color: #00000011;
-}
-
-.nav-container {
+  height: 48px;
+  padding: 0 6%;
   display: flex;
   align-items: center;
-  column-gap: 8px;
+  column-gap: 20px;
   flex-wrap: wrap;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 25px;
+  width: 100%;
 }
 
 .nav-logo {
@@ -42,7 +34,6 @@
   height: 40px;
   display: flex;
   align-items: center;
-
   position: relative;
   cursor: pointer;
 }
@@ -62,23 +53,51 @@
   width: 100%;
 }
 
+.nav-button-container{
+  position: relative;
+  right: 0;
+  height: 40px;
+  width: 200px;
+
+}
+
 .nav-button {
-  color: #fff;
-  background-color: #4040fb;
+  color: #4040fb;
+  background-color: transparent;
   border-radius: 8px;
   height: 40px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 186px;
+  width: 210px;
   border: none;
   font-size: 16px;
   letter-spacing: -0.038px;
-  transition: background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+  cursor: pointer;
+  position: fixed;
 }
 
-.nav-button:hover {
-  background-color: #0404e2;
+.nav-button img {
+  
+ position: absolute;
+  right: 0;
+}
+
+.nav-button:hover > .nav-button-arrow {
+  animation: arrowLoop 1.3s infinite linear;
+}
+
+@keyframes arrowLoop {
+  0% {
+    right: 0;
+  }
+  50% {
+    right: 5px;
+  }
+  100% {
+    right: 0;
+  }
 }
 
 /* dark mode */
@@ -119,17 +138,16 @@
 /* LANGUAGE */
 
 .language-selector {
-  position:relative;
-  height: 40px; 
+  position: relative;
+  height: 40px;
   width: 40px;
- 
 }
 
-.language-selector li{
+.language-selector li {
   list-style: none;
   cursor: pointer;
   position: relative;
-  z-index: 1000;
+  z-index: 990;
   height: 100%;
   width: 100%;
   display: flex;
@@ -138,23 +156,18 @@
   transition: top 0.2s ease-in-out;
 }
 
-.language-selector li:nth-child(2){
-  
+.language-selector li:nth-child(2) {
   position: absolute;
-  z-index: 999;
+  z-index: 980;
   top: 0px;
 }
-.language-selector li:nth-child(3){
- 
+.language-selector li:nth-child(3) {
   position: absolute;
-  z-index: 998;
+  z-index: 979;
   top: 0px;
-
 }
-.language-selector li:nth-child(4){
-  
+.language-selector li:nth-child(4) {
   position: absolute;
-  z-index: 997;
+  z-index: 978;
   top: 0px;
-
 }

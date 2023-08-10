@@ -13,7 +13,8 @@ import powerfit2 from '../assets/body/powerfit/powerfit2.png'
 import powerfit3 from '../assets/body/powerfit/powerfit3.png'
 
 export const EnData = {
-  navData: ['Showcase', 'What we do', 'Testimonial', "Let's make it happen"],
+  navData: ['Showcase', 'What we do', 'Testimonial', "PROJECT REQUEST"],
+  headerData:['UX/UI Agency','Superior digital solutions that prioritize ','user experiences.'],
   headerSlider: [
     {
       id: 0,
@@ -78,7 +79,8 @@ export const EnData = {
 }
 
 export const EsData = {
-  navData: ['Proyectos', '¿Qué hacemos?', 'Testimonios', 'Hagamos que suceda'],
+  navData: ['Proyectos', '¿Qué hacemos?', 'Testimonios', 'SOLICITAR PROYECTO'],
+  headerData:['UX/UI Agency','Superior digital solutions that prioritize ','user experiences.'],
   headerSlider: [
     {
       id: 0,

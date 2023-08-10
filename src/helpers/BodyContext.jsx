@@ -1,14 +1,23 @@
-import React,{createContext,useContext,useState} from 'react'
+import React, { createContext, useState, useContext } from 'react'
+import { EnData, EsData } from '../data/Data'
+const LanguageContext = createContext()
 
-const BodyContext = createContext()
+//this is a custom hook for use the context
+export const useBodyContext = () => useContext(LanguageContext)
 
-export const useBody=()=>useContext(BodyContext)
+//this is the context provider
+function Context({ children }) {
+  const [Language, setLanguage] = useState('en')
+  const [bgColor, setBgColor] = useState(true)
+  const AllData = Language === 'en' ? EnData : EsData
 
-function BodyContext() {
-    
   return (
-    <BodyContext.provider value={{}}>BodyContext</BodyContext.provider>
+    <LanguageContext.Provider
+      value={{ bgColor, setBgColor, Language, AllData, setLanguage }}
+    >
+      {children}
+    </LanguageContext.Provider>
   )
 }
 
-export default BodyContext
+export default Context

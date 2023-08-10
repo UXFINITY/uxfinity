@@ -24,29 +24,30 @@ function App() {
     if (videoIntro.current) {
       videoIntro.current.playbackRate = 3
       videoIntro.current.play()
-      setRender(true)
     }
-    setTimeout(() => {
-      videoIntro.current.style.display = 'none'
-    }, 3500)
   }, [])
 
-  if(!render) {
-    return (
-      <div className='App_black'>
-        
-      </div>
-    )
+  const handleRender = () => {
+    setRender(true)
   }
 
   return (
-    <div className='App'>
-      <video className='videoIntro' src={video} ref={videoIntro} muted></video>
-      <Nav />
-      <Header />
-      {/* <SliderHeader />
-      <Home /> */}
-    </div>
+    <>
+      {!render ? (
+        <video
+          className='videoIntro'
+          src={video}
+          ref={videoIntro}
+          muted
+          onEnded={handleRender}
+        ></video>
+      ) : (
+        <div className='App'>
+          <Nav />
+          <Header />
+        </div>
+      )}
+    </>
   )
 }
 

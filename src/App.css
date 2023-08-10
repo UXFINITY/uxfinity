@@ -9,7 +9,7 @@ body {
   color: #000000;
   background-color: #fff;
   transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
-  border: 5px solid rgba(255, 0, 0, 0.496);  
+  border: 5px solid rgba(255, 0, 0, 0.496);
 }
 
 .App {
@@ -19,6 +19,12 @@ body {
   margin: auto;
   border: 3px solid green;
   position: relative;
+}
+
+.App_black {
+  background-color: #000;
+  width: 100%;
+  height: 100vh;
 }
 
 .videoIntro {

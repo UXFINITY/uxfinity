@@ -6,7 +6,9 @@ import video from './assets/uxFinityIntro.mp4'
 import { useEffect, useRef } from 'react'
 import Nav from './layout/nav/Nav'
 import Header from './layout/header/Header'
+import { useState } from 'react'
 function App() {
+  const [render, setRender] = useState(false)
   const { bgColor } = useBodyContext()
   const videoIntro = useRef(null)
   if (bgColor) {
@@ -22,11 +24,20 @@ function App() {
     if (videoIntro.current) {
       videoIntro.current.playbackRate = 3
       videoIntro.current.play()
+      setRender(true)
     }
     setTimeout(() => {
       videoIntro.current.style.display = 'none'
     }, 3500)
   }, [])
+
+  if(!render) {
+    return (
+      <div className='App_black'>
+        
+      </div>
+    )
+  }
 
   return (
     <div className='App'>

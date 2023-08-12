@@ -1,0 +1,89 @@
+@import '../../../App.css';
+
+.ft_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px;
+  height: 100vh;
+  max-height: 669px;
+}
+
+.ft_items_container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.ft_items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ft_text {
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ft_text h3 {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 111.111% */
+  letter-spacing: 3.6px;
+}
+
+.ft_text h2 {
+  font-family: Poppins;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px; /* 100% */
+  letter-spacing: 0.36px;
+}
+
+.ft_text p {
+  text-align: center;
+  /* Heading principal */
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px; /* 160% */
+}
+
+.ft_buttons {
+  gap: 40px;
+}
+
+.ft_buttons button {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px; /* 156.25% */
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  border-radius: 12px;
+  color: var(--white);
+  background-color: var(--s-color);
+}
+
+.ft_items_sub{
+    position: relative;
+    white-space: nowrap;
+}
+
+.ft_items_sub::before{
+    content: "";
+    width: 100%;
+    background-color: var(--s_shadow);
+    height: 9px;
+    position: absolute;
+    bottom: 2px;
+    z-index: -1;
+}

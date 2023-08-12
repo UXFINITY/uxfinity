@@ -1,28 +1,57 @@
-import { useRef, useState, useEffect } from 'react'
+import { useState } from 'react'
+import { useEffect, useRef } from 'react'
 
-export function LazyLoad() {
-  const [isVisible, setIsVisible] = useState(false)
-  const domRef = useRef()
+function LazyLoad(disconnect = true, options) {
+  // const domRef = useRef()
+  // const intersection= useRef()
+  // let observer
 
-  const options = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.1
-  }
+  // const callbackFunction = (entries) => {
+  //   // output me devuelve el true or false
+  //   const output = entries[0].isIntersecting
+  //   intersection.current = output
 
-  const callbackFunction = (entries) => {
-    entries.forEach((entry) => setIsVisible(entry.isIntersecting))
-  }
+  //   if (output) {
+  //     func(domRef.current)
+  //   }
 
-  const observer = new IntersectionObserver(callbackFunction, options)
+  //   if (output && unObs) {
+  //     observer.disconnect()
+  //   }
+  // }
 
-  observer.observe(domRef.current)
+  // useEffect(() => {
+  //   observer = new IntersectionObserver(callbackFunction, options)
+  //   observer.observe(domRef.current)
+  //   return () => {
+  //     observer.disconnect()
+  //   }
+  // }, [])
 
-  if (isVisible) {
-    console.log('visible')
-  } else {
-    console.log('not visible')
-  }
+  // return {domRef,visible:intersection.current}
 
-  return domRef
+  const domRef = useRef(null) // Referencia para el elemento DOM
+  const [visible , setVisible] = useState(false) // Referencia para el estado de intersección
+
+  useEffect(() => {
+    // Creamos el observador de intersección
+    const observer = new IntersectionObserver((entries) => {
+      const isIntersecting = entries[0].isIntersecting
+      setVisible(isIntersecting) 
+      if (visible && disconnect) {
+        observer.disconnect() 
+      }
+    }, options)
+
+    if (domRef.current) {
+      observer.observe(domRef.current)
+    }
+
+    return () => {
+      observer.disconnect()
+    }
+  }, [options, disconnect])
+
+  return { domRef, visible }
 }
+export default LazyLoad

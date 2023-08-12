@@ -1,15 +1,26 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --f-color: #0404e2;
+  --s-color:#4040FB;
+  --f_shadow: #0000ff40;
+  --s_shadow: #8787fb40;
+  --t_shadow: #00000040;
+  --f_family:'Poppins','sans serif';
+  --s_family:'Montserrat','sans serif';
+  --t_family:'Inter','sans serif';
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', 'sans-serif';
 }
 
 body {
   color: #000000;
   background-color: #fff;
   transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
-  border: 5px solid rgba(255, 0, 0, 0.496);
 }
 
 .App {
@@ -17,7 +28,7 @@ body {
   min-height: 100vh;
   width: 100%;
   margin: auto;
-  border: 3px solid green;
+  /* border: 3px solid green; */
   position: relative;
   animation: view 0.5s ease-in-out;
 }

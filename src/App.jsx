@@ -8,6 +8,10 @@ import Nav from './layout/nav/Nav'
 import Header from './layout/header/Header'
 import FirstHome from './layout/home/first/FirstHome'
 import SecondHome from './layout/home/second/SecondHome'
+import ThirdHome from './layout/home/third/ThirdHome'
+import FouthHome from './layout/home/fourth/FouthHome'
+import FifthHome from './layout/home/fifth/FifthHome'
+
 
 function App() {
   const [render, setRender] = useState(false)
@@ -49,6 +53,9 @@ function App() {
           <Header />
           <FirstHome />
           <SecondHome />
+          <ThirdHome />
+          <FouthHome  />
+          <FifthHome />
         </div>
       )}
     </>

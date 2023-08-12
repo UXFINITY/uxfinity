@@ -2,19 +2,24 @@ import pr_1_d from '../assets/header/project-d-1.png'
 import pr_1_m from '../assets/header/project-m-1.png'
 import pr_2_d from '../assets/header/project-d-2.png'
 import pr_3_d from '../assets/header/project-d-3.png'
-import morfi from '../assets/body/morfi/morfi.png'
 import forRoad from '../assets/body/4road/4road.png'
-import powerfit from '../assets/body/powerfit/powerfit.png'
 import morfi1 from '../assets/body/morfi/morfi1.png'
 import morfi2 from '../assets/body/morfi/morfi2.png'
 import morfi3 from '../assets/body/morfi/morfi3.png'
 import powerfit1 from '../assets/body/powerfit/powerfit1.png'
 import powerfit2 from '../assets/body/powerfit/powerfit2.png'
 import powerfit3 from '../assets/body/powerfit/powerfit3.png'
+import bgfit from '../assets/body/fit.png'
+import bgroad from '../assets/body/4road.png'
+import bgmorfi from '../assets/body/morfi.png'
 
 export const EnData = {
-  navData: ['Showcase', 'What we do', 'Testimonial', "PROJECT REQUEST"],
-  headerData:['UX/UI Agency','Superior digital solutions that prioritize ','user experiences.'],
+  navData: ['Showcase', 'What we do', 'Testimonial', 'PROJECT REQUEST'],
+  headerData: [
+    'UX/UI Agency',
+    'Superior digital solutions that prioritize ',
+    'user experiences.'
+  ],
   headerSlider: [
     {
       id: 0,
@@ -49,6 +54,7 @@ export const EnData = {
       img_m: ''
     }
   ],
+  sliderBg: [bgmorfi, bgroad, bgfit],
   homeFirstData: {
     title: 'Need a prototype for your start up or bussines?',
     buttons: ['Product design (UX,UI) 🧑🏻‍🎨', 'Development 🧑‍💻', 'Consulting 📈'],
@@ -80,7 +86,11 @@ export const EnData = {
 
 export const EsData = {
   navData: ['Proyectos', '¿Qué hacemos?', 'Testimonios', 'SOLICITAR PROYECTO'],
-  headerData:['UX/UI Agency','Superior digital solutions that prioritize ','user experiences.'],
+  headerData: [
+    'UX/UI Agency',
+    'Superior digital solutions that prioritize ',
+    'user experiences.'
+  ],
   headerSlider: [
     {
       id: 0,

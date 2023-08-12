@@ -1,7 +1,10 @@
+@import '../../App.css';
+
 .header_container {
   background: url(../../assets/header/Pepitas.png) no-repeat center center;
   background-size: cover;
   height: 80vh;
+  
   max-height: 800px;
   width: 100%;
   display: flex;
@@ -20,7 +23,7 @@
 }
 
 .header_box h1 {
-  font-family: 'poppins', sans-serif;
+  font-family: var(--f_family);
   font-size: 60px;
   font-style: normal;
   font-weight: 600;
@@ -30,7 +33,7 @@
 }
 
 .header_box p {
-  font-family: Montserrat, sans-serif;
+  font-family: var(--s_family);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -47,7 +50,7 @@
   content: '';
   position: absolute;
   height: 21px;
-  background: rgba(0, 0, 255, 0.4);
+  background-color: var(--f_shadow);
   bottom: 13px;
   width: 100%;
   z-index: -1;

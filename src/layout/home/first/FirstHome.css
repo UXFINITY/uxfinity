@@ -1,7 +1,6 @@
 .f_container {
   padding: 0 10%;
-  max-height: 3000px;
- padding-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 .f_f_section {
@@ -10,7 +9,7 @@
 
 .f_s_section {
   text-align: justify;
-  font-family: Montserrat;
+  font-family: var(--s_family);
   font-style: normal;
   margin-bottom: 220px;
 }
@@ -18,7 +17,6 @@
 .f_s_section h2 {
   margin-bottom: 16px;
   font-size: 18px;
-
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 3.6px;
@@ -31,6 +29,23 @@
   display: flex;
   flex-direction: column;
   gap: 42px;
+  min-height: 360px;
+}
+
+.f_s_p_container p {
+  display: none;
+  animation: toTopP 1s ease-in-out;
+}
+
+@keyframes toTopP {
+  0% {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 .f_s_p_container span {
@@ -45,7 +60,7 @@
   height: 12px;
   width: 100%;
   z-index: -1;
-  background-color: rgba(135, 135, 251, 0.4);
+  background-color: var(--s_shadow);
 }
 
 .f_t_section {
@@ -54,12 +69,10 @@
   padding: 0 2%;
   max-width: 100%;
   text-align: center;
-  
 }
 
-
 .f_t_section span {
-  font-family: Poppins;
+  font-family: var(--f_family);
   font-size: 60px;
   font-style: normal;
   font-weight: 600;
@@ -68,18 +81,23 @@
   position: relative;
 }
 
-.f_t_section span::before{
-    content: '';
-    position: absolute;
-    bottom: 18px;
-    height: 12px;
-    width: 100%;
-    z-index: -1;
-    background-color: rgba(135, 135, 251, 0.40);
+.f_t_section span::before {
+  content: '';
+  position: absolute;
+  bottom: 18px;
+  left: 8px;
+  height: 12px;
+  width: 100%;
+  z-index: -1;
+  background-color: var(--s_shadow);
+}
+
+.f_t_section .f_t_span::before{
+  left: 5px;
 }
 
 .f_t_section p {
-  font-family: Montserrat;
+  font-family: var(--s_family);
   font-size: 25px;
   font-style: normal;
   font-weight: 500;

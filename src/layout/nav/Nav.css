@@ -1,8 +1,11 @@
+@import '../../App.css';
+
 .nav-container {
   height: 48px;
   padding: 0 6%;
   display: flex;
   align-items: center;
+  font-family: var(--t_family);
   column-gap: 20px;
   flex-wrap: wrap;
   font-size: 16px;
@@ -17,7 +20,7 @@
 }
 
 .nav-logo > strong {
-  color: #4040fb;
+  color: var(--f-color);
   font-weight: 700;
 }
 
@@ -45,7 +48,7 @@
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: white;
+  background-color: var(--white);
   transition: width 0.3s ease;
 }
 
@@ -62,7 +65,7 @@
 }
 
 .nav-button {
-  color: #4040fb;
+  color: var(--f-color);
   background-color: transparent;
   border-radius: 8px;
   height: 40px;
@@ -103,20 +106,20 @@
 
 /* dark mode */
 .nav-bg-color {
-  width: 24px;
-  height: 24px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   border: none;
   background-color: transparent;
-  border: 1px solid #fff4;
+  border: 1px solid #6666;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .nav-bg-circle {
-  width: 18px;
-  height: 18px;
+  width: 17px;
+  height: 17px;
   border-radius: 50%;
   border: none;
   transition: all 0.2s ease-in-out;

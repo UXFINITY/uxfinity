@@ -1,0 +1,40 @@
+.fif_container{
+    padding: 150px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-height: 911px;
+}
+
+.fif_items{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.fif_items p{
+    font-family: Poppins;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 60px; /* 100% */
+    letter-spacing: 0.36px
+    ;text-align: start;
+}
+
+.fif_items h2{
+    /* Titulo principal sin bold */
+font-family: Poppins;
+font-size: 60px;
+font-style: normal;
+font-weight: 500;
+line-height: 60px; /* 100% */
+letter-spacing: 0.36px;
+color: var(--s-color);
+white-space: nowrap;
+height: 100%;
+width: 461px;
+
+}

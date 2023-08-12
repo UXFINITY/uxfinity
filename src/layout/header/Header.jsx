@@ -21,7 +21,7 @@ function Header() {
         <p>{headerData[0]}</p>
         <h1>
           {headerData[1]}
-          <span className={toggleBefore && 'header_before'}>
+          <span className={toggleBefore ? 'header_before' : ''}>
             {headerData[2]}
           </span>
         </h1>

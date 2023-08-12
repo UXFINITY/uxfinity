@@ -2,17 +2,32 @@ import React, { useEffect, useState, useRef } from 'react'
 import './SecondHome.css'
 import SliderButtonHeader from '../../../components/SliderButtonHeader'
 import { useBodyContext } from '../../../helpers/BodyContext'
+import LazyLoad from '../../../helpers/LazyLoad'
+import HelpersFunction from '../../../helpers/HelpersFunction'
 
 function SecondHome() {
   const [currentIndex, setCurrentIndex] = useState(0) //for change slide
   const [isPaused, setIsPaused] = useState(false) //for pause interval
   const headerContainer = useRef(null)
   const currentFont = ['Pattaya', 'Bebas Neue', 'Outfit']
+
+  // const secondSection = LazyLoad()
   //interval container
   let interval
   //context
   const { AllData } = useBodyContext()
-  const { headerSlider } = AllData
+  const { headerSlider, sliderBg } = AllData
+
+  const sliderItemsContent = LazyLoad(true, { threshold: 0.6 })
+
+  if (sliderItemsContent.visible) {
+    console.log(true)
+    HelpersFunction.LazyDisplay(
+      headerContainer.current,
+      '.slider_bg_sections',
+      'flex'
+    )
+  }
 
   //TODO: interval function
   const intervalFunction = () => {
@@ -36,7 +51,7 @@ function SecondHome() {
         sliderDescription.style.animation = 'h_btmToTop 0.45s linear'
         sliderSubtitle.style.animation = 'h_leftToRight 0.45s linear'
       }, 350)
-    },  8000)
+    }, 8000)
   }
 
   //TODO: useEffect for interval
@@ -52,16 +67,19 @@ function SecondHome() {
   //TODO: handle click function
   const handleSliderClick = (index) => {
     const { current } = headerContainer
-    const element = current.querySelector('.slider-h_container')
+    const element = current.querySelectorAll('.slider_bg_sections')
     //conditional for avoid click on the same slide
     if (currentIndex !== index) {
-      element.style.transition = 'opacity 0s ease'
-      element.style.opacity = 0
+      [...element].forEach(e=>{e.style.transition = 'opacity 0s ease'
+      e.style.opacity = 0
+      })
+      
       setIsPaused(true)
       setCurrentIndex(index)
       setTimeout(() => {
-        element.style.transition = 'opacity 1.2s ease'
-        element.style.opacity = 1
+        [...element].forEach(e=>{e.style.transition = 'opacity 1.2s ease'
+        e.style.opacity = 1})
+        
         //static time animation
         setTimeout(() => {
           setIsPaused(false)
@@ -71,17 +89,15 @@ function SecondHome() {
   }
 
   return (
-    <div
-      className='slider-all-container'
-      
-      ref={headerContainer}
-    >
-        <h2 className='slider-all-title'>Tangible Achievements Through UX/UI Design</h2>
-      <div className='slider-h_container'>
+    <div className='slider-all-container' ref={headerContainer}>
+      <h2 className='slider-all-title'>
+        Tangible Achievements Through UX/UI Design
+      </h2>
+      <div className='slider-h_container' ref={sliderItemsContent.domRef}>
         <div className='slider_bg_container'>
-          <h1>AQUI HAY UN VIDEO BIEN PERRON 😎</h1>
+          <img src={sliderBg[currentIndex]} alt='uxfinity' />
         </div>
-        <section>
+        <section className='slider_bg_sections'>
           <div className='slider-h-titles'>
             <h1
               className={`slider-h-title`}
@@ -94,7 +110,7 @@ function SecondHome() {
             </h2>
           </div>
         </section>
-        <section>
+        <section className='slider_bg_sections'>
           <div className='slider-h-images'>
             <picture className='slider-h-picture'>
               <img

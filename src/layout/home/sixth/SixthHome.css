@@ -13,8 +13,10 @@
 .six_bg {
   position: absolute;
   background: var(--s_shadow);
+  min-height: 635px;
   height: calc(100% - 188px);
   width: 90%;
+
   left: 0;
   top: 0;
   bottom: 0;

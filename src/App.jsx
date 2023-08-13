@@ -11,6 +11,7 @@ import SecondHome from './layout/home/second/SecondHome'
 import ThirdHome from './layout/home/third/ThirdHome'
 import FouthHome from './layout/home/fourth/FouthHome'
 import FifthHome from './layout/home/fifth/FifthHome'
+import SixthHome from './layout/home/sixth/SixthHome'
 
 
 function App() {
@@ -54,6 +55,7 @@ function App() {
           <FirstHome />
           <SecondHome />
           <ThirdHome />
+          <SixthHome />
           <FouthHome  />
           <FifthHome />
         </div>

@@ -21,7 +21,7 @@ function SecondHome() {
   const sliderItemsContent = LazyLoad(true, { threshold: 0.6 })
 
   if (sliderItemsContent.visible) {
-    console.log(true)
+    
     HelpersFunction.LazyDisplay(
       headerContainer.current,
       '.slider_bg_sections',

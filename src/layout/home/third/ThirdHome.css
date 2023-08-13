@@ -19,7 +19,7 @@
     gap: 60px;
 }
 
-.t_sections > *{
+.t_sections > div{
     flex: 1;
 }
 

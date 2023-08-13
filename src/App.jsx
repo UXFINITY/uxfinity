@@ -12,7 +12,7 @@ import ThirdHome from './layout/home/third/ThirdHome'
 import FouthHome from './layout/home/fourth/FouthHome'
 import FifthHome from './layout/home/fifth/FifthHome'
 import SixthHome from './layout/home/sixth/SixthHome'
-
+import SeventhHome from './layout/home/seventh/seventhHome'
 
 function App() {
   const [render, setRender] = useState(false)
@@ -56,7 +56,8 @@ function App() {
           <SecondHome />
           <ThirdHome />
           <SixthHome />
-          <FouthHome  />
+          <FouthHome />
+          <SeventhHome />
           <FifthHome />
         </div>
       )}

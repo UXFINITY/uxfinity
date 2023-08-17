@@ -29,9 +29,8 @@ function FouthHome() {
           <p className='ft_noneToBlock'>
             Instead of jumping into long and expensive development processes, we
             build out the initial prototype in a way that allows to either
-            change it quickly, or scale it with{' '}
-            <span className='ft_items_sub'>additional technologies</span>
-            <span className='ft_items_sub'> when necessary.*</span>
+            change it quickly, or scale it with
+            <span className='ft_items_sub'>additional technologies when necessary.*</span>
           </p>
         </div>
         <div className='ft_items ft_buttons ft_noneToFlex'>

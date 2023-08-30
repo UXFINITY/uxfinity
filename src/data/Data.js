@@ -126,6 +126,7 @@ export const EsData = {
       img_m: ''
     }
   ],
+  sliderBg: [bgmorfi, bgroad, bgfit],
   homeFirstData: {
     title: '¿Necesita un prototipo para su startup o negocio?',
     buttons: [

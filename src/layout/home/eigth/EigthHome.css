@@ -63,6 +63,7 @@
 .ei_s_section {
   display: flex;
   flex-wrap: wrap;
+  padding: 0 80px;
   gap: 60px; 
   justify-content: center;
   align-items: center;
@@ -70,8 +71,34 @@
 
 .ei_team_container {
   width: 260px;
-  height: 260px;
-  padding: 50px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.ei_team_container h4{
+  white-space: nowrap;
+  color: #0303B5;
+font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 100% */
+}
+
+.ei_team_container p{
+  white-space: nowrap;
+  color:  #9E9E9E;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 142.857% */
+letter-spacing: 1.68px;
 }
 
 .ei_team_container picture {

@@ -14,6 +14,7 @@ import FifthHome from './layout/home/fifth/FifthHome'
 import SixthHome from './layout/home/sixth/SixthHome'
 import SeventhHome from './layout/home/seventh/seventhHome'
 import EigthHome from './layout/home/eigth/EigthHome'
+import NinethHome from './layout/home/nineth/NinethHome'
 
 function App() {
   const [render, setRender] = useState(false)
@@ -29,19 +30,19 @@ function App() {
 
   // efecto para darle play y ocultar el elemento
   useEffect(() => {
-    if (videoIntro.current) {
+    if (videoIntro.current && render) {
       videoIntro.current.playbackRate = 3
       videoIntro.current.play()
     }
   }, [])
 
   const handleRender = () => {
-    setRender(true)
+    setRender(false)
   }
 
   return (
     <>
-      {!render ? (
+      {render ? (
         <video
           className='videoIntro'
           src={video}
@@ -61,6 +62,7 @@ function App() {
           <SeventhHome />
           <FifthHome />
           <EigthHome />
+          <NinethHome />
         </div>
       )}
     </>

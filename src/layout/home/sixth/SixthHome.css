@@ -7,7 +7,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+  background-image: url('../../../assets/header/Pepitas.png');
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: center;
 }
 
 .six_bg {
@@ -16,15 +19,25 @@
   min-height: 635px;
   height: calc(100% - 188px);
   width: 90%;
-
   left: 0;
   top: 0;
   bottom: 0;
   margin: auto;
   z-index: -1;
+  animation:six_bg_toRight 0.5s linear forwards;
+}
+
+@keyframes six_bg_toRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }  
 }
 
 .six_sections {
+  /* background-image: url("../../../assets/header/Pepitas.png"); */
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -32,15 +45,42 @@
 
 .six_f_section {
   justify-content: space-around;
-
   flex: 1;
-  padding:0 140px;
+  padding: 0 140px;
+  display: none;
+  opacity: 0;
+  animation: six_f_section 0.5s linear forwards 0.5s;
+}
+
+@keyframes six_f_section {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 .six_s_section {
   justify-content: center;
   gap: 42px;
   align-items: center;
+  display: none;
+  opacity: 0;
+  animation: six_s_section 0.5s linear 0.5s forwards;
+}
+
+@keyframes six_s_section {
+  from {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 
 .six_rg_b_container {

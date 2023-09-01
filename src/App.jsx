@@ -12,7 +12,7 @@ import ThirdHome from './layout/home/third/ThirdHome'
 import FouthHome from './layout/home/fourth/FouthHome'
 import FifthHome from './layout/home/fifth/FifthHome'
 import SixthHome from './layout/home/sixth/SixthHome'
-import SeventhHome from './layout/home/seventh/seventhHome'
+import SeventhHome from './layout/home/seventh/SeventhHome'
 import EigthHome from './layout/home/eigth/EigthHome'
 import NinethHome from './layout/home/nineth/NinethHome'
 

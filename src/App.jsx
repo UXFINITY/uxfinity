@@ -15,6 +15,7 @@ import SixthHome from './layout/home/sixth/SixthHome'
 import SeventhHome from './layout/home/seventh/SeventhHome'
 import EigthHome from './layout/home/eigth/EigthHome'
 import NinethHome from './layout/home/nineth/NinethHome'
+import Footer from './layout/footer/Footer'
 
 function App() {
   const [render, setRender] = useState(false)
@@ -63,6 +64,7 @@ function App() {
           <FifthHome />
           <EigthHome />
           <NinethHome />
+          <Footer />
         </div>
       )}
     </>

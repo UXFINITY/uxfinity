@@ -1,0 +1,24 @@
+.foot_container{
+    background-color: #4040FB;
+    color: #fff;
+    
+}
+
+.foot_f_section{
+    padding: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.foot_s_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0;
+    font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 171.429% */
+letter-spacing: 0.2px;
+}

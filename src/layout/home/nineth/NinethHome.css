@@ -1,0 +1,107 @@
+.nin_container {
+  width: 100%;
+  height: 100vh;
+  max-height: 1080px;
+}
+
+.nin_f_container {
+  padding: 100px;
+}
+.nin_f_section {
+  display: flex;
+  gap: 8px;
+}
+
+.nin_f_section picture {
+  width: 60px;
+  height: 60px;
+}
+
+.nin_f_section img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.nin_s_section {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.nis_s_formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nis_s_formContainer h2 {
+  font-family: Montserrat;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px; /* 142.857% */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form label {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+}
+
+.form input,
+.form textarea {
+  border: none;
+  border-bottom: 1px solid #000;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+}
+
+.form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+}
+
+.nin_s_imgContainer picture {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.nin_s_imgContainer span {
+  position: absolute;
+  background: #fff;
+  width: 348px;
+  height: 89px;
+  bottom: 80px;
+  left: 0;
+  font-family: Montserrat;
+font-size: 35px;
+font-style: normal;
+font-weight: 600;
+line-height: 50px; /* 142.857% */
+display: flex;
+align-items: center;
+}

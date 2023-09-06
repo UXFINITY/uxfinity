@@ -19,7 +19,7 @@ import Footer from './layout/footer/Footer'
 import Email from './test/Email'
 
 function App() {
-  const [render, setRender] = useState(true)
+  const [render, setRender] = useState(false)
   const { bgColor } = useBodyContext()
   const videoIntro = useRef(null)
   if (bgColor) {

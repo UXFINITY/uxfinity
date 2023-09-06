@@ -35,6 +35,8 @@ function App() {
     if (videoIntro.current && render) {
       videoIntro.current.playbackRate = 3
       videoIntro.current.play()
+    }else{
+      setRender(false)
     }
   }, [])
 

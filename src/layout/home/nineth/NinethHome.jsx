@@ -24,24 +24,26 @@ function NinethHome() {
             </h2>
             <form className='form'>
               <div>
-                <label htmlFor=''>First and last name*</label>
-                <input type='text' />
+                <label htmlFor='name'>First and last name*</label>
+                <input id='name' type='text' />
               </div>
               <div>
-                <label htmlFor=''>Company</label>
-                <input type='text' />
+                <label htmlFor='company'>Company</label>
+                <input id='company' type='text' />
               </div>
               <div>
-                <label htmlFor=''>E-mail*</label>
-                <input type='text' />
+                <label htmlFor='email'>E-mail*</label>
+                <input id='email' type='text' />
               </div>
               <div>
-                <label htmlFor=''>Phone number</label>
-                <input type='text' />
+                <label htmlFor='phone'>Phone number</label>
+                <input id='phone' type='text' />
               </div>
               <div>
-                <label htmlFor=''>How can we help you in your project*</label>
-                <textarea />
+                <label htmlFor='textClient'>
+                  How can we help you in your project*
+                </label>
+                <textarea id='textClient' />
               </div>
             </form>
           </section>

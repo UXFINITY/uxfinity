@@ -1,0 +1,10 @@
+<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="ant-design:facebook-filled" clip-path="url(#clip0_2447_13227)">
+<path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M23.5 12.3087C23.5 5.91838 18.3515 0.738281 12.0014 0.738281C5.64848 0.739719 0.5 5.91839 0.5 12.3101C0.5 18.0839 4.7056 22.8701 10.2019 23.7383V15.6534H7.28415V12.3101H10.2048V9.7589C10.2048 6.85983 11.9224 5.25865 14.5484 5.25865C15.8075 5.25865 17.1226 5.48431 17.1226 5.48431V8.33021H15.6724C14.2451 8.33021 13.7995 9.22278 13.7995 10.1384V12.3087H16.9875L16.4787 15.6519H13.7981V23.7368C19.2944 22.8687 23.5 18.0824 23.5 12.3087Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_2447_13227">
+<rect width="24" height="24" fill="white" transform="translate(0 0.738281)"/>
+</clipPath>
+</defs>
+</svg>

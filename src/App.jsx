@@ -16,9 +16,10 @@ import SeventhHome from './layout/home/seventh/SeventhHome'
 import EigthHome from './layout/home/eigth/EigthHome'
 import NinethHome from './layout/home/nineth/NinethHome'
 import Footer from './layout/footer/Footer'
+import Email from './test/Email'
 
 function App() {
-  const [render, setRender] = useState(false)
+  const [render, setRender] = useState(true)
   const { bgColor } = useBodyContext()
   const videoIntro = useRef(null)
   if (bgColor) {
@@ -65,6 +66,7 @@ function App() {
           <EigthHome />
           <NinethHome />
           <Footer />
+          <Email />
         </div>
       )}
     </>

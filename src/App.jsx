@@ -32,11 +32,14 @@ function App() {
 
   // efecto para darle play y ocultar el elemento
   useEffect(() => {
-    if (videoIntro.current && render) {
-      videoIntro.current.playbackRate = 3
-      videoIntro.current.play()
-    }else{
-      setRender(false)
+    if (render) {
+      try {
+        videoIntro.current.playbackRate = 3
+        videoIntro.current.play()
+      } catch (e) {
+        console.log(e)
+        setRender(false)
+      }
     }
   }, [])
 

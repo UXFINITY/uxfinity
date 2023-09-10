@@ -6,15 +6,15 @@ import video from './assets/uxFinityIntro.mp4'
 // components
 import Nav from './layout/nav/Nav'
 import Header from './layout/header/Header'
-import FirstHome from './layout/home/first/FirstHome'
-import SecondHome from './layout/home/second/SecondHome'
-import ThirdHome from './layout/home/third/ThirdHome'
-import FouthHome from './layout/home/fourth/FouthHome'
-import FifthHome from './layout/home/fifth/FifthHome'
-import SixthHome from './layout/home/sixth/SixthHome'
-import SeventhHome from './layout/home/seventh/SeventhHome'
-import EigthHome from './layout/home/eigth/EigthHome'
-import NinethHome from './layout/home/nineth/NinethHome'
+import FirstHome from './layout/home/1_first/FirstHome'
+import SecondHome from './layout/home/2_second/SecondHome'
+import ThirdHome from './layout/home/3_third/ThirdHome'
+import FourthHome from './layout/home/4_fourth/FourthHome'
+import FifthHome from './layout/home/5_fifth/FifthHome'
+import SixthHome from './layout/home/6_sixth/SixthHome'
+import SeventhHome from './layout/home/7_seventh/SeventhHome'
+import EigthHome from './layout/home/8_eigth/EigthHome'
+import NinethHome from './layout/home/9_nineth/NinethHome'
 import Footer from './layout/footer/Footer'
 import Email from './test/Email'
 
@@ -64,10 +64,10 @@ function App() {
           <FirstHome />
           <SecondHome />
           <ThirdHome />
-          <SixthHome />
-          <FouthHome />
-          <SeventhHome />
+          <FourthHome />
           <FifthHome />
+          <SixthHome />
+          <SeventhHome />
           <EigthHome />
           <NinethHome />
           <Footer />

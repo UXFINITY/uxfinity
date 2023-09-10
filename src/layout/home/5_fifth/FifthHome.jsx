@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import './FouthHome.css'
+import './FifthHome.css'
 import LazyLoad from '../../../helpers/LazyLoad'
 import HelpersFunction from '../../../helpers/HelpersFunction'
-function FouthHome() {
+function FifthHome() {
   const ftRef = LazyLoad(false, { threshold: 0.1 })
 
   if (ftRef.visible) {
@@ -43,4 +43,4 @@ function FouthHome() {
   )
 }
 
-export default FouthHome
+export default FifthHome

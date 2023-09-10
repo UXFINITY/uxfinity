@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import './FifthHome.css'
+import './SeventhHome.css'
 import LazyLoad from '../../../helpers/LazyLoad'
 
-function FifthHome() {
+function SeventhHome() {
   const [toggleAny, setToggleAny] = useState(false)
 
   const fifRef = LazyLoad(false, { threshold: 0.6 })
@@ -22,4 +22,4 @@ function FifthHome() {
   )
 }
 
-export default FifthHome
+export default SeventhHome

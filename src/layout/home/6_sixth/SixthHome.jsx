@@ -1,5 +1,5 @@
 import React from 'react'
-import './SeventhHome.css'
+import './SixthHome.css'
 import person from "../../../assets/others/Person.png"
 import person2 from "../../../assets/others/Person2.jpg"
 import LazyLoad from '../../../helpers/LazyLoad'
@@ -21,7 +21,7 @@ const comentarios=[
 ]
 
 
-function SeventhHome() {
+function SixthHome() {
 
   const sevenRef=LazyLoad(true,{threshold:0})
 
@@ -49,4 +49,4 @@ function SeventhHome() {
   )
 }
 
-export default SeventhHome
+export default SixthHome

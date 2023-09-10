@@ -1,10 +1,10 @@
 import React from 'react'
 import Gabi from '../../../assets/others/Gabriella.png'
-import './SixthHome.css'
+import './FourthHome.css'
 import LazyLoad from '../../../helpers/LazyLoad'
 import HelpersFunction from '../../../helpers/HelpersFunction'
 
-function SixthHome() {
+function FourthHome() {
 
     const gabyRef = LazyLoad(true, { threshold: 0 })
 
@@ -44,4 +44,4 @@ function SixthHome() {
   )
 }
 
-export default SixthHome
+export default FourthHome

@@ -5,7 +5,7 @@ import USAimg from '../../assets/nav/USA.png'
 import Spainimg from '../../assets/nav/Spain.png'
 import Germanyimg from '../../assets/nav/Germany.png'
 import arrow from '../../assets/nav/ArrowRight.svg'
-
+import menu from "../../assets/icons/List.svg"
 function Nav() {
   const { setLanguage, AllData, setBgColor, bgColor } = useBodyContext()
   //destructuring
@@ -48,12 +48,13 @@ function Nav() {
         <li>{navData[1]}</li>
         <li>{navData[2]}</li>
       </ul>
-      <button className='nav-bg-color'>
+      
+      {/* <button className='nav-bg-color'>
         <div
           className={`nav-bg-circle ${bgColor && 'nav-bg-black'}`}
           onClick={handleBgColor}
         ></div>
-      </button>
+      </button> */}
       {/* language section */}
       <ul
         className='language-selector'
@@ -93,6 +94,14 @@ function Nav() {
           {navData[3]}
           <img className='nav-button-arrow' src={arrow} />
         </button>
+      </div>
+      <div className='nav_mobile'>
+        <picture><img src={menu} alt="menu icon" /></picture>
+      {false && <ul className='nav_mobile-sections'>
+        <li>{navData[0]}</li>
+        <li>{navData[1]}</li>
+        <li>{navData[2]}</li>
+      </ul>}
       </div>
     </nav>
   )

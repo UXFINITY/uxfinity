@@ -23,17 +23,16 @@ function FirstHome() {
           <p className='f_s_p_p1'>
             We believe in putting users at the center of the equation to create
             a seamless user experience that not only enhances usability but also
-            drives higher conversion rates. Our dedicated team of{' '}
+            drives higher conversion rates.<br/> Our dedicated team of{' '}
             <span>UX and UI designers</span>, experts in their field, employ an
             agile and iterative approach to tackle complex digital projects.
           </p>
           <p className='f_s_p_p2'>
             {' '}
             <span>When needed,</span> we assemble interdisciplinary squads
-            comprising specialists in <span>branding,</span>
-            <span> concept development,</span>
-            <span> design, programming,</span>
-            <span> and online marketing.</span> Together, we collaboratively
+            comprising specialists in <span>branding, </span>
+            <span>concept </span> <span>development, </span> <span>design, </span> <span>programming, </span>
+            <span>and</span> <span> online</span> <span> marketing.</span> Together, we collaboratively
             craft digital solutions that not only captivate with improved user
             experience but also showcase cutting-edge technology.
           </p>

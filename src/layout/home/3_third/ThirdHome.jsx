@@ -4,13 +4,14 @@ import { useBodyContext } from '../../../helpers/BodyContext'
 import LazyLoad from '../../../helpers/LazyLoad'
 import HelpersFunction from '../../../helpers/HelpersFunction'
 function ThirdHome() {
+  //language
+  const { AllData } = useBodyContext()
+  const { homeThirdData } = AllData
+
   //lazyload
   const f_section = LazyLoad(true, { threshold: 0 })
   const s_section = LazyLoad(true, { threshold: 0 })
   const t_section = LazyLoad(true, { threshold: 0 })
-
-  const { AllData } = useBodyContext()
-  const { homeSecondData } = AllData
 
   const localFunction = (element, className, change) => {
     const { current } = element.domRef
@@ -32,54 +33,37 @@ function ThirdHome() {
     localFunction(t_section, 't_t_txt', 'block')
   }
 
-  //   else {
-  //     const { current } = t_section.domRef
-  //     HelpersFunction.LazyDisplay(current, '.t_f_picture', 'none')
-  //   }
-
   return (
     <div className='t_container'>
       <section className='t_sections t_f_section' ref={f_section.domRef}>
         <picture className='t_f_picture tft_left'>
-          <img src={homeSecondData[0].img[0]} alt='' />
-          <img src={homeSecondData[0].img[1]} alt='' />
-          <img src={homeSecondData[0].img[2]} alt='' />
+          <img src={homeThirdData[0].img[0]} alt='uxfinity morfi' />
+          <img src={homeThirdData[0].img[1]} alt='uxfinity morfi' />
+          <img src={homeThirdData[0].img[2]} alt='uxfinity morfi' />
         </picture>
         <div className='tft_rigth t_f_txt'>
-          <h3>Morfi</h3>
-          <p>
-            Morfi is a Web App project designed to make easier the table reserve
-            process, connecting client with restaurants, and helping the
-            restaurants to have control of their reserves, created to be a easy
-            to use platform with just a couple steps.
-          </p>
+          <h3>{homeThirdData[0].title}</h3>
+          <p>{homeThirdData[0].description}</p>
         </div>
       </section>
       <section className='t_sections t_s_section' ref={s_section.domRef}>
         <div className='t_s_txt tft_left'>
-          <h3>4 road 4 you</h3>
-          <p>
-            A E-comer that offer to their clients reparation and Auto-parts with
-            the best quality on the market.
-          </p>
+          <h3>{homeThirdData[1].title}</h3>
+          <p>{homeThirdData[1].description}</p>
         </div>
         <picture className=' tft_rigth t_s_picture'>
-          <img src={homeSecondData[1].img} alt='' />
+          <img src={homeThirdData[1].img} alt='uxfinity 4road4you' />
         </picture>
       </section>
       <section className='t_sections t_t_section' ref={t_section.domRef}>
         <picture className='t_t_picture tft_left'>
-          <img src={homeSecondData[2].img[0]} alt='' />
-          <img src={homeSecondData[2].img[1]} alt='' />
-          <img src={homeSecondData[2].img[2]} alt='' />
+          <img src={homeThirdData[2].img[0]} alt='uxfinity power fit' />
+          <img src={homeThirdData[2].img[1]} alt='uxfinity power fit' />
+          <img src={homeThirdData[2].img[2]} alt='uxfinity power fit' />
         </picture>
         <div className=' t_t_txt tft_rigth'>
-          <h3>Power fit</h3>
-          <p>
-            A platform to have a control over your gym, create events, create
-            and cancel memberships, make a schedule and more, create training
-            plans to your users and more.
-          </p>
+          <h3>{homeThirdData[2].title}</h3>
+          <p>{homeThirdData[2].description}</p>
         </div>
       </section>
     </div>

@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import './SeventhHome.css'
 import LazyLoad from '../../../helpers/LazyLoad'
+import { useBodyContext } from '../../../helpers/BodyContext'
 
 function SeventhHome() {
+  const { AllData } = useBodyContext()
+  const { homeSeventhData } = AllData
+
   const [toggleAny, setToggleAny] = useState(false)
 
   const fifRef = LazyLoad(false, { threshold: 0.6 })
@@ -11,11 +15,14 @@ function SeventhHome() {
   }, [fifRef.visible])
 
   return (
-    <div className={`fif_container ${toggleAny?'fif_container_change':''}`} ref={fifRef.domRef}>
+    <div
+      className={`fif_container ${toggleAny ? 'fif_container_change' : ''}`}
+      ref={fifRef.domRef}
+    >
       <section className='fif_items'>
-        <p>Does your company or startup needs a prototype</p>
+        <p>{homeSeventhData.sub_title}</p>
         <h2 className={toggleAny ? 'fif_h2_sub' : ''}>
-          {toggleAny  ? 'Contact us': 'Let´s talk'}
+          {toggleAny ? homeSeventhData.title[0] : homeSeventhData.title[1]}
         </h2>
       </section>
     </div>

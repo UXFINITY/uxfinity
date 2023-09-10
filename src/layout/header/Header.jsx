@@ -4,7 +4,6 @@ import { useBodyContext } from '../../helpers/BodyContext'
 import ArrowDown from '../../assets/header/Group.svg'
 function Header() {
   const { AllData } = useBodyContext()
-  //destructuring
   const { headerData } = AllData
 
   const [toggleBefore, setToggleBefore] = useState(false)

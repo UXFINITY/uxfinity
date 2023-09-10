@@ -16,7 +16,7 @@ function SecondHome() {
   let interval
   //context
   const { AllData } = useBodyContext()
-  const { headerSlider, sliderBg } = AllData
+  const { homeSecondData, sliderBg } = AllData
 
   const sliderItemsContent = LazyLoad(true, { threshold: 0.6 })
 
@@ -44,7 +44,7 @@ function SecondHome() {
       sliderSubtitle.style.animation = 'h_leftToRight_out 0.45s linear'
       //time for change animation
       setTimeout(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % headerSlider.length)
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % homeSecondData.length)
 
         sliderTitle.style.animation = 'h_changeScale 0.6s linear'
         sliderImages.style.animation = 'h_leftToRight 0.45s linear'
@@ -62,7 +62,7 @@ function SecondHome() {
     }
 
     return () => clearInterval(interval)
-  }, [isPaused, headerSlider.length])
+  }, [isPaused, homeSecondData.length])
 
   //TODO: handle click function
   const handleSliderClick = (index) => {
@@ -103,10 +103,10 @@ function SecondHome() {
               className={`slider-h-title`}
               style={{ fontFamily: currentFont[currentIndex] }}
             >
-              {headerSlider[currentIndex].name}
+              {homeSecondData[currentIndex].name}
             </h1>
             <h2 className='slider-h-subtitle'>
-              {headerSlider[currentIndex].s_description}
+              {homeSecondData[currentIndex].s_description}
             </h2>
           </div>
         </section>
@@ -114,34 +114,34 @@ function SecondHome() {
           <div className='slider-h-images'>
             <picture className='slider-h-picture'>
               <img
-                src={headerSlider[currentIndex].img_d}
-                alt={headerSlider[currentIndex].name}
+                src={homeSecondData[currentIndex].img_d}
+                alt={homeSecondData[currentIndex].name}
               />
             </picture>
             <picture
               className={`slider-h-picture ${
-                headerSlider[currentIndex].img_m ? '' : 'slider-h-picture-dnone'
+                homeSecondData[currentIndex].img_m ? '' : 'slider-h-picture-dnone'
               }`}
             >
               <img
-                src={headerSlider[currentIndex].img_m}
-                alt={headerSlider[currentIndex].name}
+                src={homeSecondData[currentIndex].img_m}
+                alt={homeSecondData[currentIndex].name}
               />
             </picture>
           </div>
           <div className='slider-h-description'>
             <div className='slider-h-tags'>
-              <p>{headerSlider[currentIndex].tag_1}</p>
-              <span>{headerSlider[currentIndex].tag_2}</span>
+              <p>{homeSecondData[currentIndex].tag_1}</p>
+              <span>{homeSecondData[currentIndex].tag_2}</span>
             </div>
             <p className='slider-h-big-description'>
-              {headerSlider[currentIndex].b_description}
+              {homeSecondData[currentIndex].b_description}
             </p>
           </div>
         </section>
       </div>
       <div className='button-sl-h-container'>
-        {headerSlider.map((item, index) => (
+        {homeSecondData.map((item, index) => (
           <SliderButtonHeader
             key={item.id}
             name={item.name}

@@ -1,16 +1,22 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './FirstHome.css'
+import { useBodyContext } from '../../../helpers/BodyContext'
 import LazyLoad from '../../../helpers/LazyLoad'
 import NumberConter from '../../../components/NumberConter'
 import HelpersFunction from '../../../helpers/HelpersFunction'
 function FirstHome() {
+  //language
+  const { AllData } = useBodyContext()
+  const { homeFirstData } = AllData
+
+  //animacion scroll
   const firstSection = LazyLoad(true, { threshold: 0.5 })
   const AllCounter = LazyLoad(true, { threshold: 0.8 })
 
   if (firstSection.visible) {
     const { current } = firstSection.domRef
-    HelpersFunction.LazyDisplay(current, '.f_s_p_p1','block')
-    HelpersFunction.LazyDisplay(current, '.f_s_p_p2','block', true, 500)
+    HelpersFunction.LazyDisplay(current, '.f_s_p_p1', 'block')
+    HelpersFunction.LazyDisplay(current, '.f_s_p_p2', 'block', true, 500)
   }
 
   return (
@@ -18,23 +24,27 @@ function FirstHome() {
     <div className='f_container' ref={firstSection.domRef}>
       <section className='f_f_section'></section>
       <section className='f_s_section'>
-        <h2>OUR METHODOLOGY</h2>
+        <h2>{homeFirstData.title}</h2>
         <div className='f_s_p_container'>
           <p className='f_s_p_p1'>
-            We believe in putting users at the center of the equation to create
-            a seamless user experience that not only enhances usability but also
-            drives higher conversion rates.<br/> Our dedicated team of{' '}
-            <span>UX and UI designers</span>, experts in their field, employ an
-            agile and iterative approach to tackle complex digital projects.
+            {homeFirstData.f_description[0]}
+            <br /> {homeFirstData.f_description[1]}{' '}
+            <span>{homeFirstData.f_description[2]}</span>
+            {homeFirstData.f_description[3]}
           </p>
           <p className='f_s_p_p2'>
             {' '}
-            <span>When needed,</span> we assemble interdisciplinary squads
-            comprising specialists in <span>branding, </span>
-            <span>concept </span> <span>development, </span> <span>design, </span> <span>programming, </span>
-            <span>and</span> <span> online</span> <span> marketing.</span> Together, we collaboratively
-            craft digital solutions that not only captivate with improved user
-            experience but also showcase cutting-edge technology.
+            <span>{homeFirstData.s_description[0]}</span>
+            {homeFirstData.s_description[1]}
+            <span>{homeFirstData.s_description[2]}</span>
+            <span>{homeFirstData.s_description[3]}</span>{' '}
+            <span>{homeFirstData.s_description[4]}</span>{' '}
+            <span>{homeFirstData.s_description[5]}</span>{' '}
+            <span>{homeFirstData.s_description[6]}</span>
+            <span>{homeFirstData.s_description[7]}</span>{' '}
+            <span> {homeFirstData.s_description[8]}</span>{' '}
+            <span> {homeFirstData.s_description[9]}</span>
+            {homeFirstData.s_description[10]}
           </p>
         </div>
       </section>

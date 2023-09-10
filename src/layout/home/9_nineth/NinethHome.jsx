@@ -3,8 +3,13 @@ import './NinethHome.css'
 import Gian from '../../../assets/team/Gian.png'
 import Beja from '../../../assets/team/Beja.png'
 import Hands from '../../../assets/team/hands.png'
+import { useBodyContext } from '../../../helpers/BodyContext'
 
 function NinethHome() {
+
+  const { AllData } = useBodyContext()
+  const { homeNinethData } = AllData
+
   return (
     <div className='nin_container'>
       <div className='nin_f_container'>

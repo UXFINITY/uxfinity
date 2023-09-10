@@ -12,7 +12,12 @@ import powerfit3 from '../assets/body/powerfit/powerfit3.png'
 import bgfit from '../assets/body/fit.png'
 import bgroad from '../assets/body/4road.png'
 import bgmorfi from '../assets/body/morfi.png'
-
+import person from '../assets/others/Person.png'
+import person2 from '../assets/others/Person2.jpg'
+import Beja from '../assets/team/Beja.png'
+import Ale from '../assets/team/Ale.jpg'
+import Gian from '../assets/team/Gian.png'
+import Gabi from '../assets/team/Gabi.png'
 export const EnData = {
   navData: ['Showcase', 'What we do', 'Testimonial', 'PROJECT REQUEST'],
   headerData: [
@@ -20,7 +25,29 @@ export const EnData = {
     'Superior digital solutions that prioritize ',
     'user experiences.'
   ],
-  headerSlider: [
+  homeFirstData: {
+    title: 'OUR METHODOLOGY',
+    f_description: [
+      'We believe in putting users at the center of the equation to create a seamless user experience that not only enhances usability but also drives higher conversion rates.',
+      'Our dedicated team of',
+      'UX and UI designers',
+      ', experts in their field, employ an agile and iterative approach to tackle complex digital projects.'
+    ],
+    s_description: [
+      'When needed,',
+      'we assemble interdisciplinary squads comprising specialists in ',
+      'branding, ',
+      'concept ',
+      'development, ',
+      'design, ',
+      'programming, ',
+      'and',
+      ' online',
+      ' marketing.',
+      ' Together, we collaboratively craft digital solutions that not only captivate with improved user experience but also showcase cutting-edge technology.'
+    ]
+  },
+  homeSecondData: [
     {
       id: 0,
       name: 'MORFI',
@@ -55,14 +82,7 @@ export const EnData = {
     }
   ],
   sliderBg: [bgmorfi, bgroad, bgfit],
-  homeFirstData: {
-    title: 'Need a prototype for your start up or bussines?',
-    buttons: ['Product design (UX,UI) 🧑🏻‍🎨', 'Development 🧑‍💻', 'Consulting 📈'],
-    flexBoxOne: ['Create and engineer a ', 'digital product', ' from scratch'],
-    flexBoxTwo:
-      'We adopt your vision and craft an exquisite and functional user interface, drawing upon the finest UX methodologies. Our use of agile and contemporary programming techniques, along with rapid deployment capabilities, ensures immediate user feedback and enables seamless adjustments as required'
-  },
-  homeSecondData: [
+  homeThirdData: [
     {
       img: [morfi1, morfi2, morfi3],
       title: 'Morfi',
@@ -81,17 +101,124 @@ export const EnData = {
       description:
         'Platform to have a control over your gym, create events, create and cancel memberships, make a schedule and more, create training plans to your users and more.'
     }
-  ]
+  ],
+  homeFourthData: {
+    title: 'Any questions?',
+    description:
+      'Gabriella, our adviser its available to solve any question you have.',
+    form_title: 'Request form',
+    data: ['+43 6602069525', 'or', 'Gabriella@gmail.com', 'Gabriella Vesovic']
+  },
+  homeFifthData: {
+    s_title: 'Your MVP in 30 days',
+    f_title: 'your idea into prototype in 30 days',
+    description: [
+      'Instead of jumping into long and expensive development processes, we build out the initial prototype in a way that allows to either change it quickly, or scale it with',
+      'additional technologies when necessary.*'
+    ],
+    buttons: [
+      'First muck ups ready in 1 week 📧',
+      'We can start in the next 2 days or less 👨‍💻',
+      'Prototye in 30 days🚀'
+    ]
+  },
+  homeSixthData: [
+    {
+      id: 31,
+      name: 'Philip Jhonas',
+      company: 'Refisal Ltmd',
+      comment:
+        '“Fast, effective, comunicative, work with UXFinity is a great xperiences, they understood and found our problem. I recommend really them” ',
+      img: person
+    },
+    {
+      id: 32,
+      name: 'Johanna Miller',
+      company: 'Refisal Ltmd',
+      comment:
+        '“Fast, effective, comunicative, work with UXFinity is a great xperiences, they understood and found our problem. I recommend really them” ',
+      img: person2
+    }
+  ],
+  homeSeventhData: {
+    sub_title: 'Does your company or startup needs a prototype',
+    title: ['Contact us', 'Let´s talk']
+  },
+  homeEighthData: {
+    title: 'Our team for you',
+    sub_title: 'Know us closer',
+    description:
+      'With a team of our professsionals we will make your project grow',
+    team: [
+      {
+        id: 41,
+        name: 'Andres Bejarano',
+        rol: 'CEO - Designer',
+        img: Beja
+      },
+      {
+        id: 42,
+        name: 'Alejandra Lomónaco',
+        rol: 'UX/U  Designer',
+        img: Ale
+      },
+      {
+        id: 45,
+        name: 'Gian Marquez',
+        rol: 'Developer',
+        img: Gian
+      },
+      {
+        id: 46,
+        name: 'Gabriella Vesovic',
+        rol: 'Marketing',
+        img: Gabi
+      }
+    ]
+  },
+  homeNinethData: {},
+  footer: {
+    titles: ['Get In Touch', 'Company info', 'Features'],
+    made: 'Made With Love By UXFinity All Right Reserved',
+    company: ['About Us', 'Carrier', 'We are hiring', 'Blog'],
+    features: ['User experience', 'User Interface', 'Code', 'Support']
+  }
 }
+
+// ------------------------------------------------------
+// ------------------------ESDATA----------------------------
+// ------------------------------------------------------
 
 export const EsData = {
   navData: ['Proyectos', '¿Qué hacemos?', 'Testimonios', 'SOLICITAR PROYECTO'],
   headerData: [
-    'UX/UI Agency',
-    'Superior digital solutions that prioritize ',
-    'user experiences.'
+    'Agencia UI/UX',
+    'Soluciones digitales superiores que priorizan las',
+    'experiencias del usuario.'
   ],
-  headerSlider: [
+  homeFirstData: {
+    title: 'OUR METHODOLOGY',
+    f_description: [
+      'We believe in putting users at the center of the equation to create a seamless user experience that not only enhances usability but also drives higher conversion rates.',
+      'Our dedicated team of',
+      'UX and UI designers',
+      ', experts in their field, employ an agile and iterative approach to tackle complex digital projects.'
+    ],
+    s_description: [
+      'When needed,',
+      'we assemble interdisciplinary squads comprising specialists in ',
+      'branding, ',
+      'concept ',
+      'development, ',
+      'design, ',
+      'programming, ',
+      'and',
+      ' online',
+      ' marketing.',
+      ' Together, we collaboratively craft digital solutions that not only captivate with improved user experience but also showcase cutting-edge technology.'
+    ]
+  },
+  homeSecondData: [
     {
       id: 0,
       name: 'MORFI 1',
@@ -127,18 +254,7 @@ export const EsData = {
     }
   ],
   sliderBg: [bgmorfi, bgroad, bgfit],
-  homeFirstData: {
-    title: '¿Necesita un prototipo para su startup o negocio?',
-    buttons: [
-      'Diseño de Productos (UX,UI) 🧑🏻‍🎨',
-      'Desarrollo 🧑‍💻',
-      'Consultas 📈'
-    ],
-    flexBoxOne: ['Cree y diseñe un ', 'producto digital', ' desde cero'],
-    flexBoxTwo:
-      'Adoptamos su visión y creamos una interfaz de usuario exquisita y funcional, basándonos en las mejores metodologías de UX. Nuestro uso de técnicas de programación ágiles y contemporáneas, junto con capacidades de implementación rápida, garantiza la retroalimentación inmediata del usuario y permite ajustes sin problemas según sea necesario.'
-  },
-  homeSecondData: [
+  homeThirdData: [
     {
       img: [morfi1, morfi2, morfi3],
 
@@ -159,5 +275,86 @@ export const EsData = {
       description:
         'Plataforma para tener un control sobre tu gimnasio, organizar horarios, crear membresías, eventos, planes de entrenamiento para tus usuarios y más.'
     }
-  ]
+  ],
+  homeFourthData: {
+    title: 'Any questions?',
+    description:
+      'Gabriella, our adviser its available to solve any question you have.',
+    form_title: 'Request form',
+    data: ['+43 6602069525', 'or', 'Gabriella@gmail.com', 'Gabriella Vesovic']
+  },
+  homeFifthData: {
+    s_title: 'Your MVP in 30 days',
+    f_title: 'your idea into prototype in 30 days',
+    description: [
+      'Instead of jumping into long and expensive development processes, we build out the initial prototype in a way that allows to either change it quickly, or scale it with',
+      'additional technologies when necessary.*'
+    ],
+    buttons: [
+      'First muck ups ready in 1 week 📧',
+      'We can start in the next 2 days or less 👨‍💻',
+      'Prototye in 30 days🚀'
+    ]
+  },
+  homeSixthData: [
+    {
+      id: 31,
+      name: 'Philip Jhonas',
+      company: 'Refisal Ltmd',
+      comment:
+        '“Fast, effective, comunicative, work with UXFinity is a great xperiences, they understood and found our problem. I recommend really them” ',
+      img: person
+    },
+    {
+      id: 32,
+      name: 'Johanna Miller',
+      company: 'Refisal Ltmd',
+      comment:
+        '“Fast, effective, comunicative, work with UXFinity is a great xperiences, they understood and found our problem. I recommend really them” ',
+      img: person2
+    }
+  ],
+  homeSeventhData: {
+    sub_title: 'Does your company or startup needs a prototype',
+    title: ['Contact us', 'Let´s talk']
+  },
+  homeEighthData: {
+    title: 'Our team for you',
+    sub_title: 'Know us closer',
+    description:
+      'With a team of our professsionals we will make your project grow',
+    team: [
+      {
+        id: 41,
+        name: 'Andres Bejarano',
+        rol: 'CEO - Designer',
+        img: Beja
+      },
+      {
+        id: 42,
+        name: 'Alejandra Lomónaco',
+        rol: 'UX/U  Designer',
+        img: Ale
+      },
+      {
+        id: 45,
+        name: 'Gian Marquez',
+        rol: 'Developer',
+        img: Gian
+      },
+      {
+        id: 46,
+        name: 'Gabriella Vesovic',
+        rol: 'Marketing',
+        img: Gabi
+      }
+    ]
+  },
+  homeNinethData: {},
+  footer: {
+    titles: ['Get In Touch', 'Company info', 'Features'],
+    made: 'Made With Love By UXFinity All Right Reserved',
+    company: ['About Us', 'Carrier', 'We are hiring', 'Blog'],
+    features: ['User experience', 'User Interface', 'Code', 'Support']
+  }
 }

@@ -74,10 +74,20 @@
 }
 
 @media (min-width: 200px) and (max-width: 1200px) {
+  
+  .foot_container{
+    padding: 80px 70px;
+  }
   .foot_f_section{
     padding: 0;
     flex-direction: column;
-    
+    gap: 30px;
+    width: 100%;
+  }
+
+  .foot_s_section{
+    padding-top: 80px;
+    text-align: center;
   }
 }
 

@@ -252,7 +252,7 @@
     margin: 0;
   }
 
-  .slider-h_container {
+  .slider-h_container,.button-sl-h-container {
     display: none;
   }
   .slider-all-title h2 {

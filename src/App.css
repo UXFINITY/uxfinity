@@ -34,7 +34,7 @@ body {
   position: relative;
   animation: view 0.5s ease-in-out;
 
-  background-color: rgba(255, 0, 0, 0.127);
+  /* background-color: rgba(255, 0, 0, 0.127); */
 }
 
 @keyframes view {

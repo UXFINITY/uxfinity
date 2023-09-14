@@ -21,7 +21,6 @@ function SecondHome() {
   const sliderItemsContent = LazyLoad(true, { threshold: 0.6 })
 
   if (sliderItemsContent.visible) {
-    
     HelpersFunction.LazyDisplay(
       headerContainer.current,
       '.slider_bg_sections',
@@ -31,6 +30,10 @@ function SecondHome() {
 
   //TODO: interval function
   const intervalFunction = () => {
+    if (window.innerWidth < 1200) {
+      return
+    }
+    
     const container = headerContainer.current
     const sliderTitle = container.querySelector('.slider-h-title')
     const sliderImages = container.querySelector('.slider-h-images')
@@ -70,16 +73,19 @@ function SecondHome() {
     const element = current.querySelectorAll('.slider_bg_sections')
     //conditional for avoid click on the same slide
     if (currentIndex !== index) {
-      [...element].forEach(e=>{e.style.transition = 'opacity 0s ease'
-      e.style.opacity = 0
+      ;[...element].forEach((e) => {
+        e.style.transition = 'opacity 0s ease'
+        e.style.opacity = 0
       })
-      
+
       setIsPaused(true)
       setCurrentIndex(index)
       setTimeout(() => {
-        [...element].forEach(e=>{e.style.transition = 'opacity 1.2s ease'
-        e.style.opacity = 1})
-        
+        ;[...element].forEach((e) => {
+          e.style.transition = 'opacity 1.2s ease'
+          e.style.opacity = 1
+        })
+
         //static time animation
         setTimeout(() => {
           setIsPaused(false)
@@ -91,7 +97,8 @@ function SecondHome() {
   return (
     <div className='slider-all-container' ref={headerContainer}>
       <div className='slider-all-title'>
-        <h2>Tangible Achievements Through </h2><span> UX/UI Design</span>
+        <h2>Tangible Achievements Through </h2>
+        <span> UX/UI Design</span>
       </div>
       <div className='slider-h_container' ref={sliderItemsContent.domRef}>
         <div className='slider_bg_container'>
@@ -120,7 +127,9 @@ function SecondHome() {
             </picture>
             <picture
               className={`slider-h-picture ${
-                homeSecondData[currentIndex].img_m ? '' : 'slider-h-picture-dnone'
+                homeSecondData[currentIndex].img_m
+                  ? ''
+                  : 'slider-h-picture-dnone'
               }`}
             >
               <img

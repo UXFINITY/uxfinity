@@ -76,9 +76,7 @@ body {
 }
 
 @media (min-width: 200px) and (max-width: 1200px) {
-  * {
-    animation: none !important;
-  }
+  
 }
 
 @media (min-width: 200px) and (max-width: 750px) {

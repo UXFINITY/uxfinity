@@ -96,7 +96,7 @@ line-height: 20px; /* 125% */
 letter-spacing: -0.038px;
 
 height: 40px;
-padding: var(--V-Pading, 12px) var(--H-Pafing, 16px);
+padding: 12px 16px;
 justify-content: center;
 align-items: center;
 gap: 10px;
@@ -125,6 +125,7 @@ background: #4040FB;
   .header_box h1{
     font-size: 24px;
     line-height: 24px;
+    padding: 0 20px;
   }
 
   .nav_button-change{

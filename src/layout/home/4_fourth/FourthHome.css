@@ -149,23 +149,26 @@
 }
 
 @media (min-width: 200px) and (max-width: 1200px) {
-
-  .six_bg,.six_f_section,.six_s_section{
+  .six_bg,
+  .six_f_section,
+  .six_s_section {
     animation: none;
+    display: flex;
+    opacity: 1;
   }
 
   .six_container {
-    padding: 10px;
+    padding: 10px 30px;
     height: 100%;
     flex-direction: column;
   }
-  
+
   .six_bg {
     display: none !important;
   }
-  
+
   .six_sections {
-    background-color: #8787FB80;
+    background-color: #8787fb80;
     flex-direction: column;
     padding: 0 40px;
     height: 100%;
@@ -173,11 +176,11 @@
     position: relative;
   }
 
-  .six_f_section{
+  .six_f_section {
     padding-top: 40px;
   }
 
-  .six_s_section{
+  .six_s_section {
     padding-bottom: 40px;
   }
   .six_rg_t_container h3 {
@@ -190,7 +193,7 @@
     line-height: 36.939px;
   }
 
-  .six_rg_b_container{
+  .six_rg_b_container {
     margin-top: 10px;
     gap: 24px;
   }
@@ -224,15 +227,12 @@
     height: 100%;
   }
 
-  .six_s_section span{
+  .six_s_section span {
     position: absolute;
     width: 279px;
     bottom: 40px;
     right: 0;
   }
-
-  
-
 }
 
 @media (min-width: 200px) and (max-width: 750px) {

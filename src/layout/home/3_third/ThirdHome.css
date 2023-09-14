@@ -159,7 +159,7 @@
   }
 
   .t_container {
-    padding: 60px 10px;
+    padding: 60px 40px;
     gap: 80px;
   }
 
@@ -182,8 +182,7 @@
   }
 
   .t_sections picture {
-    min-width: 300px;
-    width: 100%;
+    width: 350px;
     height: 100%;
     min-height: 300px;
 

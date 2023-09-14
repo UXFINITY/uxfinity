@@ -79,7 +79,7 @@
   }
   .foot_f_section {
     padding: 0;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 30px;
     width: 100%;
   }

@@ -103,9 +103,14 @@
 }
 
 @media (min-width: 200px) and (max-width: 1200px) {
+
+  .sv_s_container_invert,.sv_s_container{
+    animation: none;
+  }
+
   .sv_container {
     margin: 40px 0;
-    padding: 10px 10px;
+    padding: 10px 40px;
     /* background-color: rgba(0, 255, 51, 0.398); */
     height: 100%;
     gap: 70px;

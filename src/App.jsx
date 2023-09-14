@@ -70,7 +70,7 @@ function App() {
           <SecondHome />
           <ThirdHome />
           <FourthHome />
-          <FifthHome />
+          {/* <FifthHome /> */}
           <SixthHome />
           <SeventhHome />
           <EigthHome />

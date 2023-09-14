@@ -32,6 +32,8 @@ function FifthHome() {
            {homeFifthData.description[0]}
             <span className='ft_items_sub'>
             {homeFifthData.description[1]}
+            </span><span className='ft_items_sub'>
+            {homeFifthData.description[2]}
             </span>
           </p>
         </div>

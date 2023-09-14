@@ -5,7 +5,7 @@ import USAimg from '../../assets/nav/USA.png'
 import Spainimg from '../../assets/nav/Spain.png'
 import Germanyimg from '../../assets/nav/Germany.png'
 import arrow from '../../assets/nav/ArrowRight.svg'
-import menu from "../../assets/icons/List.svg"
+import menu from '../../assets/icons/List.svg'
 function Nav() {
   const { setLanguage, AllData, setBgColor, bgColor } = useBodyContext()
   //destructuring
@@ -48,7 +48,7 @@ function Nav() {
         <li>{navData[1]}</li>
         <li>{navData[2]}</li>
       </ul>
-      
+
       {/* <button className='nav-bg-color'>
         <div
           className={`nav-bg-circle ${bgColor && 'nav-bg-black'}`}
@@ -56,52 +56,59 @@ function Nav() {
         ></div>
       </button> */}
       {/* language section */}
-      <ul
-        className='language-selector'
-        ref={languageRef}
-        onClick={handleChangeLanguage}
-      >
-        <li>
-          <img src={image} alt='' />
-        </li>
-        <li
-          onClick={() => {
-            setImage(USAimg)
-            setLanguage('en')
-          }}
+
+      <div className='nav_r_mobile'>
+        <ul
+          className='language-selector'
+          ref={languageRef}
+          onClick={handleChangeLanguage}
         >
-          <img src={USAimg} alt='' />
-        </li>
-        <li
-          onClick={() => {
-            setImage(Spainimg)
-            setLanguage('es')
-          }}
-        >
-          <img src={Spainimg} alt='' />
-        </li>
-        <li
-          onClick={() => {
-            setImage(Germanyimg)
-            setLanguage('en')
-          }}
-        >
-          <img src={Germanyimg} alt='' />
-        </li>
-      </ul>
+          <li>
+            <img src={image} alt='' />
+          </li>
+          <li
+            onClick={() => {
+              setImage(USAimg)
+              setLanguage('en')
+            }}
+          >
+            <img src={USAimg} alt='' />
+          </li>
+          <li
+            onClick={() => {
+              setImage(Spainimg)
+              setLanguage('es')
+            }}
+          >
+            <img src={Spainimg} alt='' />
+          </li>
+          <li
+            onClick={() => {
+              setImage(Germanyimg)
+              setLanguage('en')
+            }}
+          >
+            <img src={Germanyimg} alt='' />
+          </li>
+        </ul>
+        <div className='nav_mobile'>
+          <picture>
+            <img src={menu} alt='menu icon' />
+          </picture>
+          {false && (
+            <ul className='nav_mobile-sections'>
+              <li>{navData[0]}</li>
+              <li>{navData[1]}</li>
+              <li>{navData[2]}</li>
+            </ul>
+          )}
+        </div>
+      </div>
       <div className='nav-button-container'>
         <button className='nav-button'>
           {navData[3]}
           <img className='nav-button-arrow' src={arrow} />
         </button>
-      </div>
-      <div className='nav_mobile'>
-        <picture><img src={menu} alt="menu icon" /></picture>
-      {false && <ul className='nav_mobile-sections'>
-        <li>{navData[0]}</li>
-        <li>{navData[1]}</li>
-        <li>{navData[2]}</li>
-      </ul>}
       </div>
     </nav>
   )

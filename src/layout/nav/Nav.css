@@ -1,5 +1,7 @@
 @import '../../App.css';
 
+
+
 .nav-container {
   height: 48px;
   padding: 0 6%;
@@ -186,7 +188,10 @@
   }
 
 .nav-container{
-  gap: 16px;
+  
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-around;
 }
   
   .nav_mobile{
@@ -196,12 +201,13 @@
     
   }
 
-  
-  .nav-container{
-    flex-wrap: nowrap;
-    
+  .nav_r_mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   }
-
+  
   .nav_mobile picture{
     width: 100%;
     height: 100%;

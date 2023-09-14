@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   padding: 150px;
+  min-height: 500px;
   height: 100vh;
   max-height: 669px;
 }
@@ -91,7 +92,7 @@
 
 .ft_buttons {
   display: none;
-  justify-content: space-between;  
+  justify-content: space-between;
   animation: ft_buttons_gap 0.8s linear 0.7s backwards;
   width: 100%;
 }
@@ -101,13 +102,12 @@
     width: 80%;
     transform: translateY(150px);
     opacity: 0;
-   
   }
-  50% {width: 80%;
-    
+  50% {
+    width: 80%;
+
     transform: translateY(0px);
     opacity: 1;
-   
   }
   100% {
     width: 100%;
@@ -128,7 +128,7 @@
   border-radius: 12px;
   color: var(--white);
   background-color: var(--s-color);
-  
+
   animation: ft_buttons_padding 0.8s linear 0.7s backwards;
 }
 
@@ -168,4 +168,55 @@
   100% {
     width: 100%;
   }
+}
+
+@media (min-width: 200px) and (max-width: 1200px) {
+  .ft_container {
+    margin: 80px 0 10px 0;
+    height: 100%;
+    padding: 0 10px;
+  }
+
+  .ft_items_container {
+    gap: 50px;
+  }
+
+  .ft_items h3 {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .ft_items h2 {
+    font-size: 24px;
+    line-height: 24px;
+    white-space: wrap;
+    text-align: center;
+    position: relative;
+    top: 0;
+  }
+
+  .ft_items p {
+    font-size: 16px;
+    line-height: 28.462px;
+    margin: 0;
+  }
+
+  .ft_text {
+    gap: 16px;
+  }
+
+  .ft_items {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .ft_items button {
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 750px) {
+}
+
+@media (min-width: 750px) and (max-width: 1200px) {
 }

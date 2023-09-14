@@ -1,14 +1,29 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './NinethHome.css'
 import Gian from '../../../assets/team/Gian.png'
 import Beja from '../../../assets/team/Beja.png'
 import Hands from '../../../assets/team/hands.png'
 import { useBodyContext } from '../../../helpers/BodyContext'
+import emailjs from '@emailjs/browser'
 
-function NinethHome() {
+function NinethHome({ service, template, user }) {
+  const form = useRef(null)
 
   const { AllData } = useBodyContext()
   const { homeNinethData } = AllData
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs.sendForm(service, template, form.current, user).then(
+      (result) => {
+        console.log(result.text)
+      },
+      (error) => {
+        console.log(error.text)
+      }
+    )
+  }
 
   return (
     <div className='nin_container'>
@@ -27,29 +42,39 @@ function NinethHome() {
               Our team is going to provide you the best design code and and
               friendly attention
             </h2>
-            <form className='form'>
+            <form ref={form} onSubmit={sendEmail} className='form'>
               <div>
                 <label htmlFor='name'>First and last name*</label>
-                <input id='name' type='text' />
+                <input name='name' id='name' type='text' maxLength={20} />
               </div>
               <div>
                 <label htmlFor='company'>Company</label>
-                <input id='company' type='text' />
+                <input name='company' id='company' type='text' />
               </div>
               <div>
                 <label htmlFor='email'>E-mail*</label>
-                <input id='email' type='text' />
+                <input name='email' id='email' type='text' />
               </div>
               <div>
                 <label htmlFor='phone'>Phone number</label>
-                <input id='phone' type='text' />
+                <div className='form_phone'>
+                  <input
+                    name='cc'
+                    id='cc'
+                    type='number'
+                    min={0}
+                  />
+
+                  <input name='phone' id='phone' type='number' maxLength={3} />
+                </div>
               </div>
               <div>
                 <label htmlFor='textClient'>
                   How can we help you in your project*
                 </label>
-                <textarea id='textClient' />
+                <textarea name='message' id='textClient' />
               </div>
+              <input type='submit' value='Send' />
             </form>
           </section>
           <section className='nin_s_imgContainer'>

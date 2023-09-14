@@ -113,8 +113,9 @@ export const EnData = {
     s_title: 'Your MVP in 30 days',
     f_title: 'your idea into prototype in 30 days',
     description: [
-      'Instead of jumping into long and expensive development processes, we build out the initial prototype in a way that allows to either change it quickly, or scale it with',
-      'additional technologies when necessary.*'
+      'Instead of jumping into long and expensive development processes, we build out the initial prototype in a way that allows to either change it quickly, or scale it with ',
+      'additional technologies',
+      ' when necessary.*'
     ],
     buttons: [
       'First muck ups ready in 1 week 📧',

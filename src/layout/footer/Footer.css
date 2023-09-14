@@ -72,3 +72,18 @@
   display: flex;
   gap: 20px;
 }
+
+@media (min-width: 200px) and (max-width: 1200px) {
+  .foot_f_section{
+    padding: 0;
+    flex-direction: column;
+    
+  }
+}
+
+@media (min-width: 200px) and (max-width: 750px) {
+  
+}
+
+@media (min-width: 750px) and (max-width: 1200px) {
+}

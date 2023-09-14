@@ -90,9 +90,9 @@ function SecondHome() {
 
   return (
     <div className='slider-all-container' ref={headerContainer}>
-      <h2 className='slider-all-title'>
-        Tangible Achievements Through UX/UI Design
-      </h2>
+      <div className='slider-all-title'>
+        <h2>Tangible Achievements Through </h2><span> UX/UI Design</span>
+      </div>
       <div className='slider-h_container' ref={sliderItemsContent.domRef}>
         <div className='slider_bg_container'>
           <img src={sliderBg[currentIndex]} alt='uxfinity' />

@@ -16,9 +16,13 @@ import SeventhHome from './layout/home/7_seventh/SeventhHome'
 import EigthHome from './layout/home/8_eigth/EigthHome'
 import NinethHome from './layout/home/9_nineth/NinethHome'
 import Footer from './layout/footer/Footer'
-import Email from './test/Email'
 
 function App() {
+
+  const vite_service = import.meta.env.VITE_SERVICE_ID
+  const vite_template = import.meta.env.VITE_TEMPLATE_ID
+  const vite_user = import.meta.env.VITE_USER_ID
+
   // si render es true por defecto, se muestra el video
   const [render, setRender] = useState(false)
   const { bgColor } = useBodyContext()
@@ -70,9 +74,8 @@ function App() {
           <SixthHome />
           <SeventhHome />
           <EigthHome />
-          <NinethHome />
+          <NinethHome service={vite_service} template={vite_template} user={vite_user} />
           <Footer />
-          <Email />
         </div>
       )}
     </>

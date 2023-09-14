@@ -101,3 +101,47 @@
   line-height: 20px; /* 111.111% */
   letter-spacing: 3.6px;
 }
+
+@media (min-width: 200px) and (max-width: 1200px) {
+  .sv_container {
+    margin: 40px 0;
+    padding: 10px 10px;
+    /* background-color: rgba(0, 255, 51, 0.398); */
+    height: 100%;
+    gap: 70px;
+  }
+  .sv_s_container {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .sv_s_text {
+    align-items: center;
+  }
+
+  .sv_s_text p {
+    font-size: 16px;
+    line-height: 28.462px;
+    text-align: center;
+  }
+
+  .sv_s_name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sv_s_name h3::before {
+    width: 110%;
+    height: 8px;
+    bottom: 7px;
+    left: -5%;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 750px) {
+}
+
+@media (min-width: 750px) and (max-width: 1200px) {
+}

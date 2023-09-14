@@ -1,6 +1,5 @@
 .nin_container {
   width: 100%;
-  
   max-height: 1080px;
   display: flex;
   align-items: center;
@@ -9,7 +8,7 @@
 
 .nin_f_container {
   padding: 100px;
-  max-width: 1400px     ;
+  max-width: 1400px;
   margin: 0 auto;
 }
 .nin_f_section {
@@ -77,6 +76,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 40px; /* 200% */
+  padding-left: 10px;
 }
 
 .form textarea {
@@ -103,10 +103,48 @@
   bottom: 80px;
   left: 0;
   font-family: Montserrat;
-font-size: 35px;
-font-style: normal;
-font-weight: 600;
-line-height: 50px; /* 142.857% */
-display: flex;
-align-items: center;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px; /* 142.857% */
+  display: flex;
+  align-items: center;
+}
+
+.form .form_phone {
+  flex-direction: row;
+}
+
+.form .form_phone input:nth-child(1) {
+  width: 70px;
+}
+
+.form .form_phone input:nth-child(2) {
+  flex: 1;
+}
+
+@media (min-width: 200px) and (max-width: 1200px) {
+  .nin_f_container{
+    padding: 40px 10px;
+  }
+  .nin_s_section h2{
+    line-height: 24px;font-size: 24px;font-weight: 500;
+    padding: 10px 0;
+  }
+  .nin_s_imgContainer{
+    display: none;
+  }
+
+  .form label{
+    font-size: 16px;
+    line-height: 40px;
+  }
+
+
+}
+
+@media (min-width: 200px) and (max-width: 750px) {
+}
+
+@media (min-width: 750px) and (max-width: 1200px) {
 }

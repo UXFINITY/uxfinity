@@ -105,6 +105,11 @@ border: none;
 border-radius:  8px;
 background: #4040FB;
 }
+@media (min-width: 200px) and (max-width: 1200px) {
+  .header_before:before,.header_container i{
+    animation: none;
+  }
+}
 
 @media (min-width: 200px) and (max-width: 750px) {
   .header_container{

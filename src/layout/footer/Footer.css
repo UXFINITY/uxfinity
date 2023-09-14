@@ -74,25 +74,24 @@
 }
 
 @media (min-width: 200px) and (max-width: 1200px) {
-  
-  .foot_container{
-    padding: 80px 70px;
+  .foot_container {
+    padding: 80px 70px 25px;
   }
-  .foot_f_section{
+  .foot_f_section {
     padding: 0;
     flex-direction: column;
     gap: 30px;
     width: 100%;
   }
 
-  .foot_s_section{
+  .foot_s_section {
+    padding: 0;
     padding-top: 80px;
     text-align: center;
   }
 }
 
 @media (min-width: 200px) and (max-width: 750px) {
-  
 }
 
 @media (min-width: 750px) and (max-width: 1200px) {

@@ -244,6 +244,9 @@
 }
 
 @media (min-width: 200px) and (max-width: 1200px) {
+  .slider-h-title,.slider-h-subtitle,.button-sl-h-container,.slider-h-description,.slider-h-images{
+    animation:none
+  }
 }
 
 @media (min-width: 200px) and (max-width: 750px) {

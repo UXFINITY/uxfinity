@@ -149,6 +149,11 @@
 }
 
 @media (min-width: 200px) and (max-width: 1200px) {
+
+  .six_bg,.six_f_section,.six_s_section{
+    animation: none;
+  }
+
   .six_container {
     padding: 10px;
     height: 100%;

@@ -71,10 +71,10 @@ function App() {
           <ThirdHome />
           <FourthHome />
           {/* <FifthHome /> */}
-          <SixthHome />
+          {/* <SixthHome />
           <SeventhHome />
           <EigthHome />
-          <NinethHome service={vite_service} template={vite_template} user={vite_user} />
+          <NinethHome service={vite_service} template={vite_template} user={vite_user} /> */}
           <Footer />
         </div>
       )}

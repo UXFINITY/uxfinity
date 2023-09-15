@@ -65,17 +65,17 @@ function App() {
       ) : (
         <div className='App'>
           <Nav />
-          <Header />
-          <FirstHome />
+          {/* <Header />
+          <FirstHome /> */}
           {/* <SecondHome />
           <ThirdHome />
           <FourthHome /> */}
           {/* <FifthHome /> */}
-          <SixthHome />
+          {/* <SixthHome />
           <SeventhHome />
           <EigthHome />
           <NinethHome service={vite_service} template={vite_template} user={vite_user} /> 
-           <Footer />
+           <Footer /> */}
         </div>
       )}
     </>

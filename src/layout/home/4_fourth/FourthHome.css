@@ -148,7 +148,8 @@
   color: var(--s_black);
 }
 
-@media (min-width: 200px) and (max-width: 1200px) {
+@media (min-width: 200px) and (max-width: 1024px) {
+
   .six_bg,
   .six_f_section,
   .six_s_section {
@@ -161,7 +162,8 @@
     padding: 10px 30px;
     height: 100%;
     flex-direction: column;
-    
+    max-width: 700px;
+    margin: auto;
   }
 
   .six_bg {

@@ -102,7 +102,8 @@
   letter-spacing: 3.6px;
 }
 
-@media (min-width: 200px) and (max-width: 1200px) {
+@media (min-width: 200px) and (max-width: 1024px) {
+
 
   .sv_s_container_invert,.sv_s_container{
     animation: none;

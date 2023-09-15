@@ -171,8 +171,13 @@
     width: 100%;
   }
 }
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .ft_items h2{
+    font-size: 32px;
+  }
+}
+@media (min-width: 200px) and (max-width: 1024px) {
 
-@media (min-width: 200px) and (max-width: 1200px) {
   .ft_text h3,
   .ft_text p,
   .ft_items_sub::before,

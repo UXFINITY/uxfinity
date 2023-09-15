@@ -129,7 +129,7 @@
   transition: 0.4s;
 }
 
-@media (min-width: 200px) and (max-width: 1200px) {
+@media (min-width: 200px) and (max-width: 1024px) {
 
   .nin_container{
     padding: 40px;

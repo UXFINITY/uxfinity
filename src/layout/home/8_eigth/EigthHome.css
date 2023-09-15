@@ -116,7 +116,8 @@ letter-spacing: 1.68px;
   border: 10px solid var(--s_shadow);
 }
 
-@media (min-width: 200px) and (max-width: 1200px) {
+@media (min-width: 200px) and (max-width: 1024px) {
+
   .ei_container{
     height: 100%;
     padding: 10px 40px;

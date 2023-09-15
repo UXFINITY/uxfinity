@@ -153,7 +153,8 @@
   }
 }
 
-@media (min-width: 200px) and (max-width: 1200px) {
+@media (min-width: 200px) and (max-width: 1024px) {
+
   .tft_rigth,.tft_left,.t_sections h3::before,.t_sections h3::before{
     animation: none;
   }

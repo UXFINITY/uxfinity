@@ -104,7 +104,8 @@
   line-height: 40px;
 }
 
-@media (min-width: 200px) and (max-width: 1200px) {
+@media (min-width: 200px) and (max-width: 1024px) {
+
 }
 
 @media (min-width: 200px) and (max-width: 750px) {

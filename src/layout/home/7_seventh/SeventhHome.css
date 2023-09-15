@@ -51,7 +51,8 @@
   border-bottom: 2px solid var(--s-color);
 }
 
-@media (min-width: 200px) and (max-width: 1200px) {
+@media (min-width: 200px) and (max-width: 1024px) {
+
   .fif_container{
     padding: 10px 40px;
     height: 100%;

@@ -74,7 +74,7 @@ function NinethHome({ service, template, user }) {
                 </label>
                 <textarea name='message' id='textClient' />
               </div>
-              <input type='submit' value='Send' />
+              <input className='button_blue button_action' type='submit' value='Send' />
             </form>
           </section>
           <section className='nin_s_imgContainer'>

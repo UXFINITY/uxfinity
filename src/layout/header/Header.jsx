@@ -24,7 +24,7 @@ function Header() {
             {headerData[2]}
           </span>
         </h1>
-        <button className='nav_button-change'>Lets make it happen</button>
+        <button className='button_blue nav_button-change'>Lets make it happen</button>
       </div>
       <i>
         <img src={ArrowDown} alt='ArrowDown' />

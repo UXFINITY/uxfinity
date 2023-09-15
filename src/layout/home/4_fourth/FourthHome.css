@@ -161,6 +161,7 @@
     padding: 10px 30px;
     height: 100%;
     flex-direction: column;
+    
   }
 
   .six_bg {
@@ -195,11 +196,13 @@
 
   .six_rg_b_container {
     margin-top: 10px;
-    gap: 24px;
+    gap: 5px;
   }
 
   .six_rg_b_container h3 {
+    width: 100%;
     line-height: 28.462px;
+    
     font-size: 16px;
     padding: 0;
     font-weight: 500;
@@ -220,6 +223,7 @@
   .six_s_section picture {
     width: 276px;
     height: 348px;
+    margin-top: 10px ;
   }
 
   .six_s_section img {
@@ -229,7 +233,8 @@
 
   .six_s_section span {
     position: absolute;
-    width: 279px;
+    width: auto;
+    padding: 10px 40px;
     bottom: 40px;
     right: 0;
   }

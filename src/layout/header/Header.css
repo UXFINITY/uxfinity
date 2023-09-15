@@ -85,28 +85,31 @@
     bottom: 0;
   }
 }
-
-.nav_button-change{
-  display: none;
+.button_blue{
+  text-decoration: none;
   font-family: Inter;
 font-size: 16px;
 font-style: normal;
 font-weight: 500;
 line-height: 20px; /* 125% */
 letter-spacing: -0.038px;
-
 height: 40px;
-padding: 12px 16px;
 justify-content: center;
 align-items: center;
-gap: 10px;
 color: white;
 border: none;
 border-radius:  8px;
 background: #4040FB;
 }
+
+.nav_button-change{
+  display: none;
+height: 40px;
+padding: 12px 16px;
+gap: 10px;
+}
 @media (min-width: 200px) and (max-width: 1200px) {
-  .header_before:before,.header_container i{
+  .header_before:before{
     animation: none;
   }
 }

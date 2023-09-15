@@ -123,10 +123,16 @@
   flex: 1;
 }
 
+.button_action:hover{
+  background-color: var(--f-color);
+  color: #fff;
+  transition: 0.4s;
+}
+
 @media (min-width: 200px) and (max-width: 1200px) {
 
   .nin_container{
-    padding: 0 40px;
+    padding: 40px;
   }
 
   .nin_f_container{

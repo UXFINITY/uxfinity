@@ -64,12 +64,12 @@ function App() {
         ></video>
       ) : (
         <div className='App'>
-          {/* <Nav />
+          <Nav />
           <Header />
-          <FirstHome /> */}
-          <SecondHome />
+          <FirstHome />
+          {/* <SecondHome />
           <ThirdHome />
-          <FourthHome />
+          <FourthHome /> */}
           {/* <FifthHome /> */}
           <SixthHome />
           <SeventhHome />

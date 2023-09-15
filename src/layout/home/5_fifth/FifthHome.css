@@ -1,6 +1,7 @@
 @import '../../../App.css';
 
 .ft_container {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -181,7 +182,8 @@
 
   .ft_container {
     margin: 80px 0 10px 0;
-    height: 100%;
+    max-height: max-content;
+    
     width: 100%;
     padding: 0 40px;
   }

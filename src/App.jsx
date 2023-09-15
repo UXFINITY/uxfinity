@@ -70,7 +70,8 @@ function App() {
           <SecondHome />
           <ThirdHome />
           <FourthHome />
-          {/* <FifthHome /> */}
+          {/* quinto home falla en mobile */}
+          <FifthHome />
           <SixthHome />
           <SeventhHome />
           <EigthHome />

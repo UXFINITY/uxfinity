@@ -206,12 +206,8 @@
     text-align: center;
     position: relative;
     top: 0;
-    width: 200px;
-    background-color: yellow;
     max-height: max-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
   }
 
   .ft_items p {

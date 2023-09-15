@@ -188,7 +188,7 @@
   }
 
 .nav-container{
-  
+  padding: 0;
   flex-wrap: nowrap;
   width: 100%;
   justify-content: space-around;

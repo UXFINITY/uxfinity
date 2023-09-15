@@ -64,18 +64,18 @@ function App() {
         ></video>
       ) : (
         <div className='App'>
-          <Nav />
+          {/* <Nav />
           <Header />
-          <FirstHome />
+          <FirstHome /> */}
           <SecondHome />
           <ThirdHome />
           <FourthHome />
           {/* <FifthHome /> */}
-          {/* <SixthHome />
+          <SixthHome />
           <SeventhHome />
           <EigthHome />
-          <NinethHome service={vite_service} template={vite_template} user={vite_user} /> */}
-          {/* <Footer /> */}
+          <NinethHome service={vite_service} template={vite_template} user={vite_user} /> 
+           <Footer />
         </div>
       )}
     </>

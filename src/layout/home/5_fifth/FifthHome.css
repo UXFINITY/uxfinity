@@ -7,7 +7,7 @@
   align-items: center;
   padding: 150px;
   min-height: 500px;
-  height: 100vh;
+  height: 100%;
   max-height: 669px;
 }
 
@@ -183,13 +183,15 @@
   .ft_container {
     margin: 80px 0 10px 0;
     max-height: max-content;
-    
+
     width: 100%;
     padding: 0 40px;
   }
 
   .ft_items_container {
     gap: 50px;
+    height: 100%;
+    /* align-items: normal; */
   }
 
   .ft_items h3 {

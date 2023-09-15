@@ -191,7 +191,7 @@
   .ft_items_container {
     gap: 50px;
     height: 100%;
-    /* align-items: normal; */
+    align-items: normal;
   }
 
   .ft_items h3 {
@@ -224,7 +224,7 @@
   }
 
   .ft_items button {
-    white-space: nowrap;
+    white-space: wrap;
   }
 }
 

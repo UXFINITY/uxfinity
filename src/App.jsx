@@ -64,7 +64,7 @@ function App() {
         ></video>
       ) : (
         <div className='App'>
-          <Nav />
+          {/* <Nav /> */}
           {/* <Header />
           <FirstHome /> */}
           {/* <SecondHome />

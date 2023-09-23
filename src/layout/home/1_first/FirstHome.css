@@ -105,7 +105,6 @@
 }
 
 @media (min-width: 200px) and (max-width: 1024px) {
-
 }
 
 @media (min-width: 200px) and (max-width: 750px) {
@@ -118,7 +117,7 @@
     display: none;
   }
 
-  .f_s_section{
+  .f_s_section {
     margin-bottom: 60px;
   }
 
@@ -143,22 +142,22 @@
     position: relative;
   }
 
-  .f_t_section p{
-    font-size: 16px;line-height: 28.462px;
+  .f_t_section p {
+    font-size: 16px;
+    line-height: 28.462px;
   }
 
-  .f_t_section span::before{
+  .f_t_section span::before {
     width: 44.92px;
-height: 5.183px;
-bottom: 10px;
-left: 0;
+    height: 5.183px;
+    bottom: 10px;
+    left: 0;
   }
 
   .f_t_section .f_t_span::before {
     left: 3px;
     width: 65.076px;
   }
-
 }
 
 @media (min-width: 750px) and (max-width: 1200px) {

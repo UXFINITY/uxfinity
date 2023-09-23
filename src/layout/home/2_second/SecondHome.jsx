@@ -5,6 +5,7 @@ import { useBodyContext } from '../../../helpers/BodyContext'
 import LazyLoad from '../../../helpers/LazyLoad'
 import HelpersFunction from '../../../helpers/HelpersFunction'
 
+
 function SecondHome() {
   const [currentIndex, setCurrentIndex] = useState(0) //for change slide
   const [isPaused, setIsPaused] = useState(false) //for pause interval
@@ -30,11 +31,11 @@ function SecondHome() {
 
   //TODO: interval function
   const intervalFunction = () => {
+    const container = headerContainer.current
     if (window.innerWidth < 1200) {
       return
     }
-    
-    const container = headerContainer.current
+
     const sliderTitle = container.querySelector('.slider-h-title')
     const sliderImages = container.querySelector('.slider-h-images')
     const sliderDescription = container.querySelector('.slider-h-description')
@@ -160,6 +161,7 @@ function SecondHome() {
           />
         ))}
       </div>
+      
     </div>
   )
 }

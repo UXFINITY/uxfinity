@@ -1,3 +1,5 @@
+
+
 .nin_container {
   width: 100%;
   max-height: 1080px;
@@ -123,36 +125,39 @@
   flex: 1;
 }
 
-.button_action:hover{
+.button_action:hover {
   background-color: var(--f-color);
   color: #fff;
   transition: 0.4s;
 }
 
-@media (min-width: 200px) and (max-width: 1024px) {
+.form .bb_red {
+  border-color: #f00;
+}
 
-  .nin_container{
+@media (min-width: 200px) and (max-width: 1024px) {
+  .nin_container {
     padding: 40px;
   }
 
-  .nin_f_container{
+  .nin_f_container {
     max-width: 500px;
     padding: 0px;
   }
-  .nin_s_section h2{
-    line-height: 24px;font-size: 24px;font-weight: 500;
+  .nin_s_section h2 {
+    line-height: 24px;
+    font-size: 24px;
+    font-weight: 500;
     padding: 10px 0;
   }
-  .nin_s_imgContainer{
+  .nin_s_imgContainer {
     display: none;
   }
 
-  .form label{
+  .form label {
     font-size: 16px;
     line-height: 40px;
   }
-
-
 }
 
 @media (min-width: 200px) and (max-width: 750px) {

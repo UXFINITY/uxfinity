@@ -160,13 +160,13 @@ export const EnData = {
       {
         id: 42,
         name: 'Alejandra Lomónaco',
-        rol: 'UX/U  Designer',
+        rol: 'UX/UI  Designer',
         img: Ale
       },
       {
         id: 45,
         name: 'Gian Marquez',
-        rol: 'Developer',
+        rol: 'Web Developer',
         img: Gian
       },
       {

@@ -41,7 +41,7 @@ function Nav() {
   return (
     <nav className='nav-container'>
       <div className='nav-logo'>
-        <strong>UX</strong>finiti
+        <strong>UX</strong>finity
       </div>
       <ul className='nav-sections'>
         <li>{navData[0]}</li>

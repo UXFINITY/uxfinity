@@ -1,0 +1,106 @@
+.fconfirm_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px;
+  height: 90px;
+  width: 350px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: 0 0 1px #000;
+  transition: all 0.3s ease;
+}
+
+.fconfirm_container picture {
+  width: 48px;
+  height: 48px;
+}
+.fconfirm_container img {
+  width: 100%;
+  height: 100%;
+}
+.fconfirm_container p {
+  flex: 1;
+}
+
+.fconfirm_green {
+  color: #29cc6a;
+}
+
+.fconfirm_red {
+  color: #ff0000;
+}
+
+.fconfirm_bgnormal {
+  background-color: #fff;
+}
+
+.fconfirm_bggreen {
+  background-color: #e7f8ec;
+}
+.fconfirm_bgred {
+  background-color: #f2e7e7;
+}
+
+.fconfirm_colors::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #000c;
+  animation: verifyLine 3s linear backwards;
+}
+
+.fconfirm_green::before {
+  background-color: #29cc6a;
+}
+
+.fconfigm_red::before {
+  background-color: #ff0000;
+}
+
+.fconfirm_picture {
+  opacity: 0.8;
+  padding: 6px;
+  animation: rotate 2s linear infinite;
+}
+
+.fconfirm_invisible {
+  bottom: -100%;
+  opacity: 0;
+  transition-duration: 1s;
+}
+
+@keyframes verifyLine {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 300px) and (max-width: 1024px) {
+  .fconfirm_container {
+    left: 0;
+  }
+}

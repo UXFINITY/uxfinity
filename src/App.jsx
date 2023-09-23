@@ -16,6 +16,8 @@ import SeventhHome from './layout/home/7_seventh/SeventhHome'
 import EigthHome from './layout/home/8_eigth/EigthHome'
 import NinethHome from './layout/home/9_nineth/NinethHome'
 import Footer from './layout/footer/Footer'
+import arrow from './assets/header/Group.svg'
+import { toUp } from './helpers/toUp'
 
 function App() {
   const vite_service = import.meta.env.VITE_SERVICE_ID
@@ -26,6 +28,8 @@ function App() {
   const [render, setRender] = useState(false)
   const { bgColor } = useBodyContext()
   const videoIntro = useRef(null)
+ 
+
   if (bgColor) {
     document.body.style.backgroundColor = '#fff'
     document.body.style.color = '#000'
@@ -63,7 +67,6 @@ function App() {
         ></video>
       ) : (
         <div className='App'>
-          
           <Nav />
           <Header />
           <FirstHome />
@@ -75,8 +78,15 @@ function App() {
           <SixthHome />
           <SeventhHome />
           <EigthHome />
-          <NinethHome service={vite_service} template={vite_template} user={vite_user} /> 
-           <Footer />
+          <NinethHome
+            service={vite_service}
+            template={vite_template}
+            user={vite_user}
+          />
+          <Footer />
+          <button onClick={toUp} className='toUp'>
+            <img src={arrow} alt=' button_to_up' />
+          </button>
         </div>
       )}
     </>

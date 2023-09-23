@@ -1,7 +1,5 @@
 @import '../../App.css';
 
-
-
 .nav-container {
   height: 48px;
   padding: 0 6%;
@@ -178,37 +176,38 @@
   top: 0px;
 }
 
-.nav_mobile{
+.nav_mobile {
   display: none;
 }
 
 @media (min-width: 200px) and (max-width: 1024px) {
-  .nav-button-container,.nav-sections{
+  .nav-button-container,
+  .nav-sections {
     display: none;
   }
 
-.nav-container{
-  padding: 0;
-  flex-wrap: nowrap;
-  width: 100%;
-  justify-content: space-around;
-}
-  
-  .nav_mobile{
+  .nav-container {
+    padding: 0;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .nav_mobile {
     display: inline-block;
     width: 30px;
     height: 100%;
-    
   }
 
-  .nav_r_mobile{
+  .nav_r_mobile {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    user-select: none;
   }
-  
-  .nav_mobile picture{
+
+  .nav_mobile picture {
     width: 100%;
     height: 100%;
     display: flex;
@@ -218,9 +217,7 @@
 }
 
 @media (min-width: 200px) and (max-width: 750px) {
-  
 }
 
 @media (min-width: 750px) and (max-width: 1200px) {
-  
 }

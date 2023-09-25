@@ -147,7 +147,7 @@ function NinethHome({ service, template, user }) {
         loading={modal.loading}
         validation={modal.validation}
       />
-      <div className='nin_f_container'>
+      <div className='nin_f_container' id='form_mail'>
         <section className='nin_f_section'>
           <picture>
             <img src={Beja} alt='Bejarano uxfinity' />
@@ -225,6 +225,7 @@ function NinethHome({ service, template, user }) {
                   onChange={obtainData}
                   name='message'
                   id='textClient'
+                  minLength={15}
                 />
               </div>
               <input

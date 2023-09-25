@@ -1,11 +1,13 @@
 import React, { useRef, useState } from 'react'
 import './Nav.css'
+import { Link as ButtonScroll } from 'react-scroll'
 import { useBodyContext } from '../../helpers/BodyContext'
 import USAimg from '../../assets/nav/USA.png'
 import Spainimg from '../../assets/nav/Spain.png'
 import Germanyimg from '../../assets/nav/Germany.png'
 import arrow from '../../assets/nav/ArrowRight.svg'
 import menu from '../../assets/icons/List.svg'
+import MenuMobile from '../../components/MenuMobile'
 function Nav() {
   const { setLanguage, AllData, setBgColor, bgColor } = useBodyContext()
   //destructuring
@@ -13,7 +15,12 @@ function Nav() {
   // envair a un componente
   const [image, setImage] = useState(USAimg)
   const [toggleLanguage, setToggleLanguage] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(true)
   const languageRef = useRef(null)
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen)
+  }
 
   const handleChangeLanguage = (e) => {
     const { current } = languageRef
@@ -41,7 +48,7 @@ function Nav() {
   return (
     <nav className='nav-container'>
       <div className='nav-logo'>
-        <strong>UX</strong>finity
+        <strong>UX</strong>Finity
       </div>
       <ul className='nav-sections'>
         <li>{navData[0]}</li>
@@ -91,25 +98,27 @@ function Nav() {
             <img src={Germanyimg} alt='' />
           </li>
         </ul>
-        <div className='nav_mobile'>
+        <div className='nav_mobile' onClick={toggleMenu}>
           <picture>
             <img src={menu} alt='menu icon' />
           </picture>
-          {false && (
-            <ul className='nav_mobile-sections'>
-              <li>{navData[0]}</li>
-              <li>{navData[1]}</li>
-              <li>{navData[2]}</li>
-            </ul>
-          )}
         </div>
       </div>
       <div className='nav-button-container'>
-        <button className='nav-button'>
+        <ButtonScroll
+          smooth={true}
+          duration={100}
+          to='form_mail'
+          className='nav-button'
+        >
           {navData[3]}
           <img className='nav-button-arrow' src={arrow} />
-        </button>
+        </ButtonScroll>
       </div>
+      {/*  */}
+      {menuOpen && <MenuMobile toggleMenu={toggleMenu} navData={navData} />}
+
+      {/*  */}
     </nav>
   )
 }

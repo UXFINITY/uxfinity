@@ -18,6 +18,12 @@ import Beja from '../assets/team/Beja.png'
 import Ale from '../assets/team/Ale.jpg'
 import Gian from '../assets/team/Gian.png'
 import Gabi from '../assets/team/Gabi.png'
+import Axel from '../assets/team/Axel.png'
+import Luisa from '../assets/team/Luisa.png'
+import Jose from '../assets/team/Jose.png'
+import Angelica from '../assets/team/Angelica.png'
+import Masiel from '../assets/team/Masiel.png'
+
 export const EnData = {
   navData: ['Showcase', 'What we do', 'Testimonial', 'PROJECT REQUEST'],
   headerData: [
@@ -163,24 +169,55 @@ export const EnData = {
         rol: 'UX/UI  Designer',
         img: Ale
       },
-      {
-        id: 45,
-        name: 'Gian Marquez',
-        rol: 'Web Developer',
-        img: Gian
-      },
+
       {
         id: 46,
         name: 'Gabriella Vesovic',
         rol: 'Marketing',
         img: Gabi
+      },
+      {
+        id: 45,
+        name: 'Gian Marquez',
+        rol: 'Full-stack Developer',
+        img: Gian
+      },
+      {
+        id: 51,
+        name: 'Luisa Markarian',
+        rol: 'Front-end Developer',
+        img: Luisa
+      },
+      {
+        id: 47,
+        name: 'Axel Torletti',
+        rol: 'Full-stack Developer',
+        img: Axel
+      },
+      {
+        id: 48,
+        name: 'Angélica Rodríguez',
+        rol: 'Front-end Developer',
+        img: Angelica
+      },
+      {
+        id: 49,
+        name: 'Jose Morales',
+        rol: 'Front-end Developer',
+        img: Jose
+      },
+      {
+        id: 50,
+        name: 'Masiel Venegas',
+        rol: 'Back-end Developer',
+        img: Masiel
       }
     ]
   },
   homeNinethData: {},
   footer: {
     titles: ['Get In Touch', 'Company info', 'Features'],
-    made: 'Made With Love By UXFinity All Right Reserved',
+    made: 'Made With Love By UXFinityAgency. All Right Reserved',
     company: ['About Us', 'Carrier', 'We are hiring', 'Blog'],
     features: ['User experience', 'User Interface', 'Code', 'Support']
   }
@@ -324,37 +361,68 @@ export const EsData = {
     sub_title: 'Know us closer',
     description:
       'With a team of our professsionals we will make your project grow',
-    team: [
-      {
-        id: 41,
-        name: 'Andres Bejarano',
-        rol: 'CEO - Designer',
-        img: Beja
-      },
-      {
-        id: 42,
-        name: 'Alejandra Lomónaco',
-        rol: 'UX/U  Designer',
-        img: Ale
-      },
-      {
-        id: 45,
-        name: 'Gian Marquez',
-        rol: 'Developer',
-        img: Gian
-      },
-      {
-        id: 46,
-        name: 'Gabriella Vesovic',
-        rol: 'Marketing',
-        img: Gabi
-      }
-    ]
+      team: [
+        {
+          id: 41,
+          name: 'Andres Bejarano',
+          rol: 'CEO - Designer',
+          img: Beja
+        },
+        {
+          id: 42,
+          name: 'Alejandra Lomónaco',
+          rol: 'UX/UI  Designer',
+          img: Ale
+        },
+  
+        {
+          id: 46,
+          name: 'Gabriella Vesovic',
+          rol: 'Marketing',
+          img: Gabi
+        },
+        {
+          id: 45,
+          name: 'Gian Marquez',
+          rol: 'Full-stack Developer',
+          img: Gian
+        },
+        {
+          id: 51,
+          name: 'Luisa Markarian',
+          rol: 'Front-end Developer',
+          img: Luisa
+        },
+        {
+          id: 47,
+          name: 'Axel Torletti',
+          rol: 'Full-stack Developer',
+          img: Axel
+        },
+        {
+          id: 48,
+          name: 'Angélica Rodríguez',
+          rol: 'Front-end Developer',
+          img: Angelica
+        },
+        {
+          id: 49,
+          name: 'Jose Morales',
+          rol: 'Front-end Developer',
+          img: Jose
+        },
+        {
+          id: 50,
+          name: 'Masiel Venegas',
+          rol: 'Back-end Developer',
+          img: Masiel
+        }
+      ]
   },
   homeNinethData: {},
   footer: {
     titles: ['Get In Touch', 'Company info', 'Features'],
-    made: 'Made With Love By UXFinity All Right Reserved',
+    made: 'Made With Love By UXFinityAgency. All Right Reserved',
     company: ['About Us', 'Carrier', 'We are hiring', 'Blog'],
     features: ['User experience', 'User Interface', 'Code', 'Support']
   }

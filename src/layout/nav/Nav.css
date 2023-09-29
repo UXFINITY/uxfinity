@@ -17,11 +17,11 @@
 
 .nav-logo {
   width: 200px;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: 25px;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
 }
 
 .nav-logo > strong {
@@ -36,7 +36,7 @@ line-height: 25px;
   justify-content: flex-end;
 }
 
-.nav-sections > li {
+.nav-sections > * {
   list-style: none;
   margin-right: 20px;
   height: 40px;
@@ -62,51 +62,30 @@ line-height: 25px;
 }
 
 .nav-button-container {
-  position: relative;
-  right: 0;
-  height: 40px;
-  width: 200px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: #8787fb80;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  z-index: 999;
 }
 
-.nav-button {
-  color: var(--f-color);
-  background-color: transparent;
-  background-color: #fff;
-  padding: 0 12px;
-  border-radius: 8px;
-  height: 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 210px;
-  border: none;
-  font-size: 16px;
-  letter-spacing: -0.038px;
-  transition: color 0.2s ease-in-out;
-  cursor: pointer;
-  position: fixed;
-  z-index: 880;
+.nav-button-container:hover {
+  background-color: #8787fb;
 }
 
 .nav-button img {
-  position: absolute;
-  right: 0;
-}
-
-.nav-button:hover > .nav-button-arrow {
-  animation: arrowLoop 1.3s infinite linear;
-}
-
-@keyframes arrowLoop {
-  0% {
-    right: 0;
-  }
-  50% {
-    right: 5px;
-  }
-  100% {
-    right: 0;
-  }
+  padding-top: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* dark mode */
@@ -186,16 +165,19 @@ line-height: 25px;
 }
 
 @media (min-width: 200px) and (max-width: 1024px) {
-  .nav-button-container,
   .nav-sections {
     display: none;
   }
 
   .nav-container {
+    /* position: fixed; */
+    /* background-color: #fff; */
     padding: 0;
     flex-wrap: nowrap;
     width: 100%;
     justify-content: space-around;
+    /* z-index: 999;
+    box-shadow: 0 0 3px #000; */
   }
 
   .nav_mobile {

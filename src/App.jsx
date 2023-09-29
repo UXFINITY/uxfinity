@@ -17,7 +17,6 @@ import EigthHome from './layout/home/8_eigth/EigthHome'
 import NinethHome from './layout/home/9_nineth/NinethHome'
 import Footer from './layout/footer/Footer'
 import arrow from './assets/header/Group.svg'
-import { toUp } from './helpers/toUp'
 
 function App() {
   const vite_service = import.meta.env.VITE_SERVICE_ID
@@ -84,9 +83,7 @@ function App() {
             user={vite_user}
           />
           <Footer />
-          <button onClick={toUp} className='toUp'>
-            <img src={arrow} alt=' button_to_up' />
-          </button>
+          
         </div>
       )}
     </>

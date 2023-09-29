@@ -23,7 +23,7 @@ function FifthHome() {
   }
 
   return (
-    <div className='ft_container' ref={ftRef.domRef}>
+    <div className='ft_container' id='whatwedo' ref={ftRef.domRef}>
       <section className='ft_items_container'>
         <div className='ft_items ft_text'>
           <h3 className='ft_noneToBlock'>{homeFifthData.s_title}</h3>
@@ -32,9 +32,9 @@ function FifthHome() {
            {homeFifthData.description[0]}
             <span className='ft_items_sub'>
             {homeFifthData.description[1]}
-            </span><span className='ft_items_sub'>
-            {homeFifthData.description[2]}
             </span>
+            {homeFifthData.description[2]}
+            
           </p>
         </div>
         <div className='ft_items ft_buttons ft_noneToFlex'>

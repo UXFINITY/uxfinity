@@ -26,6 +26,10 @@
   list-style: none;
 }
 
+.tm_s_section *{
+  cursor: pointer;
+}
+
 .nav-logo-w strong {
   color: #8787fb;
 }

@@ -16,8 +16,8 @@ function MenuMobile({ toggleMenu, navData }) {
       </section>
       <section className='tm_s_section'>
         
-          <LiScroll>{navData[0]}</LiScroll>
-          <LiScroll>{navData[1]}</LiScroll><LiScroll>{navData[2]}</LiScroll><LiScroll>{navData[3]}</LiScroll>
+          <LiScroll to='methodology'>{navData[0]}</LiScroll>
+          <LiScroll to='whatwedo'>{navData[1]}</LiScroll><LiScroll to='testimonial'>{navData[2]}</LiScroll><LiScroll to='form_mail'>{navData[3]}</LiScroll>
         
       </section>
     </div>

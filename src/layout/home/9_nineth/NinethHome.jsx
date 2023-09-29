@@ -11,6 +11,8 @@ import { useReducer } from 'react'
 import { createPortal } from 'react-dom'
 import ModalError from '../../../components/ModalError'
 
+
+
 const formModel = {
   name: '',
   company: '',
@@ -159,12 +161,11 @@ function NinethHome({ service, template, user }) {
         <section className='nin_s_section'>
           <section className='nis_s_formContainer'>
             <h2>
-              Our team is going to provide you the best design code and and
-              friendly attention
+              {homeNinethData.title}
             </h2>
             <form ref={form} onSubmit={sendEmail} className='form'>
               <div>
-                <label htmlFor='name'>First and last name*</label>
+                <label htmlFor='name'>{homeNinethData.inputs[0]}</label>
                 <input
                   className={state.name ? 'bb_red' : ''}
                   onChange={obtainData}
@@ -175,7 +176,7 @@ function NinethHome({ service, template, user }) {
                 />
               </div>
               <div>
-                <label htmlFor='company'>Company</label>
+                <label htmlFor='company'>{homeNinethData.inputs[1]}</label>
                 <input
                   className={state.company ? 'bb_red' : ''}
                   onChange={obtainData}
@@ -185,7 +186,7 @@ function NinethHome({ service, template, user }) {
                 />
               </div>
               <div>
-                <label htmlFor='email'>E-mail*</label>
+                <label htmlFor='email'>{homeNinethData.inputs[2]}</label>
                 <input
                   className={state.email ? 'bb_red' : ''}
                   onChange={obtainData}
@@ -195,7 +196,7 @@ function NinethHome({ service, template, user }) {
                 />
               </div>
               <div>
-                <label htmlFor='phone'>Phone number</label>
+                <label htmlFor='phone'>{homeNinethData.inputs[3]}</label>
                 <div className='form_phone'>
                   <input
                     className={state.cc ? 'bb_red' : ''}
@@ -218,7 +219,7 @@ function NinethHome({ service, template, user }) {
               </div>
               <div>
                 <label htmlFor='textClient'>
-                  How can we help you in your project*
+                {homeNinethData.inputs[4]}
                 </label>
                 <textarea
                   className={state.message ? 'bb_red' : ''}

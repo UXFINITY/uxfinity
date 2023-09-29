@@ -21,31 +21,17 @@ function FirstHome() {
 
   return (
     //
-    <div className='f_container' ref={firstSection.domRef}>
+    <div className='f_container' id='methodology' ref={firstSection.domRef}>
       <section className='f_f_section'></section>
       <section className='f_s_section'>
         <h2>{homeFirstData.title}</h2>
         <div className='f_s_p_container'>
           <p className='f_s_p_p1'>
             {homeFirstData.f_description[0]}
-            <br /> {homeFirstData.f_description[1]}{' '}
-            <span>{homeFirstData.f_description[2]}</span>
-            {homeFirstData.f_description[3]}
+            <span>{homeFirstData.f_description[1]}</span>
+            {homeFirstData.f_description[2]}
           </p>
-          <p className='f_s_p_p2'>
-            {' '}
-            <span>{homeFirstData.s_description[0]}</span>
-            {homeFirstData.s_description[1]}
-            <span>{homeFirstData.s_description[2]}</span>
-            <span>{homeFirstData.s_description[3]}</span>{' '}
-            <span>{homeFirstData.s_description[4]}</span>{' '}
-            <span>{homeFirstData.s_description[5]}</span>{' '}
-            <span>{homeFirstData.s_description[6]}</span>
-            <span>{homeFirstData.s_description[7]}</span>{' '}
-            <span> {homeFirstData.s_description[8]}</span>{' '}
-            <span> {homeFirstData.s_description[9]}</span>
-            {homeFirstData.s_description[10]}
-          </p>
+          <p className='f_s_p_p2'> {homeFirstData.s_description[0]}</p>
         </div>
       </section>
       <section className='f_t_section' ref={AllCounter.domRef}>

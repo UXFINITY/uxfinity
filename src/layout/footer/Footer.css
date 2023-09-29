@@ -1,76 +1,56 @@
 .foot_container {
   background-color: #1e1f20;
-  color: #fff;
+  color: #9ca7c260;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px 0;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  font-family: Inter;
+  font-size:20px;
 }
 
 .foot_f_section {
-  margin: auto;
-  max-width: 1440px;
-  padding: 80px 150px;
-  display: flex;
-  justify-content: space-between;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 16px;
+ font: optional;
 }
 
-.foot_f_section h3 {
-  font-family: Montserrat;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 32px; /* 133.333% */
-  letter-spacing: 0.1px;
+.foot_f_section a{
+  cursor: pointer;
 }
 
-.foot_s_section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 25px 0;
-  font-family: Montserrat;
+.foot_f_section p{
   font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px; /* 171.429% */
-  letter-spacing: 0.2px;
 }
 
-.foot_ff_colum {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
+.foot_ff_column {
+  color: #9ca7c2;
+ 
+
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 142.857% */
+letter-spacing: -0.2px;
 }
 
-.foot_fs_colum,
-.foot_ft_colum {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-
-.foot_fs_colum > ul,
-.foot_ft_colum > ul {
-  display: flex;
-  list-style: none;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.foot_fs_colum a,
-.foot_ft_colum a {
-  text-decoration: none;
-  color: #8ec2f2;
-  font-family: Montserrat;
+.foot_ff_column span{
   font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px; /* 171.429% */
-  letter-spacing: 0.2px;
+  color: #9ca7c260;
 }
 
-.foot_f_list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 20px;
+.foot_s_section{
+  font-family: Montserrat;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 171.429% */
+letter-spacing: 0.2px;
+color: #9ca7c2;
 }
 
 @media (min-width: 200px) and (max-width: 1024px) {

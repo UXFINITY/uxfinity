@@ -5,17 +5,17 @@ import { useBodyContext } from '../../helpers/BodyContext'
 import USAimg from '../../assets/nav/USA.png'
 import Spainimg from '../../assets/nav/Spain.png'
 import Germanyimg from '../../assets/nav/Germany.png'
-import arrow from '../../assets/nav/ArrowRight.svg'
 import menu from '../../assets/icons/List.svg'
 import MenuMobile from '../../components/MenuMobile'
+
 function Nav() {
   const { setLanguage, AllData, setBgColor, bgColor } = useBodyContext()
   //destructuring
-  const { navData } = AllData
+  const { navData, navImg } = AllData
   // envair a un componente
   const [image, setImage] = useState(USAimg)
   const [toggleLanguage, setToggleLanguage] = useState(false)
-  const [menuOpen, setMenuOpen] = useState(true)
+  const [menuOpen, setMenuOpen] = useState(false)
   const languageRef = useRef(null)
 
   const toggleMenu = () => {
@@ -51,9 +51,15 @@ function Nav() {
         <strong>UX</strong>Finity
       </div>
       <ul className='nav-sections'>
-        <li>{navData[0]}</li>
-        <li>{navData[1]}</li>
-        <li>{navData[2]}</li>
+        <ButtonScroll smooth={true} duration={100} to='methodology'>
+          {navData[0]}
+        </ButtonScroll>
+        <ButtonScroll smooth={true} duration={100} to='whatwedo'>
+          {navData[1]}
+        </ButtonScroll>
+        <ButtonScroll smooth={true} duration={100} to='testimonial'>
+          {navData[2]}
+        </ButtonScroll>
       </ul>
 
       {/* <button className='nav-bg-color'>
@@ -111,8 +117,7 @@ function Nav() {
           to='form_mail'
           className='nav-button'
         >
-          {navData[3]}
-          <img className='nav-button-arrow' src={arrow} />
+          <img className='nav-button-arrow' src={navImg} />
         </ButtonScroll>
       </div>
       {/*  */}

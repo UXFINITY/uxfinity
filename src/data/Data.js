@@ -23,9 +23,11 @@ import Luisa from '../assets/team/Luisa.png'
 import Jose from '../assets/team/Jose.png'
 import Angelica from '../assets/team/Angelica.png'
 import Masiel from '../assets/team/Masiel.png'
+import message from '../assets/icons/message.svg'
 
 export const EnData = {
-  navData: ['Showcase', 'What we do', 'Testimonial', 'PROJECT REQUEST'],
+  navData: ['METHODOLOGY', 'WHAT WE DO', 'TESTIMONIAL', 'PROJECT REQUEST'],
+  navImg: message,
   headerData: [
     'UX/UI Agency',
     'Superior digital solutions that prioritize ',
@@ -34,23 +36,12 @@ export const EnData = {
   homeFirstData: {
     title: 'OUR METHODOLOGY',
     f_description: [
-      'We believe in putting users at the center of the equation to create a seamless user experience that not only enhances usability but also drives higher conversion rates.',
-      'Our dedicated team of',
-      'UX and UI designers',
-      ', experts in their field, employ an agile and iterative approach to tackle complex digital projects.'
+      'We believe in putting users at the center of the equation to create a seamless user experience that not only enhances usability but also drives higher conversion rates. Our dedicated team of UX and UI designers, who are all experts in their field, ',
+      'employ an agile and iterative approach',
+      ' to tackle complex digital projects.'
     ],
     s_description: [
-      'When needed,',
-      'we assemble interdisciplinary squads comprising specialists in ',
-      'branding, ',
-      'concept ',
-      'development, ',
-      'design, ',
-      'programming, ',
-      'and',
-      ' online',
-      ' marketing.',
-      ' Together, we collaboratively craft digital solutions that not only captivate with improved user experience but also showcase cutting-edge technology.'
+      ' When needed, we assemble interdisciplinary squads comprising specialists in branding, concept development, design, programming, and online marketing. Together, we collaboratively craft digital solutions that not only captivate with improved user experience but also showcase cutting-edge technology.'
     ]
   },
   homeSecondData: [
@@ -58,7 +49,7 @@ export const EnData = {
       id: 0,
       name: 'MORFI',
       s_description: 'WEB APP',
-      b_description: 'The table reserve revolution, for web and app',
+      b_description: 'The table reservation revolution, for web and app',
       tag_1: 'Table reservation',
       tag_2: 'WebApp',
       img_d: pr_1_d,
@@ -93,35 +84,35 @@ export const EnData = {
       img: [morfi1, morfi2, morfi3],
       title: 'Morfi',
       description:
-        'Web App project designed to make easier the table reserve process, connecting client with restaurants, and helping the restaurants to have control of their reserves, created to be a easy to use platform with just a couple steps.'
+        'Morfi is a Web App project designed to make the process of table reservation easier, connecting clients with restaurants and additionally helping restaurants have control over their reservation. It was created to be a easy to use platform with very little necessary steps.'
     },
     {
       img: forRoad,
       title: '4 road 4 you',
       description:
-        'E-comer that offer to their clients reparation and Auto-parts with the best quality on the market.'
+        'An E-commerce that offers high quality vehicle reparations and car parts to their clients.'
     },
     {
       img: [powerfit1, powerfit2, powerfit3],
       title: 'Power fit',
       description:
-        'Platform to have a control over your gym, create events, create and cancel memberships, make a schedule and more, create training plans to your users and more.'
+        'A platform that allows you to have an overview of all your gym has to offer, such as events, personal training, as well as training plan options. Additionally with the ability to create and cancel memberships independently.'
     }
   ],
   homeFourthData: {
     title: 'Any questions?',
     description:
-      'Gabriella, our adviser its available to solve any question you have.',
+      'Gabriella, our adviser is available to answer any question you have.',
     form_title: 'Request form',
     data: ['+43 6602069525', 'or', 'Gabriella@gmail.com', 'Gabriella Vesovic']
   },
   homeFifthData: {
     s_title: 'Your MVP in 30 days',
-    f_title: 'your idea into prototype in 30 days',
+    f_title: 'From an idea into a prototype in only 30 days',
     description: [
-      'Instead of jumping into long and expensive development processes, we build out the initial prototype in a way that allows to either change it quickly, or scale it with ',
-      'additional technologies',
-      ' when necessary.*'
+      'Instead of jumping into a long and expensive development processes, we create ',
+      'an initial prototype in just 30 days,',
+      ' in a way that allows you to make changes quickly and easily, as well as scale it with additional technologies if necessary.*'
     ],
     buttons: [
       'First muck ups ready in 1 week 📧',
@@ -135,7 +126,7 @@ export const EnData = {
       name: 'Philip Jhonas',
       company: 'Refisal Ltmd',
       comment:
-        '“Fast, effective, comunicative, work with UXFinity is a great xperiences, they understood and found our problem. I recommend really them” ',
+        '“Fast, effective and communicative, working with UXFinity was a great experiences, they found, understood and then solved our problem. I  highly recommend them” ',
       img: person
     },
     {
@@ -143,19 +134,19 @@ export const EnData = {
       name: 'Johanna Miller',
       company: 'Refisal Ltmd',
       comment:
-        '“Fast, effective, comunicative, work with UXFinity is a great xperiences, they understood and found our problem. I recommend really them” ',
+        '“Fast, effective and communicative, working with UXFinity was a great experiences, they found, understood and then solved our problem. I  highly recommend them” ',
       img: person2
     }
   ],
   homeSeventhData: {
-    sub_title: 'Does your company or startup needs a prototype',
+    sub_title: 'Does your company or startup need a website prototype?',
     title: ['Contact us', 'Let´s talk']
   },
   homeEighthData: {
     title: 'Our team for you',
     sub_title: 'Know us closer',
     description:
-      'With a team of our professsionals we will make your project grow',
+      'With our team of professionals we will make your business flourish',
     team: [
       {
         id: 41,
@@ -214,9 +205,13 @@ export const EnData = {
       }
     ]
   },
-  homeNinethData: {},
+  homeNinethData: {
+    title:"Our team is going to provide you with the best design, code and  service.",
+    inputs:['First and last name *',"Company",'E-mail *','Phone number','How can we help you in your project *']
+  },
   footer: {
-    titles: ['Get In Touch', 'Company info', 'Features'],
+    titles: ['Methodology', 'Testimonial', 'What we do'],
+    other:"2023 | Privacy & Terms",
     made: 'Made With Love By UXFinityAgency. All Right Reserved',
     company: ['About Us', 'Carrier', 'We are hiring', 'Blog'],
     features: ['User experience', 'User Interface', 'Code', 'Support']
@@ -228,65 +223,54 @@ export const EnData = {
 // ------------------------------------------------------
 
 export const EsData = {
-  navData: ['Proyectos', '¿Qué hacemos?', 'Testimonios', 'SOLICITAR PROYECTO'],
+  navData: ['METODOLOGIA', '¿QUE HACEMOS?', 'TESTIMONIOS', 'PROJECT REQUEST'],
+  navImg: message,
   headerData: [
-    'Agencia UI/UX',
-    'Soluciones digitales superiores que priorizan las',
-    'experiencias del usuario.'
+    'UX/UI Agency',
+    'Superior digital solutions that prioritize ',
+    'user experiences.'
   ],
   homeFirstData: {
     title: 'OUR METHODOLOGY',
     f_description: [
-      'We believe in putting users at the center of the equation to create a seamless user experience that not only enhances usability but also drives higher conversion rates.',
-      'Our dedicated team of',
-      'UX and UI designers',
-      ', experts in their field, employ an agile and iterative approach to tackle complex digital projects.'
+      'We believe in putting users at the center of the equation to create a seamless user experience that not only enhances usability but also drives higher conversion rates. Our dedicated team of UX and UI designers, who are all experts in their field, ',
+      'employ an agile and iterative approach',
+      ' to tackle complex digital projects.'
     ],
     s_description: [
-      'When needed,',
-      'we assemble interdisciplinary squads comprising specialists in ',
-      'branding, ',
-      'concept ',
-      'development, ',
-      'design, ',
-      'programming, ',
-      'and',
-      ' online',
-      ' marketing.',
-      ' Together, we collaboratively craft digital solutions that not only captivate with improved user experience but also showcase cutting-edge technology.'
+      ' When needed, we assemble interdisciplinary squads comprising specialists in branding, concept development, design, programming, and online marketing. Together, we collaboratively craft digital solutions that not only captivate with improved user experience but also showcase cutting-edge technology.'
     ]
   },
   homeSecondData: [
     {
       id: 0,
-      name: 'MORFI 1',
-      s_description: 'APP WEB',
-      b_description:
-        'La revolución de la reserva de mesa, para web y aplicación',
-      tag_1: 'Resevación de mesa',
-      tag_2: 'AppWeb',
+      name: 'MORFI',
+      s_description: 'WEB APP',
+      b_description: 'The table reservation revolution, for web and app',
+      tag_1: 'Table reservation',
+      tag_2: 'WebApp',
       img_d: pr_1_d,
       img_m: pr_1_m
     },
     {
       id: 1,
       name: '4 ROAD 4 YOU',
-      s_description: 'APP WEB',
+      s_description: 'WEB',
       b_description:
-        'La revolución de la reserva de mesa, para web y aplicación',
-      tag_1: 'Resevación de mesa',
-      tag_2: 'AppWeb',
+        'Parts and accessories for your off road vehicle, drive with power',
+      tag_1: '4 Wheels drive auto parts',
+      tag_2: 'E-comerce',
       img_d: pr_2_d,
       img_m: ''
     },
     {
       id: 2,
-      name: 'MORFI 3',
-      s_description: 'APP WEB',
+      name: 'Power fit',
+      s_description: 'WEB-APP',
       b_description:
-        'La revolución de la reserva de mesa, para web y aplicación',
-      tag_1: 'Resevación de mesa',
-      tag_2: 'AppWeb',
+        'Control your gym, add events, manage memberships and more',
+      tag_1: 'Gym management system',
+      tag_2: 'Fit Managment system',
       img_d: pr_3_d,
       img_m: ''
     }
@@ -295,38 +279,37 @@ export const EsData = {
   homeThirdData: [
     {
       img: [morfi1, morfi2, morfi3],
-
       title: 'Morfi',
       description:
-        'Proyecto web diseñada para facilitar el proceso de reserva de mesas, conectando al cliente con los restaurantes y ayudando a los restaurantes a tener el control de sus reservas, creada para ser una plataforma fácil de usar con solo un par de pasos.'
+        'Morfi is a Web App project designed to make the process of table reservation easier, connecting clients with restaurants and additionally helping restaurants have control over their reservation. It was created to be a easy to use platform with very little necessary steps.'
     },
     {
       img: forRoad,
       title: '4 road 4 you',
       description:
-        'E-comer que ofrece a sus clientes reparación y Autopartes con la mejor calidad del mercado.'
+        'An E-commerce that offers high quality vehicle reparations and car parts to their clients.'
     },
     {
       img: [powerfit1, powerfit2, powerfit3],
-
       title: 'Power fit',
       description:
-        'Plataforma para tener un control sobre tu gimnasio, organizar horarios, crear membresías, eventos, planes de entrenamiento para tus usuarios y más.'
+        'A platform that allows you to have an overview of all your gym has to offer, such as events, personal training, as well as training plan options. Additionally with the ability to create and cancel memberships independently.'
     }
   ],
   homeFourthData: {
     title: 'Any questions?',
     description:
-      'Gabriella, our adviser its available to solve any question you have.',
+      'Gabriella, our adviser is available to answer any question you have.',
     form_title: 'Request form',
     data: ['+43 6602069525', 'or', 'Gabriella@gmail.com', 'Gabriella Vesovic']
   },
   homeFifthData: {
     s_title: 'Your MVP in 30 days',
-    f_title: 'your idea into prototype in 30 days',
+    f_title: 'From an idea into a prototype in only 30 days',
     description: [
-      'Instead of jumping into long and expensive development processes, we build out the initial prototype in a way that allows to either change it quickly, or scale it with',
-      'additional technologies when necessary.*'
+      'Instead of jumping into a long and expensive development processes, we create ',
+      'an initial prototype in just 30 days,',
+      ' in a way that allows you to make changes quickly and easily, as well as scale it with additional technologies if necessary.*'
     ],
     buttons: [
       'First muck ups ready in 1 week 📧',
@@ -340,7 +323,7 @@ export const EsData = {
       name: 'Philip Jhonas',
       company: 'Refisal Ltmd',
       comment:
-        '“Fast, effective, comunicative, work with UXFinity is a great xperiences, they understood and found our problem. I recommend really them” ',
+        '“Fast, effective and communicative, working with UXFinity was a great experiences, they found, understood and then solved our problem. I  highly recommend them” ',
       img: person
     },
     {
@@ -348,80 +331,84 @@ export const EsData = {
       name: 'Johanna Miller',
       company: 'Refisal Ltmd',
       comment:
-        '“Fast, effective, comunicative, work with UXFinity is a great xperiences, they understood and found our problem. I recommend really them” ',
+        '“Fast, effective and communicative, working with UXFinity was a great experiences, they found, understood and then solved our problem. I  highly recommend them” ',
       img: person2
     }
   ],
   homeSeventhData: {
-    sub_title: 'Does your company or startup needs a prototype',
+    sub_title: 'Does your company or startup need a website prototype?',
     title: ['Contact us', 'Let´s talk']
   },
   homeEighthData: {
     title: 'Our team for you',
     sub_title: 'Know us closer',
     description:
-      'With a team of our professsionals we will make your project grow',
-      team: [
-        {
-          id: 41,
-          name: 'Andres Bejarano',
-          rol: 'CEO - Designer',
-          img: Beja
-        },
-        {
-          id: 42,
-          name: 'Alejandra Lomónaco',
-          rol: 'UX/UI  Designer',
-          img: Ale
-        },
-  
-        {
-          id: 46,
-          name: 'Gabriella Vesovic',
-          rol: 'Marketing',
-          img: Gabi
-        },
-        {
-          id: 45,
-          name: 'Gian Marquez',
-          rol: 'Full-stack Developer',
-          img: Gian
-        },
-        {
-          id: 51,
-          name: 'Luisa Markarian',
-          rol: 'Front-end Developer',
-          img: Luisa
-        },
-        {
-          id: 47,
-          name: 'Axel Torletti',
-          rol: 'Full-stack Developer',
-          img: Axel
-        },
-        {
-          id: 48,
-          name: 'Angélica Rodríguez',
-          rol: 'Front-end Developer',
-          img: Angelica
-        },
-        {
-          id: 49,
-          name: 'Jose Morales',
-          rol: 'Front-end Developer',
-          img: Jose
-        },
-        {
-          id: 50,
-          name: 'Masiel Venegas',
-          rol: 'Back-end Developer',
-          img: Masiel
-        }
-      ]
+      'With our team of professionals we will make your business flourish',
+    team: [
+      {
+        id: 41,
+        name: 'Andres Bejarano',
+        rol: 'CEO - Designer',
+        img: Beja
+      },
+      {
+        id: 42,
+        name: 'Alejandra Lomónaco',
+        rol: 'UX/UI  Designer',
+        img: Ale
+      },
+
+      {
+        id: 46,
+        name: 'Gabriella Vesovic',
+        rol: 'Marketing',
+        img: Gabi
+      },
+      {
+        id: 45,
+        name: 'Gian Marquez',
+        rol: 'Full-stack Developer',
+        img: Gian
+      },
+      {
+        id: 51,
+        name: 'Luisa Markarian',
+        rol: 'Front-end Developer',
+        img: Luisa
+      },
+      {
+        id: 47,
+        name: 'Axel Torletti',
+        rol: 'Full-stack Developer',
+        img: Axel
+      },
+      {
+        id: 48,
+        name: 'Angélica Rodríguez',
+        rol: 'Front-end Developer',
+        img: Angelica
+      },
+      {
+        id: 49,
+        name: 'Jose Morales',
+        rol: 'Front-end Developer',
+        img: Jose
+      },
+      {
+        id: 50,
+        name: 'Masiel Venegas',
+        rol: 'Back-end Developer',
+        img: Masiel
+      }
+    ]
   },
-  homeNinethData: {},
+  homeNinethData: {
+    title:"Our team is going to provide you with the best design, code and  service.",
+    inputs:['First and last name *',"Company",'E-mail *','Phone number','How can we help you in your project *']
+  },
   footer: {
-    titles: ['Get In Touch', 'Company info', 'Features'],
+    titles: ['Methodology', 'Testimonial', 'What we do'],
+    other:"2023 | Privacy & Terms",
     made: 'Made With Love By UXFinityAgency. All Right Reserved',
     company: ['About Us', 'Carrier', 'We are hiring', 'Blog'],
     features: ['User experience', 'User Interface', 'Code', 'Support']

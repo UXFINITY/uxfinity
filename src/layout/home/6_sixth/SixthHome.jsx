@@ -6,7 +6,7 @@ import { useBodyContext } from '../../../helpers/BodyContext'
 
 function SixthHome() {
   const { AllData } = useBodyContext()
-  const { homeSixthData:comentarios } = AllData
+  const { homeSixthData: comentarios } = AllData
 
   const sevenRef = LazyLoad(true, { threshold: 0 })
 
@@ -18,7 +18,7 @@ function SixthHome() {
 
   //este map podria ser un componente
   return (
-    <div className='sv_container' ref={sevenRef.domRef}>
+    <div className='sv_container' id='testimonial' ref={sevenRef.domRef}>
       {comentarios.map((com, ind) => (
         <section
           className={`sv_s_container ${

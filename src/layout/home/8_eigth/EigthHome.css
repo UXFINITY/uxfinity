@@ -52,6 +52,16 @@
   background-color: var(--s_shadow);
   bottom: 12px;
   z-index: -1;
+  animation: toRightB 1s ease-in-out backwards 0.5s;
+}
+
+@keyframes toRightB {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 .ei_f_section p {
@@ -62,13 +72,47 @@
   line-height: 40px; /* 160% */
 }
 
+.ei_f_section h3,
+.ei_f_section p {
+  animation: toOpacity 1s ease-in-out backwards 0.3s;
+}
+
+@keyframes toOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .ei_s_section {
   display: flex;
   flex-wrap: wrap;
   padding: 0 80px;
-  gap: 60px; 
+  gap: 60px;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.ei_s_section::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, transparent 0%, #ffffff 3%, #ffffff 100%);
+  animation: toBottomOpacity 1.2s ease-in-out backwards 0.6s;
+}
+
+@keyframes toBottomOpacity {
+  0% {
+    height: 100%;
+  }
+  100% {
+    height: 0;
+  }
 }
 
 .ei_team_container {
@@ -80,27 +124,25 @@
   align-items: center;
 }
 
-
-
-.ei_team_container h4{
+.ei_team_container h4 {
   white-space: nowrap;
-  color: #0303B5;
-font-family: Montserrat;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: 20px; /* 100% */
+  color: #0303b5;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 100% */
 }
 
-.ei_team_container p{
+.ei_team_container p {
   white-space: nowrap;
-  color:  #9E9E9E;
-font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: 20px; /* 142.857% */
-letter-spacing: 1.68px;
+  color: #9e9e9e;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 1.68px;
 }
 
 .ei_team_container picture {
@@ -117,24 +159,28 @@ letter-spacing: 1.68px;
 }
 
 @media (min-width: 200px) and (max-width: 1024px) {
-
-  .ei_container{
+  .ei_f_section h2::before,
+  .ei_f_section h3,
+  .ei_f_section p {
+    animation: none;
+  }
+  .ei_container {
     height: 100%;
     padding: 10px 40px;
     align-items: normal;
     margin: 60px 0;
   }
 
-  .ei_f_container{
+  .ei_f_container {
     gap: 0;
   }
 
-  .ei_f_section h3{
+  .ei_f_section h3 {
     font-size: 12px;
     line-height: 7.481px;
   }
 
-  .ei_f_section h2{
+  .ei_f_section h2 {
     font-size: 24px;
     line-height: 24px;
   }
@@ -144,19 +190,19 @@ letter-spacing: 1.68px;
     bottom: 2px;
   }
 
-  .ei_f_section p{
-    font-size: 16px;line-height: 28.462px;
+  .ei_f_section p {
+    font-size: 16px;
+    line-height: 28.462px;
     padding: 12px 0;
     text-align: center;
   }
 
-  .ei_s_section{
+  .ei_s_section {
     gap: 0;
     padding: 0;
   }
 
-
-  .ei_team_container{
+  .ei_team_container {
     height: auto;
     margin: 20px;
   }

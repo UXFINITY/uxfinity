@@ -119,7 +119,7 @@
   font-weight: 500;
   line-height: 40px; /* 160% */
   border-bottom: 1px solid var(--black);
-  width: 269px;
+  width: 485px;
   text-align: center;
   padding-bottom: 10px;
 }
@@ -149,7 +149,6 @@
 }
 
 @media (min-width: 200px) and (max-width: 1024px) {
-
   .six_bg,
   .six_f_section,
   .six_s_section {
@@ -204,7 +203,7 @@
   .six_rg_b_container h3 {
     width: 100%;
     line-height: 28.462px;
-    
+
     font-size: 16px;
     padding: 0;
     font-weight: 500;
@@ -225,7 +224,7 @@
   .six_s_section picture {
     width: 276px;
     height: 348px;
-    margin-top: 10px ;
+    margin-top: 10px;
   }
 
   .six_s_section img {

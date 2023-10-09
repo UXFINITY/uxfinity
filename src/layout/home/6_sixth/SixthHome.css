@@ -91,6 +91,16 @@
   background-color: var(--s_shadow);
   bottom: 10px;
   z-index: -1;
+  animation: toRightSixth 1s ease-in-out backwards 0.5s;
+}
+
+@keyframes toRightSixth {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 20px;
+  }
 }
 
 .sv_s_name span {
@@ -103,12 +113,15 @@
 }
 
 @media (min-width: 200px) and (max-width: 1024px) {
-
-
-  .sv_s_container_invert,.sv_s_container{
+  .sv_s_container_invert,
+  .sv_s_container,
+  .sv_s_name h3::before {
     animation: none;
   }
 
+  .sv_s_name h3::before {
+    display: none;
+  }
   .sv_container {
     margin: 40px 0;
     padding: 10px 40px;

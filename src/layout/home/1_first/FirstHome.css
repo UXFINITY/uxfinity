@@ -61,6 +61,16 @@
   width: 100%;
   z-index: -1;
   background-color: var(--s_shadow);
+  animation: toRightB 1s ease-in-out backwards 0.5s;
+}
+
+@keyframes toRightB {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 .f_t_section {
@@ -108,6 +118,10 @@
 }
 
 @media (min-width: 200px) and (max-width: 750px) {
+  .f_s_p_container span::before {
+    animation: none;
+  }
+
   .f_container {
     padding: 0 40px;
     margin: 100px 0;

@@ -64,11 +64,12 @@
   font-weight: 600;
   line-height: 60px; /* 100% */
   letter-spacing: 0.36px;
+  text-align: center;
   /* white-space: nowrap; */
 }
 
 .ft_text p {
-  margin-top: 90px;
+  margin-top: 130px;
   display: none;
   text-align: center;
   /* Heading principal */
@@ -172,12 +173,11 @@
   }
 }
 @media (min-width: 1024px) and (max-width: 1400px) {
-  .ft_items h2{
+  .ft_items h2 {
     font-size: 32px;
   }
 }
 @media (min-width: 200px) and (max-width: 1024px) {
-
   .ft_text h3,
   .ft_text p,
   .ft_items_sub::before,

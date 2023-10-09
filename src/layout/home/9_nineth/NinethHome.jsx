@@ -11,8 +11,6 @@ import { useReducer } from 'react'
 import { createPortal } from 'react-dom'
 import ModalError from '../../../components/ModalError'
 
-
-
 const formModel = {
   name: '',
   company: '',
@@ -160,9 +158,7 @@ function NinethHome({ service, template, user }) {
         </section>
         <section className='nin_s_section'>
           <section className='nis_s_formContainer'>
-            <h2>
-              {homeNinethData.title}
-            </h2>
+            <h2>{homeNinethData.title}</h2>
             <form ref={form} onSubmit={sendEmail} className='form'>
               <div>
                 <label htmlFor='name'>{homeNinethData.inputs[0]}</label>
@@ -198,29 +194,31 @@ function NinethHome({ service, template, user }) {
               <div>
                 <label htmlFor='phone'>{homeNinethData.inputs[3]}</label>
                 <div className='form_phone'>
+                  <span>+</span>
                   <input
                     className={state.cc ? 'bb_red' : ''}
                     onChange={obtainData}
                     name='cc'
                     id='cc'
+                    autoComplete='country-code'
                     type='number'
                     min={0}
+                    maxLength={6}
                   />
 
                   <input
                     className={state.phone ? 'bb_red' : ''}
                     onChange={obtainData}
                     name='phone'
+                    autoComplete='phone'
                     id='phone'
                     type='number'
-                    maxLength={3}
+                    minLength={7}
                   />
                 </div>
               </div>
               <div>
-                <label htmlFor='textClient'>
-                {homeNinethData.inputs[4]}
-                </label>
+                <label htmlFor='textClient'>{homeNinethData.inputs[4]}</label>
                 <textarea
                   className={state.message ? 'bb_red' : ''}
                   onChange={obtainData}

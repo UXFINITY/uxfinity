@@ -44,6 +44,12 @@
   align-items: center;
   position: relative;
   cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s ease-in-out;
+}
+
+.nav-sections > *:hover {
+  border-bottom: 2px solid var(--f-color);
 }
 
 .nav-sections > li::before {

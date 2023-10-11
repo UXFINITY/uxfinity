@@ -134,7 +134,7 @@ export const EnData = {
       name: 'Johanna Miller',
       company: 'Refisal Ltmd',
       comment:
-        '“Fast, effective and communicative, working with UXFinity was a great experiences, they found, understood and then solved our problem. I  highly recommend them” ',
+        "From the moment I contacted UXFinity, their responsiveness was remarkable. They wasted no time in understanding my project's requirements and swiftly provided me with a detailed plan of action. This promptness was especially appreciated, as I had a tight schedule to meet.",
       img: person2
     }
   ],
@@ -206,12 +206,19 @@ export const EnData = {
     ]
   },
   homeNinethData: {
-    title:"Our team is going to provide you with the best design, code and  service.",
-    inputs:['First and last name *',"Company",'E-mail *','Phone number','How can we help you in your project *']
+    title:
+      'Our team is going to provide you with the best design, code and  service.',
+    inputs: [
+      'First and last name *',
+      'Company',
+      'E-mail *',
+      'Phone number',
+      'How can we help you in your project *'
+    ]
   },
   footer: {
     titles: ['Methodology', 'Testimonial', 'What we do'],
-    other:"2023 | Privacy & Terms",
+    other: '2023 | Privacy & Terms',
     made: 'Made With Love By UXFinityAgency. All Right Reserved',
     company: ['About Us', 'Carrier', 'We are hiring', 'Blog'],
     features: ['User experience', 'User Interface', 'Code', 'Support']
@@ -331,7 +338,7 @@ export const EsData = {
       name: 'Johanna Miller',
       company: 'Refisal Ltmd',
       comment:
-        '“Fast, effective and communicative, working with UXFinity was a great experiences, they found, understood and then solved our problem. I  highly recommend them” ',
+        "From the moment I contacted UXFinity, their responsiveness was remarkable. They wasted no time in understanding my project's requirements and swiftly provided me with a detailed plan of action. This promptness was especially appreciated, as I had a tight schedule to meet.",
       img: person2
     }
   ],
@@ -403,12 +410,19 @@ export const EsData = {
     ]
   },
   homeNinethData: {
-    title:"Our team is going to provide you with the best design, code and  service.",
-    inputs:['First and last name *',"Company",'E-mail *','Phone number','How can we help you in your project *']
+    title:
+      'Our team is going to provide you with the best design, code and  service.',
+    inputs: [
+      'First and last name *',
+      'Company',
+      'E-mail *',
+      'Phone number',
+      'How can we help you in your project *'
+    ]
   },
   footer: {
     titles: ['Methodology', 'Testimonial', 'What we do'],
-    other:"2023 | Privacy & Terms",
+    other: '2023 | Privacy & Terms',
     made: 'Made With Love By UXFinityAgency. All Right Reserved',
     company: ['About Us', 'Carrier', 'We are hiring', 'Blog'],
     features: ['User experience', 'User Interface', 'Code', 'Support']

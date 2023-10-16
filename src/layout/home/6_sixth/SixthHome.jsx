@@ -27,7 +27,7 @@ function SixthHome() {
           key={com.id}
         >
           <picture>
-            <img src={com.img} alt={com.name} />
+            <img src={com.img} alt={`${com.name} uxfinity uxfinityagency`} />
           </picture>
           <div className='sv_s_text'>
             <p>{com.comment} </p>

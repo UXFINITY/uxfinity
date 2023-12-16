@@ -1,22 +1,25 @@
-import React, { useEffect, useState } from 'react'
-import './Header.css'
-import { useBodyContext } from '../../helpers/BodyContext'
-import ArrowDown from '../../assets/header/Group.svg'
+import React, { useEffect, useState } from 'react';
+import './Header.css';
+import { useBodyContext } from '../../helpers/BodyContext';
+import ArrowDown from '../../assets/header/Group.svg';
 function Header() {
-  const { AllData } = useBodyContext()
-  const { headerData } = AllData
+  const { AllData } = useBodyContext();
+  const { headerData } = AllData;
 
-  const [toggleBefore, setToggleBefore] = useState(false)
+  const [toggleBefore, setToggleBefore] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
-      setToggleBefore(true)
-    }, 1000)
-  }, [])
+      setToggleBefore(true);
+    }, 1000);
+  }, []);
 
   return (
-    <div className='header_container'>
-      <div className='header_box'>
+    <div className="header_container">
+      <div className="header_box">
+        <p>ACA VA A IR EL VIDEO</p>
+      </div>
+      {/* <div className='header_box'>
         <p>{headerData[0]}</p>
         <h1>
           {headerData[1]}
@@ -29,9 +32,9 @@ function Header() {
       <i>
         <img src={ArrowDown} alt='ArrowDown' />
         <img src={ArrowDown} alt='ArrowDown' />
-      </i>
+      </i> */}
     </div>
-  )
+  );
 }
 
-export default Header
+export default Header;

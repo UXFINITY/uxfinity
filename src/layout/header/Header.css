@@ -2,9 +2,9 @@
 
 .header_container {
   background: url(../../assets/header/Pepitas.png) no-repeat center center;
+  background-color: var(--bg-color);
   background-size: cover;
   height: 80vh;
-  
   max-height: 800px;
   width: 100%;
   display: flex;
@@ -15,6 +15,7 @@
 }
 
 .header_box {
+  color: var(--t-color-1);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,65 +86,62 @@
     bottom: 0;
   }
 }
-.button_blue{
+.button_blue {
   text-decoration: none;
   font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 20px; /* 125% */
-letter-spacing: -0.038px;
-height: 40px;
-justify-content: center;
-align-items: center;
-color: white;
-border: none;
-border-radius:  8px;
-background: #4040FB;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 125% */
+  letter-spacing: -0.038px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  background: #4040fb;
 }
 
-.nav_button-change{
+.nav_button-change {
   display: none;
-height: 40px;
-padding: 12px 16px;
-gap: 10px;
+  height: 40px;
+  padding: 12px 16px;
+  gap: 10px;
 }
 @media (min-width: 200px) and (max-width: 1024px) {
-
-  .header_before:before{
+  .header_before:before {
     animation: none;
   }
-  .header_container{
+  .header_container {
     height: 100vh;
     max-height: 350px;
   }
-  .header_box{
+  .header_box {
     margin: 0;
   }
-  .header_box p{
+  .header_box p {
     font-size: 12px;
   }
-  .header_box h1{
+  .header_box h1 {
     font-size: 24px;
     line-height: 24px;
     padding: 0 20px;
   }
 
-  .nav_button-change{
+  .nav_button-change {
     display: flex;
     margin-top: 30px;
   }
 
-.header_before:before{
-  height: 8px;
-  bottom: 8px;
-}
+  .header_before:before {
+    height: 8px;
+    bottom: 8px;
+  }
 }
 
 @media (min-width: 200px) and (max-width: 750px) {
-  
 }
 
 @media (min-width: 750px) and (max-width: 1200px) {
-  
 }

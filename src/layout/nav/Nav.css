@@ -1,6 +1,7 @@
 @import '../../App.css';
 
 .nav-container {
+  background-color: var(--bg-color);
   height: 48px;
   padding: 0 6%;
   display: flex;
@@ -16,24 +17,38 @@
 }
 
 .nav-logo {
-  width: 200px;
+  /* width: 200px; */
+  height: 100%;
+  color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: Inter;
-  font-size: 16px;
+  font-size: 37px;
   font-style: normal;
   font-weight: 700;
   line-height: 25px;
+  background: linear-gradient(
+    272deg,
+    var(--t-color-1) 0%,
+    var(--t-color-2) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.nav-logo > strong {
+/* .nav-logo > strong {
   color: var(--f-color);
   font-weight: 700;
-}
+} */
 
 .nav-sections {
   flex: 1;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  color: var(--t-color-1);
 }
 
 .nav-sections > * {

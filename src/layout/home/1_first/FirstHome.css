@@ -1,6 +1,7 @@
 .f_container {
   padding: 0 10%;
   padding-bottom: 100px;
+  background-color: var(--bg-color);
 }
 
 .f_f_section {
@@ -9,12 +10,110 @@
 
 .f_s_section {
   text-align: justify;
-  font-family: var(--s_family);
+  font-family: var(--t_family_2);
   font-style: normal;
   margin-bottom: 220px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.f_s_section h2 {
+.f_s_title {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.f_s_title h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.5; /* Adjust line height to 1.2 */
+  background: linear-gradient(
+    272deg,
+    var(--t-color-1) 0%,
+    var(--t-color-2) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline; /* Change display to inline to fix gradient on multiline text */
+}
+
+.f_s_title p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  color: #5c5c5c;
+}
+
+.button-with-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Asegura que el texto y la flecha estén separados */
+  padding: 0; /* Ajusta según sea necesario */
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: inherit;
+  color: inherit;
+}
+
+.button-text {
+  margin-right: 16px; /* Separación entre el texto y la flecha */
+}
+
+.arrow {
+  border: solid currentColor;
+  border-width: 0 2px 2px 0;
+  padding: 10px;
+  transform: rotate(45deg) translateY(-15px) translateX(5px); /* Flecha hacia abajo */
+  transition: transform 0.3s ease;
+}
+
+.arrow.up {
+  transform: rotate(-135deg) translateY(5px) translateX(-15px); /* Flecha hacia arriba */
+}
+
+.f_s_list {
+  width: 30%;
+  transition: transform 0.3s ease;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.f_s_list .f_s_item {
+  transition: max-height 0.3s ease;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px; /* 100% */
+}
+
+.f_s_list .f_s_item button {
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+}
+
+.f_s_list .f_s_item .f_s_description {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.9s ease, opacity 0.9s ease 0.2s; /* Retrasa la transición de opacidad */
+  opacity: 0;
+}
+
+.f_s_list .f_s_item.active .f_s_description {
+  max-height: 20em; /* Ajusta este valor para que sea ligeramente mayor que la altura del contenido */
+  transition: max-height 0.9s ease, opacity 0.9s ease; /* Sin retraso para la transición de opacidad */
+  opacity: 1;
+}
+
+/* .f_s_section h2 {
   margin-bottom: 16px;
   font-size: 18px;
   font-weight: 400;
@@ -30,7 +129,7 @@
   flex-direction: column;
   gap: 42px;
   min-height: 360px;
-}
+} */
 
 .f_s_p_container p {
   display: none;

@@ -9,16 +9,16 @@
 }
 
 .f_s_section {
-  text-align: justify;
   font-family: var(--t_family_2);
   font-style: normal;
-  margin-bottom: 220px;
   display: flex;
   justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto 220px auto;
 }
 
 .f_s_title {
-  width: 60%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -101,15 +101,20 @@
 }
 
 .f_s_list .f_s_item .f_s_description {
+  font-family: var(--t_family_3);
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.9s ease, opacity 0.9s ease 0.2s; /* Retrasa la transición de opacidad */
+  transition: max-height 0.5s ease, opacity 0.9s; /* Retrasa la transición de opacidad */
   opacity: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 31px;
+  color: rgba(219, 219, 219, 0.6);
 }
 
 .f_s_list .f_s_item.active .f_s_description {
   max-height: 20em; /* Ajusta este valor para que sea ligeramente mayor que la altura del contenido */
-  transition: max-height 0.9s ease, opacity 0.9s ease; /* Sin retraso para la transición de opacidad */
+  transition: max-height 0.9s ease, opacity 0.9s; /* Sin retraso para la transición de opacidad */
   opacity: 1;
 }
 

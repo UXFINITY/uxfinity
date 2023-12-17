@@ -59,39 +59,6 @@ function FirstHome() {
           ))}
         </div>
       </section>
-      <section className='f_t_section' ref={AllCounter.domRef}>
-        <div>
-          <span>
-            {AllCounter.visible ? (
-              <NumberConter max={12} time={1000} count={12} />
-            ) : (
-              0
-            )}
-          </span>
-          <p>Specialist</p>
-        </div>
-        <div>
-          <span className='f_t_span'>
-            {AllCounter.visible ? (
-              <NumberConter max={50} time={1000} count={50} />
-            ) : (
-              0
-            )}
-            +
-          </span>
-          <p>Projects</p>
-        </div>
-        <div>
-          <span>
-            {AllCounter.visible ? (
-              <NumberConter max={15} time={1000} count={15} decimal={10} />
-            ) : (
-              0
-            )}
-          </span>
-          <p>Years</p>
-        </div>
-      </section>
     </div>
   );
 }

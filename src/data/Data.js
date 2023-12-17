@@ -6,6 +6,10 @@ import forRoad from '../assets/body/4road/4road.png';
 import morfi1 from '../assets/body/morfi/morfi1.png';
 import morfi2 from '../assets/body/morfi/morfi2.png';
 import morfi3 from '../assets/body/morfi/morfi3.png';
+import morfi_reserved1 from '../assets/body/morfi/morfi_reserved/morfi_reserved.png';
+import mazing_ellipse1 from '../assets/body/mazing/ellipse1.svg';
+import mazing_ellipse2 from '../assets/body/mazing/ellipse2.svg';
+import mazing_ellipse3 from '../assets/body/mazing/ellipse3.svg';
 import powerfit1 from '../assets/body/powerfit/powerfit1.png';
 import powerfit2 from '../assets/body/powerfit/powerfit2.png';
 import powerfit3 from '../assets/body/powerfit/powerfit3.png';
@@ -80,6 +84,16 @@ export const EnData = {
   ],
   sliderBg: [bgmorfi, bgroad, bgfit],
   homeThirdData: [
+    {
+      img: [morfi_reserved1],
+      title: 'Morfi',
+      description: 'Make the process of table reservation easier',
+    },
+    {
+      img: [mazing_ellipse1, mazing_ellipse2, mazing_ellipse3],
+      title: 'Mazing',
+      description: 'Login redisign for a AR Start up',
+    },
     {
       img: [morfi1, morfi2, morfi3],
       title: 'Morfi',

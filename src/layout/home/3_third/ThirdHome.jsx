@@ -48,26 +48,28 @@ function ThirdHome() {
 
   return (
     <div className='t_container'>
-      <section className='v_sections t_f_section' ref={f_section.domRef}>
-        <picture className='t_f_picture'>
-          <img src={homeThirdData[0].img[0]} alt='uxfinity morfi reserved' />
-        </picture>
-        <div className='t_f_text'>
-          <h3>{homeThirdData[0].title}</h3>
-          <p>{homeThirdData[0].description}</p>
-        </div>
-      </section>
-      <section className='v_sections t_s_section' ref={s_section.domRef}>
-        <picture className='t_s_picture'>
-          <img src={homeThirdData[1].img[0]} alt='uxfinity morfi reserved' />
-          <img src={homeThirdData[1].img[1]} alt='uxfinity morfi reserved' />
-          <img src={homeThirdData[1].img[2]} alt='uxfinity morfi reserved' />
-        </picture>
-        <div className='t_s_text'>
-          <h3>{homeThirdData[1].title}</h3>
-          <p>{homeThirdData[1].description}</p>
-        </div>
-      </section>
+      <div className='t_horizontal_container'>
+        <section className='v_sections t_f_section' ref={f_section.domRef}>
+          <picture className='t_f_picture'>
+            <img src={homeThirdData[0].img[0]} alt='uxfinity morfi reserved' />
+          </picture>
+          <div className='t_f_text'>
+            <h3>{homeThirdData[0].title}</h3>
+            <p>{homeThirdData[0].description}</p>
+          </div>
+        </section>
+        <section className='v_sections t_s_section' ref={s_section.domRef}>
+          <picture className='t_s_picture'>
+            <img src={homeThirdData[1].img[0]} alt='uxfinity morfi reserved' />
+            <img src={homeThirdData[1].img[1]} alt='uxfinity morfi reserved' />
+            <img src={homeThirdData[1].img[2]} alt='uxfinity morfi reserved' />
+          </picture>
+          <div className='t_s_text'>
+            <h3>{homeThirdData[1].title}</h3>
+            <p>{homeThirdData[1].description}</p>
+          </div>
+        </section>
+      </div>
       <section className='t_sections t_t_section' ref={t_section.domRef}>
         <picture className='t_t_picture tft_left'>
           <img src={homeThirdData[2].img[0]} alt='uxfinity morfi' />

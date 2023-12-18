@@ -26,10 +26,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  max-width: 850px;
   width: 100%;
-  height: 470px;
-  gap: 60px;
+  height: 700px;
+  gap: 24px;
   color: var(--white);
 }
 
@@ -48,17 +49,7 @@
   flex: 1;
 }
 
-.t_sections h3 {
-  display: inline-block;
-  font-family: Montserrat;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px; /* 111.111% */
-  letter-spacing: 3.6px;
-  position: relative;
-}
-
+.t_sections h3,
 .v_sections h3 {
   display: inline-block;
   font-family: var(--t_family_2);
@@ -67,6 +58,7 @@
   font-weight: 600;
   line-height: 30px;
   position: relative;
+  margin-bottom: 24px;
 }
 
 .t_sections h3::before,
@@ -78,6 +70,15 @@
   background-color: var(--s_shadow);
   z-index: -1;
   animation: h3_before 1s ease forwards 1.2s;
+}
+
+.t_t_section,
+.t_fi_section {
+  transform: translateX(-100px);
+}
+
+.t_fo_section {
+  transform: translateX(100px);
 }
 
 @keyframes h3_before {
@@ -92,11 +93,11 @@
 }
 
 .t_sections p {
-  font-family: Montserrat;
-  font-size: 25px;
+  font-family: var(--t_family_2);
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 40px;
+  line-height: 30px;
 }
 
 .v_sections p {
@@ -108,8 +109,8 @@
 }
 
 .t_sections picture {
-  min-width: 300px;
-  width: 600px;
+  /* min-width: 300px; */
+  width: 100%;
   height: 100%;
   object-fit: cover;
   position: relative;
@@ -126,7 +127,7 @@
 .v_sections img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   position: absolute;
 }
 
@@ -134,6 +135,19 @@
   background-color: #ec8a50;
   overflow: hidden;
   position: relative;
+}
+
+.hidden-description {
+  display: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease; /* Ajusta la duración del fade a tu gusto */
+}
+
+/* Muestra el párrafo con un fade al hacer hover sobre la sección */
+.v_sections:hover .hidden-description,
+.t_sections:hover .hidden-description {
+  display: block;
+  opacity: 1;
 }
 
 @keyframes float1 {
@@ -195,48 +209,23 @@
 }
 
 .t_t_picture img:nth-child(1) {
-  width: 158px;
-  height: 323px;
+  width: 100%;
+  height: 100%;
   z-index: 700;
 }
 
-.t_t_picture img:nth-child(2) {
-  width: 386px;
-  height: 283px;
-  right: 0;
-  top: 0;
-  z-index: 698;
-}
-
-.t_t_picture img:nth-child(3) {
-  width: 381px;
-  height: 393px;
+.t_fo_picture img:nth-child(1) {
+  width: 100%;
+  height: 100%;
   z-index: 699;
-  bottom: 0;
-  left: 10%;
+  background: var(--black);
 }
 
 .t_fi_picture img:nth-child(1) {
-  width: 121px;
-  height: 257px;
+  width: 100%;
+  height: 100%;
   z-index: 699;
-  top: 90px;
-}
-
-.t_fi_picture img:nth-child(2) {
-  width: 448px;
-  height: 288px;
-  right: 22px;
-  top: 0;
-  z-index: 698;
-}
-
-.t_fi_picture img:nth-child(3) {
-  left: 60px;
-  width: 500px;
-  height: 400px;
-  z-index: 699;
-  bottom: -75px;
+  background: linear-gradient(95deg, #000 3.62%, #c5fc85 96.81%);
 }
 
 .tft_left {
@@ -255,7 +244,7 @@
   }
 }
 
-.tft_rigth {
+.tft_right {
   display: none;
   animation: tft_m_rigth 1s ease forwards;
 }
@@ -272,7 +261,7 @@
 }
 
 @media (min-width: 200px) and (max-width: 1024px) {
-  .tft_rigth,
+  .tft_right,
   .tft_left,
   .t_sections h3::before,
   .t_sections h3::before {

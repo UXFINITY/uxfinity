@@ -13,7 +13,7 @@
   background-position: center;
 }
 
-.six_bg {
+/* .six_bg {
   position: absolute;
   background: var(--s_shadow);
   min-height: 635px;
@@ -25,7 +25,7 @@
   margin: auto;
   z-index: -1;
   animation: six_bg_toRight 0.5s linear forwards;
-}
+} */
 
 @keyframes six_bg_toRight {
   from {
@@ -47,9 +47,12 @@
   justify-content: space-around;
   flex: 1;
   padding: 0 140px;
+  max-width: 1600px;
+  margin: 0 auto;
   display: none;
   opacity: 0;
   animation: six_f_section 0.5s linear forwards 0.5s;
+  text-align: center;
 }
 
 @keyframes six_f_section {
@@ -95,21 +98,146 @@
 }
 
 .six_rg_t_container h3 {
-  font-family: Montserrat;
-  font-size: 18px;
+  font-family: Poppins;
+  font-size: 60px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 20px; /* 111.111% */
-  letter-spacing: 3.6px;
+  font-weight: 500;
+  line-height: 80px; /* 133.333% */
+  background: linear-gradient(
+    272deg,
+    var(--t-color-1) 0%,
+    var(--t-color-2) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline; /* Change display to inline to fix gradient on multiline text */
+  text-align: center;
 }
 
-.six_rg_t_container p {
+.six_rg_t_container span {
   font-family: Poppins;
   font-size: 60px;
   font-style: normal;
   font-weight: 500;
   line-height: 80px; /* 133.333% */
   letter-spacing: 0.36px;
+  background: linear-gradient(
+    292deg,
+    var(--t-color-1) 90.46%,
+    var(--t-color-2) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* display: inline; Change display to inline to fix gradient on multiline text */
+  text-align: center;
+}
+
+.six_rg_t_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.six_rg_t_img img {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  border: 1px solid #fff;
+  
+}
+
+.six_container:hover .six_rg_t_container h3:nth-child(1) {
+  animation: rightMargin 1s ease forwards;
+}
+
+.six_container:hover img {
+  animation: growImg 1s ease forwards,
+    firstMarginMove 2s ease forwards,
+    lastMarginMove 2s 2s ease forwards;
+}
+
+@keyframes rightMargin {
+  0% {
+    margin-right: 0;
+  }
+  100% {
+    margin-right: 20px;
+  }
+}
+
+@keyframes growImg {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 60px;
+    height: 60px;
+    opacity: 1;
+  }
+}
+
+@keyframes firstMarginMove {
+  0% {
+    margin-left: -50px;
+  }
+  100% {
+    margin-left: -10px;
+  }
+}
+
+@keyframes lastMarginMove {
+  0% {
+    margin-left: -10px;
+  }
+  100% {
+    margin-left: -20px;
+  }
+}
+
+.six_rg_t_span0 {
+  display: inline;
+}
+
+.six_rg_t_span1 {
+  display: none;
+}
+
+.six_container:hover .six_rg_t_span0 {
+  animation: spanChange0 0.3s ease forwards;
+}
+
+.six_container:hover .six_rg_t_span1 {
+  display: inline;
+  opacity: 0;
+  animation: spanChange1 0.3s 0.3s ease forwards;
+}
+
+@keyframes spanChange0 {
+  0% {
+    opacity: 1;
+    display: none;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes spanChange1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .six_rg_b_container h3 {

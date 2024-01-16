@@ -126,25 +126,21 @@ export const EnData = {
     },
   ],
   homeFourthData: {
-    title: 'Any questions?',
-    description:
-      'Gabriella, our adviser is available to answer any question you have.',
-    form_title: 'Request form',
-    data: ['+43 6602069525', 'or', 'Gabriella@gmail.com', 'Gabriella Vesovic'],
+    title: ['Our prfessionals were handpicked as', 'the best among'],
+    title_word: ['HUNDERS.', 'THOUSANDS.'],
   },
   homeFifthData: {
-    s_title: 'Your MVP in 30 days',
-    f_title: 'From an idea into a prototype in only 30 days',
+    f_title: [
+      'Innovation, Creativity, Impact:',
+      'Start Your Journey with',
+      'UXFinity.',
+    ],
     description: [
-      'Instead of jumping into a long and expensive development processes, we create ',
-      'an initial prototype in just 30 days,',
-      ' in a way that allows you to make changes quickly and easily, as well as scale it with additional technologies if necessary.*',
+      "Whether it's redesigning your website or ",
+      "launching a new app, we're here to ensure",
+      'every step you take is forward.',
     ],
-    buttons: [
-      'First muck ups ready in 1 week 📧',
-      'We can start in the next 2 days or less 👨‍💻',
-      'Prototye in 30 days🚀',
-    ],
+    buttons: ["Let's talk"],
   },
   homeSixthData: [
     {

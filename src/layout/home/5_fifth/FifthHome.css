@@ -9,6 +9,7 @@
   min-height: 500px;
   height: 100%;
   max-height: 669px;
+  background: linear-gradient(87deg, #191919 0.58%, rgba(21, 21, 21, 0) 47.24%);
 }
 
 .ft_items_container {
@@ -33,13 +34,13 @@
 }
 
 .ft_text h3 {
+  color: var(--white);
   display: none;
   font-family: Montserrat;
-  font-size: 18px;
+  font-size: 52px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 20px; /* 111.111% */
-  letter-spacing: 3.6px;
+  font-weight: 600;
+  line-height: 60px;
 
   animation: ft_h3_toTop 0.8s linear;
 }
@@ -55,26 +56,12 @@
   }
 }
 
-.ft_text h2 {
-  position: absolute;
-  top: 40px;
-  font-family: Poppins;
-  font-size: 60px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 60px; /* 100% */
-  letter-spacing: 0.36px;
-  text-align: center;
-  /* white-space: nowrap; */
-}
-
 .ft_text p {
-  margin-top: 130px;
+  color: rgba(219, 219, 219, 0.60);
   display: none;
   text-align: center;
-  /* Heading principal */
   font-family: Montserrat;
-  font-size: 25px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 500;
   line-height: 40px; /* 160% */
@@ -150,18 +137,6 @@
 .ft_items_sub {
   position: relative;
   white-space: nowrap;
-}
-
-.ft_items_sub::before {
-  content: '';
-  width: 100%;
-  background-color: var(--s_shadow);
-  height: 9px;
-  position: absolute;
-  bottom: 2px;
-  left: 0;
-  z-index: -1;
-  animation: ft_p_toRight 0.5s linear 1.6s backwards;
 }
 
 @keyframes ft_p_toRight {

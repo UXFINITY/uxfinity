@@ -156,18 +156,23 @@
     transform: translate(-50%, -50%) translateY(0px) rotate(0deg);
   }
   50% {
-    transform: translate(-50%, -50%) translateY(-50px) rotate(6deg);
+    transform: translate(-50%, -50%) translateY(150px) rotate(-39.076deg);
   }
 }
 
 @keyframes float2 {
   0%,
   100% {
-    transform: translate(-50%, -50%) rotate(-57deg) translateY(0px) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(-57deg) translateY(0px)
+      rotate(-57.343deg);
+    width: 569.842px;
+    height: 633.693px;
   }
   50% {
     transform: translate(-50%, -50%) rotate(-57deg) translateY(-50px)
-      rotate(10deg);
+      rotate(0deg);
+    width: 738px;
+    height: 820.693px;
   }
 }
 

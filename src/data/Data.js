@@ -243,10 +243,10 @@ export const EnData = {
     ],
   },
   footer: {
-    titles: ['Methodology', 'Testimonial', 'What we do'],
-    other: '2023 | Privacy & Terms',
-    made: 'Made With Love By UXFinityAgency. All Right Reserved',
-    company: ['About Us', 'Carrier', 'We are hiring', 'Blog'],
+    titles: ['Services', 'Projects', 'About', 'Contact'],
+    other: ['Terms & Conditions', 'Privacy'],
+    made: 'Made With Love By UXFinityAgency 2024.  All Right Reserved',
+    company: ['UXFinity'],
     features: ['User experience', 'User Interface', 'Code', 'Support'],
   },
 };
@@ -447,10 +447,10 @@ export const EsData = {
     ],
   },
   footer: {
-    titles: ['Methodology', 'Testimonial', 'What we do'],
-    other: '2023 | Privacy & Terms',
-    made: 'Made With Love By UXFinityAgency. All Right Reserved',
-    company: ['About Us', 'Carrier', 'We are hiring', 'Blog'],
+    titles: ['Servicios', 'Proyectos', 'Acerca de nosotros', 'Contacto'],
+    other: ['Terminos & Condiciones', 'Privacidad'],
+    made: 'Made With Love By UXFinityAgency 2024. All Right Reserved',
+    company: [['UXFinity']],
     features: ['User experience', 'User Interface', 'Code', 'Support'],
   },
 };

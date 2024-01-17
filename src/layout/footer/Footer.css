@@ -91,6 +91,43 @@
   color: var(--white);
 }
 
+.linkBtn{
+  
+ 
+  position: relative;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  background: none;
+  font-weight: 300;
+  
+ 
+}
+
+
+
+.linkBtn::after {
+  content: '';
+  width: 0%;
+  height: 1px;
+  background:  linear-gradient(267deg,var(--t-color-1) 4.51%, var(--t-color-2) 95.01%);
+  display: block;
+  transition: 0.5s;
+}
+
+.linkBtn:hover{
+  background:  linear-gradient(267deg,var(--t-color-1) 4.51%, var(--t-color-2) 95.01%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s;
+  
+}
+.linkBtn:hover::after, .linkBtn:hover::before {
+  width: 100%;
+  
+}
+
 @media (min-width: 200px) and (max-width: 1024px) {
   .foot_container {
     padding: 80px 40px 25px;

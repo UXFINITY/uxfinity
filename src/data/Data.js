@@ -189,10 +189,10 @@ export const EnData = {
       "Bring your ideas, and we'll bring the fun! In our no-cost meeting, we’ll dive deep into your project, aligning our strategy with your budget. It’s all about crafting the perfect digital masterpiece for you",
   },
   footer: {
-    titles: ['Methodology', 'Testimonial', 'What we do'],
-    other: '2023 | Privacy & Terms',
-    made: 'Made With Love By UXFinityAgency. All Right Reserved',
-    company: ['About Us', 'Carrier', 'We are hiring', 'Blog'],
+    titles: ['Services', 'Projects', 'About', 'Contact'],
+    other: ['Terms & Conditions', 'Privacy'],
+    made: 'Made With Love By UXFinityAgency 2024.  All Right Reserved',
+    company: ['UXFinity'],
     features: ['User experience', 'User Interface', 'Code', 'Support'],
   },
 };
@@ -393,10 +393,10 @@ export const EsData = {
     ],
   },
   footer: {
-    titles: ['Methodology', 'Testimonial', 'What we do'],
-    other: '2023 | Privacy & Terms',
-    made: 'Made With Love By UXFinityAgency. All Right Reserved',
-    company: ['About Us', 'Carrier', 'We are hiring', 'Blog'],
+    titles: ['Servicios', 'Proyectos', 'Acerca de nosotros', 'Contacto'],
+    other: ['Terminos & Condiciones', 'Privacidad'],
+    made: 'Made With Love By UXFinityAgency 2024. All Right Reserved',
+    company: [['UXFinity']],
     features: ['User experience', 'User Interface', 'Code', 'Support'],
   },
 };

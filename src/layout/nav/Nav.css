@@ -52,22 +52,52 @@
 }
 
 .nav-sections > * {
-  list-style: none;
-  margin-right: 20px;
-  height: 40px;
-  display: flex;
-  align-items: center;
   position: relative;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
   cursor: pointer;
-  border-bottom: 2px solid transparent;
-  transition: border-bottom 0.2s ease-in-out;
+  border: none;
+  background: none;
+}
+
+.nav-sections > *::after {
+  content: '';
+  height: 1px;
+  background: linear-gradient(
+    267deg,
+    var(--t-color-1) 4.51%,
+    var(--t-color-2) 95.01%
+  );
+  display: block;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: left;
 }
 
 .nav-sections > *:hover {
-  border-bottom: 2px solid var(--f-color);
+  background: linear-gradient(
+    267deg,
+    var(--t-color-1) 4.51%,
+    var(--t-color-2) 95.01%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s ease-in-out;
 }
 
-.nav-sections > li::before {
+.nav-sections > *:hover::after {
+  transform: scaleX(1);
+}
+
+.nav-sections > *:not(:hover)::after {
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+/* .nav-sections > li::before {
   content: '';
   position: absolute;
   left: 0;
@@ -80,7 +110,7 @@
 
 .nav-sections > li:hover::before {
   width: 100%;
-}
+} */
 
 .nav-button-container {
   position: fixed;

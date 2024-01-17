@@ -4,6 +4,7 @@ import './FifthHome.css';
 import LazyLoad from '../../../helpers/LazyLoad';
 import HelpersFunction from '../../../helpers/HelpersFunction';
 import { useBodyContext } from '../../../helpers/BodyContext';
+import { Link } from 'react-scroll';
 function FifthHome() {
   const { AllData } = useBodyContext();
   const { homeFifthData } = AllData;
@@ -43,10 +44,10 @@ function FifthHome() {
           </div>
         </div>
         <div className='ft_items ft_buttons ft_noneToFlex'>
-          <button>
+          <Link className='ft_buttons_button' to='contact'>
             {homeFifthData.buttons[0]}
             <img src={arrow} alt='arrow' />
-          </button>
+          </Link>
         </div>
       </section>
     </div>

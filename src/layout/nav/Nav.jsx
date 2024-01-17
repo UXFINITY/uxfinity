@@ -114,7 +114,7 @@ function Nav() {
           </picture>
         </div>
       </div>
-      <div className="nav-button-container">
+      {/* <div className="nav-button-container">
         <ButtonScroll
           smooth={true}
           duration={100}
@@ -123,7 +123,7 @@ function Nav() {
         >
           <img className="nav-button-arrow" src={navImg} />
         </ButtonScroll>
-      </div>
+      </div> */}
       {/*  */}
       {menuOpen && <MenuMobile toggleMenu={toggleMenu} navData={navData} />}
 

@@ -95,7 +95,7 @@ function SecondHome() {
   };
 
   return (
-    <div className='slider-all-container' ref={headerContainer}>
+    <div className='slider-all-container' id='projects' ref={headerContainer}>
       {/* <div className='slider-all-title'>
         <h2>Tangible Achievements Through </h2>
         <span> UX/UI Design</span>

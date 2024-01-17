@@ -115,7 +115,7 @@
   }
 }
 
-.ft_buttons button {
+.ft_buttons .ft_buttons_button {
   position: relative;
   font-family: var(--t_family_2);
   font-size: 22px;
@@ -136,7 +136,7 @@
   animation: ft_buttons_padding 0.8s linear 0.7s backwards;
 }
 
-.ft_buttons button:hover, .ft_buttons button:hover img {
+.ft_buttons .ft_buttons_button:hover, .ft_buttons .ft_buttons_button:hover img {
   background: linear-gradient(
     274deg,
     var(--t-color-1) 80%,
@@ -183,7 +183,7 @@
   .ft_text h3,
   .ft_text p,
   .ft_items_sub::before,
-  .ft_buttons button,
+  .ft_buttons .ft_buttons_button,
   .ft_buttons {
     animation: none;
   }
@@ -232,7 +232,7 @@
     gap: 16px;
   }
 
-  .ft_items button {
+  .ft_items .ft_buttons_button {
     white-space: normal;
   }
 }

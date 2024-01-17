@@ -14,16 +14,16 @@ function Footer() {
       <section className='foot_f_section'>
         <div className='foot_f_company'>{footer.company}</div>
         <div className='foot_ff_column'>
-          <Link className='linkBtn'  to='methodology'>
+          <Link className='linkBtn'  to='services'>
             {footer.titles[0]}
           </Link>          
-          <Link className='linkBtn'  to='methodology'>
+          <Link className='linkBtn'  to='projects'>
             {footer.titles[1]}
           </Link>          
-          <Link className='linkBtn' to='methodology'>
+          <Link className='linkBtn' to='about'>
             {footer.titles[2]}
           </Link> 
-          <Link className='linkBtn' smooth={true} duration={100} to='methodology'>
+          <Link className='linkBtn' smooth={true} duration={100} to='contact'>
             {footer.titles[3]}
           </Link>
         </div>

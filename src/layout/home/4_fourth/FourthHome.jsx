@@ -20,7 +20,7 @@ function FourthHome() {
   }
 
   return (
-    <div className='six_container' ref={gabyRef.domRef}>
+    <div className='six_container' id='about' ref={gabyRef.domRef}>
       {/* <div className='six_bg'></div> */}
       <section className='six_sections six_f_section'>
         <div className='six_rg_t_container'>

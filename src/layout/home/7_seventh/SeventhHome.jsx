@@ -18,6 +18,7 @@ function SeventhHome() {
   return (
     <div
       className={`fif_container ${toggleAny ? 'fif_container_change' : ''}`}
+      id='contact'
       ref={fifRef.domRef}
     >
       <section className='fif_items'>
@@ -30,7 +31,7 @@ function SeventhHome() {
         <div className='fif_calendly'>
           <InlineWidget
             url='https://calendly.com/axeltorletti/30min'
-            styles={{height: '100%', width: '100%'}}
+            styles={{ height: '100%', width: '100%' }}
           />
         </div>
       </section>

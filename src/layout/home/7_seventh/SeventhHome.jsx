@@ -1,18 +1,19 @@
-import React, { useEffect, useState } from 'react'
-import './SeventhHome.css'
-import LazyLoad from '../../../helpers/LazyLoad'
-import { useBodyContext } from '../../../helpers/BodyContext'
+import React, { useEffect, useState } from 'react';
+import './SeventhHome.css';
+import LazyLoad from '../../../helpers/LazyLoad';
+import { useBodyContext } from '../../../helpers/BodyContext';
+import { InlineWidget } from 'react-calendly';
 
 function SeventhHome() {
-  const { AllData } = useBodyContext()
-  const { homeSeventhData } = AllData
+  const { AllData } = useBodyContext();
+  const { homeSeventhData } = AllData;
 
-  const [toggleAny, setToggleAny] = useState(false)
+  const [toggleAny, setToggleAny] = useState(false);
 
-  const fifRef = LazyLoad(false, { threshold: 0.6 })
+  const fifRef = LazyLoad(false, { threshold: 0.6 });
   useEffect(() => {
-    setToggleAny(fifRef.visible)
-  }, [fifRef.visible])
+    setToggleAny(fifRef.visible);
+  }, [fifRef.visible]);
 
   return (
     <div
@@ -20,13 +21,21 @@ function SeventhHome() {
       ref={fifRef.domRef}
     >
       <section className='fif_items'>
-        <p>{homeSeventhData.sub_title}</p>
-        <h2 className={toggleAny ? 'fif_h2_sub' : ''}>
-          {toggleAny ? homeSeventhData.title[0] : homeSeventhData.title[1]}
-        </h2>
+        <div>
+          <h2 className={toggleAny ? 'fif_h2_sub' : ''}>
+            {toggleAny ? homeSeventhData.title : homeSeventhData.title}
+          </h2>
+          <p>{homeSeventhData.sub_title}</p>
+        </div>
+        <div className='fif_calendly'>
+          <InlineWidget
+            url='https://calendly.com/axeltorletti/30min'
+            styles={{height: '100%', width: '100%'}}
+          />
+        </div>
       </section>
     </div>
-  )
+  );
 }
 
-export default SeventhHome
+export default SeventhHome;

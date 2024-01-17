@@ -75,12 +75,12 @@ function App() {
           <FifthHome />
           <SixthHome />
           <SeventhHome />
-          <EigthHome />
+          {/* <EigthHome />
           <NinethHome
             service={vite_service}
             template={vite_template}
             user={vite_user}
-          />
+          /> */}
           <Footer />
         </div>
       )}

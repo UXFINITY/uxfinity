@@ -5,29 +5,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 150px;
+  padding: 40px 150px;
   min-height: 500px;
   height: 100%;
   max-height: 669px;
   background: linear-gradient(87deg, #191919 0.58%, rgba(21, 21, 21, 0) 47.24%);
+  margin-bottom: 110px;
 }
 
 .ft_items_container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 80px;
+  gap: 48px;
   min-height: 385px;
   width: 100%;
+  max-width: 1440px;
   position: relative;
 }
 
 .ft_items {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
+
 .ft_text {
   flex-direction: column;
   gap: 24px;
@@ -35,14 +36,26 @@
 
 .ft_text h3 {
   color: var(--white);
-  display: none;
-  font-family: Montserrat;
+  /* display: none; */
+  font-family: var(--t_family_2);
   font-size: 52px;
   font-style: normal;
   font-weight: 600;
   line-height: 60px;
 
   animation: ft_h3_toTop 0.8s linear;
+}
+
+.ft_text h3 span {
+  background: linear-gradient(
+    274deg,
+    var(--t-color-1) 55.31%,
+    var(--t-color-2) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline;
 }
 
 @keyframes ft_h3_toTop {
@@ -59,8 +72,7 @@
 .ft_text p {
   color: rgba(219, 219, 219, 0.60);
   display: none;
-  text-align: center;
-  font-family: Montserrat;
+  font-family: var(--t_family_2);
   font-size: 28px;
   font-style: normal;
   font-weight: 500;
@@ -81,7 +93,6 @@
 
 .ft_buttons {
   display: none;
-  justify-content: space-between;
   animation: ft_buttons_gap 0.8s linear 0.7s backwards;
   width: 100%;
   max-width: 1000px;
@@ -105,21 +116,37 @@
 }
 
 .ft_buttons button {
-  font-family: Inter;
-  font-size: 16px;
+  position: relative;
+  font-family: var(--t_family_2);
+  font-size: 22px;
   font-style: normal;
-  font-weight: 300;
-  line-height: 25px; /* 156.25% */
+  font-weight: 500;
+  line-height: 40px; /* 181.818% */
   display: flex;
-  padding: 16px 16px;
   align-items: center;
-  gap: 10px;
+  gap: 16px;
   border: none;
-  border-radius: 12px;
+  background-color: transparent;
+  background: none;
   color: var(--white);
-  background-color: var(--s-color);
+  cursor: pointer;
+  border-bottom: 1px solid var(--white);
+  transition: 0.5s ease-in-out;
 
   animation: ft_buttons_padding 0.8s linear 0.7s backwards;
+}
+
+.ft_buttons button:hover, .ft_buttons button:hover img {
+  background: linear-gradient(
+    274deg,
+    var(--t-color-1) 80%,
+    var(--t-color-2) 200%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  gap: 26px;
+  transition: 0.5s ease-in-out;
 }
 
 @keyframes ft_buttons_padding {

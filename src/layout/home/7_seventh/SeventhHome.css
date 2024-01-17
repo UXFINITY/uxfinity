@@ -3,57 +3,59 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  max-height: 1080px;
+  height: 100%;
   transition: all 1s ease-in-out;
-  
 }
 
 .fif_container_change {
   color: #ffffff;
   background-color: #000;
-
 }
 
 .fif_items {
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  gap: 42px;
   justify-content: center;
   align-items: center;
-}
-
-.fif_items p {
-  font-family: Poppins;
-  font-size: 60px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 60px; /* 100% */
-  letter-spacing: 0.36px;
-  text-align: start;
-  flex: 1;
+  text-align: center;
+  max-width: 764px;
 }
 
 .fif_items h2 {
-  /* Titulo principal sin bold */
-  font-family: Poppins;
-  font-size: 60px;
+  font-family: var(--t_family_2);
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px;
+  background: linear-gradient(
+    272deg,
+    var(--t-color-1) 0%,
+    var(--t-color-2) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* display: inline; */
+  padding-bottom: 16px;
+}
+
+.fif_items p {
+  color: rgba(219, 219, 219, 0.60);
+  font-family: var(--t_family_2);
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 60px; /* 100% */
-  letter-spacing: 0.36px;
-  color: var(--s-color);
-  white-space: nowrap;
-  height: 100%;
-  width: 461px;
-  text-align: center;
+  line-height: 30px;
 }
-.fif_h2_sub {
-  border-bottom: 2px solid var(--s-color);
+
+.fif_calendly {
+  width: 1000px;
+  height: 900px;
 }
 
 @media (min-width: 200px) and (max-width: 1024px) {
-
-  .fif_container{
+  .fif_container {
     padding: 10px 40px;
     height: 100%;
     min-height: 260px;
@@ -62,18 +64,18 @@
     flex-direction: column;
     gap: 30px;
   }
-  .fif_items p,.fif_items h2{
-    font-size: 24px;line-height: 24px;
+  .fif_items p,
+  .fif_items h2 {
+    font-size: 24px;
+    line-height: 24px;
     text-align: center;
   }
-  .fif_items h2{
+  .fif_items h2 {
     width: 180px;
   }
-  
 }
 
 @media (min-width: 200px) and (max-width: 750px) {
-
 }
 
 @media (min-width: 750px) and (max-width: 1200px) {

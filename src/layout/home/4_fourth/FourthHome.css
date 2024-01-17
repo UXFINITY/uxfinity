@@ -111,7 +111,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: inline; /* Change display to inline to fix gradient on multiline text */
+  display: inline;
   text-align: center;
 }
 
@@ -149,7 +149,7 @@
   object-fit: cover;
   position: relative;
   border: 1px solid #fff;
-  
+  transition: width 1s ease, height 1s ease, opacity 1s ease, margin 2s ease; /* Transiciones suaves para revertir el estado */
 }
 
 .six_container:hover .six_rg_t_container h3:nth-child(1) {
@@ -157,8 +157,7 @@
 }
 
 .six_container:hover img {
-  animation: growImg 1s ease forwards,
-    firstMarginMove 2s ease forwards,
+  animation: growImg 1s ease forwards, firstMarginMove 2s ease forwards,
     lastMarginMove 2s 2s ease forwards;
 }
 
@@ -199,6 +198,55 @@
   }
   100% {
     margin-left: -20px;
+  }
+}
+
+.six_container:not(:hover) .six_rg_t_container h3:nth-child(1) {
+  animation: revertRightMargin 1s ease forwards;
+}
+
+.six_container:not(:hover) img {
+  animation: shrinkImg 1s ease forwards, revertFirstMarginMove 2s ease forwards,
+    revertLastMarginMove 2s 2s ease forwards;
+}
+
+@keyframes revertRightMargin {
+  0% {
+    margin-right: 20px;
+  }
+  100% {
+    margin-right: 0;
+  }
+}
+
+@keyframes shrinkImg {
+  0% {
+    width: 60px;
+    height: 60px;
+    opacity: 1;
+  }
+  100% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes revertFirstMarginMove {
+  0% {
+    margin-left: -10px;
+  }
+  100% {
+    margin-left: -50px;
+  }
+}
+
+@keyframes revertLastMarginMove {
+  0% {
+    margin-left: -20px;
+  }
+  100% {
+    margin-left: -10px;
   }
 }
 

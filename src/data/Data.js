@@ -126,7 +126,7 @@ export const EnData = {
     },
   ],
   homeFourthData: {
-    title: ['Our prfessionals were handpicked as', 'the best among'],
+    title: ['Our professionals were handpicked as', 'the best among'],
     title_word: ['HUNDERS.', 'THOUSANDS.'],
   },
   homeFifthData: {
@@ -142,27 +142,51 @@ export const EnData = {
     ],
     buttons: ["Let's talk"],
   },
-  homeSixthData: [
-    {
-      id: 31,
-      name: 'Philip Jhonas',
-      company: 'Refisal Ltmd',
-      comment:
-        '“Fast, effective and communicative, working with UXFinity was a great experiences, they found, understood and then solved our problem. I  highly recommend them” ',
-      img: person,
-    },
-    {
-      id: 32,
-      name: 'Johanna Miller',
-      company: 'Refisal Ltmd',
-      comment:
-        "From the moment I contacted UXFinity, their responsiveness was remarkable. They wasted no time in understanding my project's requirements and swiftly provided me with a detailed plan of action. This promptness was especially appreciated, as I had a tight schedule to meet.",
-      img: person2,
-    },
-  ],
+  homeSixthData: {
+    title: 'FAQ',
+    questions: [
+      {
+        id: 1,
+        question: "Q: What's the scoop on UXFinity's services?",
+        answer:
+          "A: Hey there! We're all about jazzing up your web and app. Whether it's a fresh site design, a cool app launch, development, or giving your brand a total glow-up, we've got your back. Plus, we're diving into the awesome world of AR too!",
+      },
+      {
+        id: 2,
+        question: 'Q: How quick can you deliver?',
+        answer:
+          "A: I'm in a hurry! A: We get it, time's ticking! Our team hustles hard to get your project rolling ASAP. The timeline? Depends on what you need. Let's chat, hash out the details, and we'll give you the lowdown on how fast we can make magic happen.",
+      },
+      {
+        id: 3,
+        question: "Q:Got any cool projects you've done?",
+        answer:
+          "A: Absolutely! Our portfolio's packed with some epic work. From sleek websites to apps that users can't get enough of, we've done it all. Check out our portfolio on the site for a taste of our style. To protect our clients privacy, we reserve some details.",
+      },
+      {
+        id: 4,
+        question: "Q: What's the deal with pricing?",
+        answer:
+          "A: No beating around the bush here - we're all about transparency. Pricing varies depending on your project's needs. Hit us up, and we'll walk you through the options to find something that suits your budget and goals.",
+      },
+      {
+        id: 5,
+        question: 'Q: How do I kick off my project with you guys?',
+        answer:
+          "A: Starting is simple! Drop us a line through our contact form, or shoot us an email. We'll set up a chat, vibe out your vision, and then take it from there. Let's make something amazing together!",
+      },
+      {
+        id: 6,
+        question: 'Q: What time zone are you guys in?',
+        answer:
+          "A: Time zones? No sweat! Our team's spread out from the cool vibes of San Francisco, through the heart of Latin America, all the way to the charm of Europe. We're like global chameleons, adapting to your time zone. Whether you're an early bird or a night owl, we'll sync up with your clock. Let's make it happen, no matter where you are on the planet!",
+      },
+    ],
+  },
   homeSeventhData: {
-    sub_title: 'Does your company or startup need a website prototype?',
-    title: ['Contact us', 'Let´s talk'],
+    title: 'Free Advice? Heck Yeah!',
+    sub_title:
+      "Bring your ideas, and we'll bring the fun! In our no-cost meeting, we’ll dive deep into your project, aligning our strategy with your budget. It’s all about crafting the perfect digital masterpiece for you",
   },
   homeEighthData: {
     title: 'Our team for you',

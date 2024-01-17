@@ -61,17 +61,6 @@
   margin-bottom: 24px;
 }
 
-.t_sections h3::before,
-.v_sections h3::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  height: 9px;
-  background-color: var(--s_shadow);
-  z-index: -1;
-  animation: h3_before 1s ease forwards 1.2s;
-}
-
 .t_t_section,
 .t_fi_section {
   transform: translateX(-100px);

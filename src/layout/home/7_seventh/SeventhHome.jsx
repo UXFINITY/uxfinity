@@ -22,7 +22,7 @@ function SeventhHome() {
       ref={fifRef.domRef}
     >
       <section className='fif_items'>
-        <div>
+        <div className='fif_text'>
           <h2 className={toggleAny ? 'fif_h2_sub' : ''}>
             {toggleAny ? homeSeventhData.title : homeSeventhData.title}
           </h2>

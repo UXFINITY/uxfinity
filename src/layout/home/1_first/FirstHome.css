@@ -25,6 +25,7 @@
 }
 
 .f_s_title h2 {
+  font-family: var(--t_family_2);
   font-size: 40px;
   font-weight: 600;
   line-height: 1.5; /* Adjust line height to 1.2 */
@@ -100,8 +101,12 @@
   color: inherit;
 }
 
+.f_s_list .f_s_item span {
+  font-family: var(--t_family_2);
+}
+
 .f_s_list .f_s_item .f_s_description {
-  font-family: var(--t_family_3);
+  font-family: var(--t_family_2);
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease, opacity 0.9s; /* Retrasa la transición de opacidad */
@@ -117,24 +122,6 @@
   transition: max-height 0.9s ease, opacity 0.9s; /* Sin retraso para la transición de opacidad */
   opacity: 1;
 }
-
-/* .f_s_section h2 {
-  margin-bottom: 16px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 3.6px;
-}
-
-.f_s_p_container {
-  font-size: 25px;
-  font-weight: 500;
-  line-height: 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 42px;
-  min-height: 360px;
-} */
 
 .f_s_p_container p {
   display: none;
@@ -186,7 +173,7 @@
 }
 
 .f_t_section span {
-  font-family: var(--f_family);
+  font-family: var(--t_family_2);
   font-size: 60px;
   font-style: normal;
   font-weight: 600;

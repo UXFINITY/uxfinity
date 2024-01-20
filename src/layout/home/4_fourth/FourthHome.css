@@ -13,20 +13,6 @@
   background-position: center;
 }
 
-/* .six_bg {
-  position: absolute;
-  background: var(--s_shadow);
-  min-height: 635px;
-  height: calc(100% - 188px);
-  width: 90%;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  z-index: -1;
-  animation: six_bg_toRight 0.5s linear forwards;
-} */
-
 @keyframes six_bg_toRight {
   from {
     transform: translateX(-100%);
@@ -37,7 +23,6 @@
 }
 
 .six_sections {
-  /* background-image: url("../../../assets/header/Pepitas.png"); */
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -98,7 +83,7 @@
 }
 
 .six_rg_t_container h3 {
-  font-family: Poppins;
+  font-family: var(--t_family_2);
   font-size: 60px;
   font-style: normal;
   font-weight: 500;
@@ -116,7 +101,7 @@
 }
 
 .six_rg_t_container span {
-  font-family: Poppins;
+  font-family: var(--t_family_2);
   font-size: 60px;
   font-style: normal;
   font-weight: 500;

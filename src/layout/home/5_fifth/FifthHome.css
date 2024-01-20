@@ -56,6 +56,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline;
+  font-family: var(--t_family_2);
 }
 
 @keyframes ft_h3_toTop {

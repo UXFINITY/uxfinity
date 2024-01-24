@@ -106,7 +106,6 @@
 
 .linkBtn::after {
   content: '';
-  width: 0%;
   height: 1px;
   background: linear-gradient(
     267deg,
@@ -114,7 +113,9 @@
     var(--t-color-2) 95.01%
   );
   display: block;
-  transition: 0.5s;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: left;
 }
 
 .linkBtn:hover {
@@ -126,11 +127,16 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
 }
-.linkBtn:hover::after,
-.linkBtn:hover::before {
-  width: 100%;
+
+.linkBtn:hover::after {
+  transform: scaleX(1);
+}
+
+.linkBtn:not(:hover)::after {
+  transform: scaleX(0);
+  transform-origin: right;
 }
 
 @media (min-width: 200px) and (max-width: 1024px) {

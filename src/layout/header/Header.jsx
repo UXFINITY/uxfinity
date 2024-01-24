@@ -18,7 +18,7 @@ function Header() {
       <div className='header_box'>
         {loading && <div className='spline_loading'></div>}
         <Spline
-          scene='https://prod.spline.design/2RFAjx-MzAVqlSgu/scene.splinecode'
+          scene='https://prod.spline.design/rcJCWqdjs37mdzhv/scene.splinecode'
           onLoad={handleOnLoad}
         />
       </div>

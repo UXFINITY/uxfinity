@@ -30,7 +30,7 @@ function SeventhHome() {
         </div>
         <div className='fif_calendly'>
           <InlineWidget
-            url='https://calendly.com/axeltorletti/30min'
+            url='https://calendly.com/info-oqk/meeting-with-our-team'
             styles={{ height: '100%', width: '100%' }}
           />
         </div>

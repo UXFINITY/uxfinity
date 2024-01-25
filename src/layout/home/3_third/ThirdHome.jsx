@@ -52,6 +52,8 @@ function ThirdHome() {
         <section className='v_sections t_f_section' ref={f_section.domRef}>
           <picture className='t_f_picture tft_left'>
             <img src={homeThirdData[0].img[0]} alt='uxfinity morfi reserved' />
+            <img src={homeThirdData[0].img[1]} alt='uxfinity morfi reserved' />
+            <img src={homeThirdData[0].img[2]} alt='uxfinity morfi reserved' />
           </picture>
           <div className='t_f_text '>
             <h3>{homeThirdData[0].title}</h3>
@@ -66,6 +68,7 @@ function ThirdHome() {
             <img src={homeThirdData[1].img[0]} alt='uxfinity morfi reserved' />
             <img src={homeThirdData[1].img[1]} alt='uxfinity morfi reserved' />
             <img src={homeThirdData[1].img[2]} alt='uxfinity morfi reserved' />
+            <img src={homeThirdData[1].img[3]} alt='uxfinity morfi reserved' />
           </picture>
           <div className='t_s_text'>
             <h3>{homeThirdData[1].title}</h3>
@@ -79,6 +82,11 @@ function ThirdHome() {
       <section className='t_sections t_t_section' ref={t_section.domRef}>
         <picture className='t_t_picture tft_left'>
           <img src={homeThirdData[2].img[0]} alt='uxfinity gymate' />
+          <img src={homeThirdData[2].img[4]} alt='uxfinity gymate' />
+          <img src={homeThirdData[2].img[1]} alt='uxfinity gymate' />
+          <img src={homeThirdData[2].img[2]} alt='uxfinity gymate' />
+          <img src={homeThirdData[2].img[3]} alt='uxfinity gymate' />
+          <img src={homeThirdData[2].img[5]} alt='uxfinity gymate' />
         </picture>
         <div className='tft_right t_t_txt'>
           <h3>{homeThirdData[2].title}</h3>

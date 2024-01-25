@@ -7,6 +7,9 @@ import morfi1 from '../assets/body/morfi/morfi1.png';
 import morfi2 from '../assets/body/morfi/morfi2.png';
 import morfi3 from '../assets/body/morfi/morfi3.png';
 import morfi_reserved1 from '../assets/body/morfi/morfi_reserved/morfi_reserved.png';
+import morfi_reserved2 from '../assets/body/morfi/morfi_reserved/morfi_reserved2.png';
+import morfi_reserved3 from '../assets/body/morfi/morfi_reserved/morfi_reserved3.png';
+import mazing1 from '../assets/body/mazing/main.png';
 import mazing_ellipse1 from '../assets/body/mazing/ellipse1.svg';
 import mazing_ellipse2 from '../assets/body/mazing/ellipse2.svg';
 import mazing_ellipse3 from '../assets/body/mazing/ellipse3.svg';
@@ -14,6 +17,11 @@ import powerfit1 from '../assets/body/powerfit/powerfit1.png';
 import powerfit2 from '../assets/body/powerfit/powerfit2.png';
 import powerfit3 from '../assets/body/powerfit/powerfit3.png';
 import gymate1 from '../assets/body/gymate/gymate1.png';
+import gymate2 from '../assets/body/gymate/gymate2.png';
+import gymate3 from '../assets/body/gymate/gymate3.png';
+import gymate4 from '../assets/body/gymate/gymate4.png';
+import gymate5 from '../assets/body/gymate/gymate5.png';
+import gymate6 from '../assets/body/gymate/gymate6.png';
 import mia1 from '../assets/body/mia/mia1.png';
 import ailibrary1 from '../assets/body/ailibrary/ailibrary1.png';
 import bgfit from '../assets/body/fit.png';
@@ -88,7 +96,7 @@ export const EnData = {
   sliderBg: [bgmorfi, bgroad, bgfit],
   homeThirdData: [
     {
-      img: [morfi_reserved1],
+      img: [morfi_reserved1, morfi_reserved2, morfi_reserved3],
       title: 'Morfi',
       description: [
         'Make the process of table reservation easier',
@@ -96,12 +104,12 @@ export const EnData = {
       ],
     },
     {
-      img: [mazing_ellipse1, mazing_ellipse2, mazing_ellipse3],
+      img: [mazing_ellipse1, mazing_ellipse2, mazing_ellipse3, mazing1],
       title: 'Mazing',
       description: ['Login redisign for a AR Start up', 'Web Redesign'],
     },
     {
-      img: [gymate1],
+      img: [gymate1, gymate2, gymate3, gymate4, gymate5, gymate6],
       title: 'Gymate',
       description: [
         'A platform that allows you to have an overview of all your gym has to offer',

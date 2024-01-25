@@ -124,6 +124,7 @@
   background-color: #ec8a50;
   overflow: hidden;
   position: relative;
+  height: 566px;
 }
 
 .hidden-description {
@@ -137,6 +138,49 @@
 .t_sections:hover .hidden-description {
   display: block;
   opacity: 1;
+}
+
+.t_f_picture {
+  overflow: hidden;
+}
+
+.t_f_picture img:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.t_f_picture img:nth-child(2) {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  right: -200px;
+  top: -40px;
+  transform: translateY(100%);
+  transition: transform 0.5s ease 0.5s;
+}
+
+.t_f_picture img:nth-child(3) {
+  width: calc(100% - 40px);
+  height: fit-content;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
+}
+
+.t_f_picture:hover img:nth-child(2) {
+  transform: translateY(0%);
+  transition: transform 0.5s ease;
+}
+
+.t_f_picture:hover img:nth-child(3) {
+  transform: translateY(0%);
+  transition: transform 0.5s ease 0.5s;
 }
 
 @keyframes float1 {
@@ -202,10 +246,95 @@
   animation: float3 7s ease-in-out infinite;
 }
 
+.t_s_picture img:nth-child(4) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+}
+
+.t_t_picture {
+  overflow: hidden;
+  position: relative;
+}
+
 .t_t_picture img:nth-child(1) {
   width: 100%;
   height: 100%;
-  z-index: 700;
+  flex: 10;
+}
+
+.t_t_picture img:nth-child(2) {
+  width: 344.395px;
+  height: 333.135px;
+  position: absolute;
+  top: -30px;
+  right: -40px;
+  flex: 11;
+  transition: transform 0.5s ease;
+}
+
+.t_t_picture:hover img:nth-child(2) {
+  transform: translate(17px, -17px);
+  transition: transform 0.5s ease;
+}
+
+.t_t_picture img:nth-child(3) {
+  width: calc(100% - 150px);
+  object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex: 12;
+}
+
+.t_t_picture img:nth-child(4) {
+  width: 169.058px;
+  height: 462.874px;
+  bottom: 14px;
+  left: -200px;
+  position: absolute;
+  flex: 13;
+  transition: all 0.5s ease;
+}
+
+.t_t_picture:hover img:nth-child(4) {
+  left: 39px;
+  transition: all 0.5s ease;
+}
+
+.t_t_picture img:nth-child(5) {
+  width: 220px;
+  height: 213px;
+  position: absolute;
+  transform: rotate(22.257deg);
+  bottom: -103px;
+  left: -45px;
+  flex: 14;
+  transition: all 0.5s ease;
+}
+
+.t_t_picture:hover img:nth-child(5) {
+  transform: translate(19px, -16px) rotate(22.257deg);
+  transition: all 0.5s ease;
+}
+
+.t_t_picture img:nth-child(6) {
+  width: 482.896px;
+  height: 423.749px;
+  position: absolute;
+  transform: rotate(4.725deg);
+  right: -100px;
+  bottom: -175px;
+  flex: 15;
+  transition: all 0.5s ease;
+}
+
+.t_t_picture:hover img:nth-child(6) {
+  transform: translate(-15px, -19px) rotate(4.725deg);
+  transition: all 0.5s ease;
 }
 
 .t_fo_picture img:nth-child(1) {

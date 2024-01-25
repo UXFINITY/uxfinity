@@ -46,6 +46,14 @@ function ThirdHome() {
     localFunction(fi_section, 't_fi_txt', 'block');
   }
 
+  const playVideo = (e) => {
+    e.currentTarget.play();
+  }
+
+  const pauseVideo = (e) => {
+    e.currentTarget.pause();
+  }
+
   return (
     <div className='t_container'>
       <div className='t_horizontal_container'>
@@ -99,6 +107,14 @@ function ThirdHome() {
       <section className='t_sections t_fo_section' ref={fo_section.domRef}>
         <picture className='tft_right t_fo_picture'>
           <img src={homeThirdData[3].img[0]} alt='uxfinity mia jewellewry' />
+          <video
+            src={homeThirdData[3].img[1]}
+            alt='uxfinity mia jewellewry'
+            onMouseOver={playVideo}
+            // onMouseOut={pauseVideo}
+            loop
+            muted
+          ></video>
         </picture>
         <div className='t_fo_txt tft_left'>
           <h3>{homeThirdData[3].title}</h3>
@@ -111,6 +127,7 @@ function ThirdHome() {
       <section className='t_sections t_fi_section' ref={fi_section.domRef}>
         <picture className='t_fi_picture tft_left'>
           <img src={homeThirdData[4].img[0]} alt='uxfinity ailibrary fit' />
+          <img src={homeThirdData[4].img[1]} alt='uxfinity ailibrary fit' />
         </picture>
         <div className='t_fi_txt tft_right'>
           <h3>{homeThirdData[4].title}</h3>

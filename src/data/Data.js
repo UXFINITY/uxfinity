@@ -23,7 +23,9 @@ import gymate4 from '../assets/body/gymate/gymate4.png';
 import gymate5 from '../assets/body/gymate/gymate5.png';
 import gymate6 from '../assets/body/gymate/gymate6.png';
 import mia1 from '../assets/body/mia/mia1.png';
+import mia2 from '../assets/body/mia/mia2.mov';
 import ailibrary1 from '../assets/body/ailibrary/ailibrary1.png';
+import ailibrary2 from '../assets/body/ailibrary/ailibrary2.png';
 import bgfit from '../assets/body/fit.png';
 import bgroad from '../assets/body/4road.png';
 import bgmorfi from '../assets/body/morfi.png';
@@ -117,7 +119,7 @@ export const EnData = {
       ],
     },
     {
-      img: [mia1],
+      img: [mia1, mia2],
       title: 'MIA Jewellery',
       description: [
         'A jewellery E-commerce, with fancy design',
@@ -125,7 +127,7 @@ export const EnData = {
       ],
     },
     {
-      img: [ailibrary1],
+      img: [ailibrary1, ailibrary2],
       title: 'Kill donkey',
       description: [
         `AI Library the easy way to find IA's`,

@@ -51,8 +51,8 @@
 .button-with-arrow {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Asegura que el texto y la flecha estén separados */
-  padding: 0; /* Ajusta según sea necesario */
+  justify-content: space-between;
+  padding: 0;
   border: none;
   background: none;
   cursor: pointer;
@@ -205,10 +205,62 @@
   line-height: 40px;
 }
 
+.mobile_projects {
+  display: none;
+}
+
 @media (min-width: 200px) and (max-width: 1024px) {
 }
 
 @media (min-width: 200px) and (max-width: 750px) {
+  .t_container .t_horizontal_container {
+    display: none;
+  }
+
+  .t_container .t_sections {
+    display: none;
+  }
+
+  .mobile_projects {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .mobile_project {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mobile_project_text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: var(--t_family_2);
+    font-style: normal;
+    line-height: 30px;
+  }
+
+  .mobile_project_text--title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .mobile_project_text--title h3 {
+    color: #ddd;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .mobile_project_text--title p,
+  .mobile_project_text--subtitle {
+    color: #858e97;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
   .f_s_p_container span::before {
     animation: none;
   }
@@ -223,45 +275,52 @@
   }
 
   .f_s_section {
-    margin-bottom: 60px;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0 auto;
   }
 
   .f_s_section h2 {
-    font-size: 12px;
-    line-height: 7.481px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
   }
 
   .f_s_section p {
     font-size: 16px;
-    line-height: 28.462px;
-    text-align: justify;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.08px;
   }
 
-  .f_t_section span {
-    font-family: var(--f_family);
-    font-size: 34.554px;
-    font-style: normal;
+  .f_s_list {
+    width: 100%;
+  }
+
+  .f_s_title {
+    width: 100%;
+    gap: 8px;
+  }
+
+  .button-with-arrow {
+    gap: 16px;
+  }
+
+  .button-text {
+    margin-right: 0;
+  }
+
+  .f_s_list .f_s_item span {
+    font-size: 22px;
     font-weight: 600;
-    line-height: 34.554px; /* 100% */
-    letter-spacing: 0.36px;
-    position: relative;
+    line-height: 30px;
   }
 
-  .f_t_section p {
+  .f_s_list .f_s_item .f_s_description {
     font-size: 16px;
-    line-height: 28.462px;
-  }
-
-  .f_t_section span::before {
-    width: 44.92px;
-    height: 5.183px;
-    bottom: 10px;
-    left: 0;
-  }
-
-  .f_t_section .f_t_span::before {
-    left: 3px;
-    width: 65.076px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.08px;
   }
 }
 

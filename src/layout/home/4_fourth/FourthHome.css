@@ -310,6 +310,9 @@
 }
 
 @media (min-width: 200px) and (max-width: 1024px) {
+  .six_container {
+    display: none;
+  }
   .six_bg,
   .six_f_section,
   .six_s_section {

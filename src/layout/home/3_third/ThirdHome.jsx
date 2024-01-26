@@ -48,11 +48,11 @@ function ThirdHome() {
 
   const playVideo = (e) => {
     e.currentTarget.play();
-  }
+  };
 
   const pauseVideo = (e) => {
     e.currentTarget.pause();
-  }
+  };
 
   return (
     <div className='t_container'>
@@ -136,6 +136,24 @@ function ThirdHome() {
             {homeThirdData[4].description[1]}
           </p>
         </div>
+      </section>
+      <section className='mobile_projects'>
+        {homeThirdData.slice(5, 10).map((project, index) => (
+          <div className='mobile_project' key={index}>
+            <div className='mobile_project_picture'>
+              <img src={project.img[0]} alt={project.title} />
+            </div>
+            <div className='mobile_project_text'>
+              <div className='mobile_project_text--title'>
+                <h3>{project.title}</h3>
+                <p>{project.description[0]}</p>
+              </div>
+              <p className='mobile_project_text--subtitle'>
+                {project.description[1]}
+              </p>
+            </div>
+          </div>
+        ))}
       </section>
     </div>
   );

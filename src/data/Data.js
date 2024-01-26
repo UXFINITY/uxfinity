@@ -9,10 +9,12 @@ import morfi3 from '../assets/body/morfi/morfi3.png';
 import morfi_reserved1 from '../assets/body/morfi/morfi_reserved/morfi_reserved.png';
 import morfi_reserved2 from '../assets/body/morfi/morfi_reserved/morfi_reserved2.png';
 import morfi_reserved3 from '../assets/body/morfi/morfi_reserved/morfi_reserved3.png';
+import morfi_reserved4 from '../assets/body/morfi/morfi_reserved/mobile.png';
 import mazing1 from '../assets/body/mazing/main.png';
 import mazing_ellipse1 from '../assets/body/mazing/ellipse1.svg';
 import mazing_ellipse2 from '../assets/body/mazing/ellipse2.svg';
 import mazing_ellipse3 from '../assets/body/mazing/ellipse3.svg';
+import mazing2 from '../assets/body/mazing/mobile.png';
 import powerfit1 from '../assets/body/powerfit/powerfit1.png';
 import powerfit2 from '../assets/body/powerfit/powerfit2.png';
 import powerfit3 from '../assets/body/powerfit/powerfit3.png';
@@ -22,10 +24,13 @@ import gymate3 from '../assets/body/gymate/gymate3.png';
 import gymate4 from '../assets/body/gymate/gymate4.png';
 import gymate5 from '../assets/body/gymate/gymate5.png';
 import gymate6 from '../assets/body/gymate/gymate6.png';
+import gymate7 from '../assets/body/gymate/mobile.png';
 import mia1 from '../assets/body/mia/mia1.png';
 import mia2 from '../assets/body/mia/mia2.mov';
+import mia3 from '../assets/body/mia/mobile.png';
 import ailibrary1 from '../assets/body/ailibrary/ailibrary1.png';
 import ailibrary2 from '../assets/body/ailibrary/ailibrary2.png';
+import ailibrary3 from '../assets/body/ailibrary/mobile.png';
 import bgfit from '../assets/body/fit.png';
 import bgroad from '../assets/body/4road.png';
 import bgmorfi from '../assets/body/morfi.png';
@@ -134,10 +139,36 @@ export const EnData = {
         'Product Design · UX Research · Web Development · Branding',
       ],
     },
+    {
+      img: [mazing2],
+      title: 'Mazing',
+      description: ['Redisign', 'AR Platform'],
+    },
+    {
+      img: [ailibrary3],
+      title: 'AILibrary',
+      description: ['UX/UI-Development', 'UX/UI-Development start up'],
+    },
+    {
+      img: [gymate7],
+      title: 'Gymate',
+      description: ['Design / Development', 'Gym Website'],
+    },
+    {
+      img: [morfi_reserved4],
+      title: 'Morfi',
+      description: ['Design / Development', 'Make the process of table reservation easier'],
+    },
+    {
+      img: [mia3],
+      title: 'Mia',
+      description: ['Design / Development', 'Jewellery E-commerce'],
+    }
   ],
   homeFourthData: {
     title: ['Our professionals were handpicked as', 'the best among'],
     title_word: ['HUNDERS.', 'THOUSANDS.'],
+    img: [Beja, Gabi, Axel, Luisa, Jose, Angelica],
   },
   homeFifthData: {
     f_title: [

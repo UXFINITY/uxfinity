@@ -75,7 +75,7 @@ function Nav() {
       {/* language section */}
 
       <div className="nav_r_mobile">
-        <ul
+        {/* <ul
           className="language-selector"
           ref={languageRef}
           onClick={handleChangeLanguage}
@@ -107,7 +107,7 @@ function Nav() {
           >
             <img src={Germanyimg} alt="" />
           </li>
-        </ul>
+        </ul> */}
         <div className="nav_mobile" onClick={toggleMenu}>
           <picture>
             <img src={menu} alt="menu icon" />
@@ -126,7 +126,6 @@ function Nav() {
       </div> */}
       {/*  */}
       {menuOpen && <MenuMobile toggleMenu={toggleMenu} navData={navData} />}
-
       {/*  */}
     </nav>
   );

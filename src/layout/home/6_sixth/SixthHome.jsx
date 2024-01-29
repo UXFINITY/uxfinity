@@ -40,7 +40,7 @@ function SixthHome() {
               <img
                 src={arrow}
                 alt='arrow fow FAQ'
-                className={`arrow ${activeIndex === ind ? 'up' : 'down'}`}
+                className={`arrow_faq ${activeIndex === ind ? 'up' : 'down'}`}
               />
             </button>
             <p className={`sv_s_answer ${activeIndex === ind ? 'active' : ''}`}>

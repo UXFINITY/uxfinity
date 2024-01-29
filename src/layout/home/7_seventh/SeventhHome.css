@@ -62,24 +62,50 @@
   height: 1000px;
 }
 
+.mobile {
+  display: none;
+}
+
 @media (min-width: 200px) and (max-width: 1024px) {
-  .fif_container {
-    padding: 10px 40px;
-    height: 100%;
-    min-height: 260px;
+  .desktop {
+    display: none;
   }
+
+  .mobile {
+    display: block;
+  }
+
+  .fif_container {
+    padding: 20px 40px;
+    height: 100%;
+    min-height: auto;
+    background-color: #0d0d0d;
+  }
+
   .fif_items {
     flex-direction: column;
     gap: 30px;
   }
-  .fif_items p,
+
   .fif_items h2 {
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 22px;
+    line-height: 30px;
     text-align: center;
+    padding-bottom: 0;
   }
-  .fif_items h2 {
-    width: 180px;
+
+  .fif_items p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.08px;
+    text-align: start;
+  }
+
+  .fif_calendly {
+    height: 875px;
+    border-radius: 20px;
+    overflow: hidden;
   }
 }
 

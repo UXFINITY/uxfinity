@@ -157,13 +157,16 @@ export const EnData = {
     {
       img: [morfi_reserved4],
       title: 'Morfi',
-      description: ['Design / Development', 'Make the process of table reservation easier'],
+      description: [
+        'Design / Development',
+        'Make the process of table reservation easier',
+      ],
     },
     {
       img: [mia3],
       title: 'Mia',
       description: ['Design / Development', 'Jewellery E-commerce'],
-    }
+    },
   ],
   homeFourthData: {
     title: ['Our professionals were handpicked as', 'the best among'],
@@ -226,8 +229,10 @@ export const EnData = {
   },
   homeSeventhData: {
     title: 'Free Advice? Heck Yeah!',
-    sub_title:
+    sub_title: [
       "Bring your ideas, and we'll bring the fun! In our no-cost meeting, we’ll dive deep into your project, aligning our strategy with your budget. It’s all about crafting the perfect digital masterpiece for you",
+      "Bring your ideas, and we'll bring the fun! In our no-cost meeting, we’ll dive deep into your project, aligning our strategy with your budget. ",
+    ],
   },
   footer: {
     titles: ['Services', 'Projects', 'About', 'Contact'],

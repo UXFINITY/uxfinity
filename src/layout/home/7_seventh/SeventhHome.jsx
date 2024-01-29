@@ -26,12 +26,13 @@ function SeventhHome() {
           <h2 className={toggleAny ? 'fif_h2_sub' : ''}>
             {toggleAny ? homeSeventhData.title : homeSeventhData.title}
           </h2>
-          <p>{homeSeventhData.sub_title}</p>
+          <p className='desktop'>{homeSeventhData.sub_title[0]}</p>
+          <p className='mobile'>{homeSeventhData.sub_title[1]}</p>
         </div>
         <div className='fif_calendly'>
           <InlineWidget
             url='https://calendly.com/info-oqk/meeting-with-our-team'
-            styles={{ height: '100%', width: '100%' }}
+            styles={{ height: '100%', width: '100%'}}
           />
         </div>
       </section>

@@ -138,7 +138,8 @@ function ThirdHome() {
         </div>
       </section>
       <section className='mobile_projects'>
-        {homeThirdData.slice(5, 10).map((project, index) => (
+        <h3 className='mobile_projects_title'>{homeThirdData[5].title}</h3>
+        {homeThirdData.slice(6, 11).map((project, index) => (
           <div className='mobile_project' key={index}>
             <div className='mobile_project_picture'>
               <img src={project.img[0]} alt={project.title} />

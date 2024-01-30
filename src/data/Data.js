@@ -139,6 +139,7 @@ export const EnData = {
         'Product Design · UX Research · Web Development · Branding',
       ],
     },
+    {title: 'Some of our projects'},
     {
       img: [mazing2],
       title: 'Mazing',

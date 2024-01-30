@@ -40,14 +40,19 @@ function FifthHome() {
       <section className='ft_items_container'>
         <div className='ft_items_container_horizontal'>
           <div className='ft_items ft_text'>
-            <h3>{homeFifthData.f_title[0]}</h3>
-            <div className='ft_group_title'>
-              <h3>{homeFifthData.f_title[1]}</h3>
-              <h3>
-                <span className='ft_title_color'>
-                  {homeFifthData.f_title[2]}
-                </span>
-              </h3>
+            <div className='ft_title desktop'>
+              <h3>{homeFifthData.f_title[0]}</h3>
+              <div className='ft_group_title'>
+                <h3>{homeFifthData.f_title[1]}</h3>
+                <h3>
+                  <span className='ft_title_color'>
+                    {homeFifthData.f_title[2]}
+                  </span>
+                </h3>
+              </div>
+            </div>
+            <div className="ft_title mobile">
+              <h3>{homeFifthData.f_title.join(' ')}</h3>
             </div>
 
             <div>

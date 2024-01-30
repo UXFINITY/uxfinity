@@ -144,7 +144,7 @@
 
 @media (min-width: 200px) and (max-width: 1024px) {
   .foot_container {
-    padding: 80px 40px 25px;
+    padding: 66px 40px 25px;
     background: linear-gradient(359deg, #1C1C2A -1.15%, #0D0D12 63.63%);
     font-family: var(--t_family_2);
     gap: 24px;

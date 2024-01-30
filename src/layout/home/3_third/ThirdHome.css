@@ -459,7 +459,7 @@
   }
 
   .t_container {
-    padding: 16px 40px;
+    padding: 20px 16px;
     gap: 80px;
   }
 
@@ -538,7 +538,7 @@
   .mobile_projects {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 24px;
     width: 100%;
     box-sizing: border-box;
   }
@@ -559,7 +559,7 @@
   .mobile_project {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 8px;
     width: 100%;
   }
 
@@ -579,7 +579,7 @@
   .mobile_project_text {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 4px;
     font-family: var(--t_family_2);
     font-style: normal;
     line-height: 30px;
@@ -602,6 +602,7 @@
     color: #858e97;
     font-size: 16px;
     font-weight: 500;
+    line-height: 30px;
   }
 }
 

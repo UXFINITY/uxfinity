@@ -73,11 +73,12 @@
 
 .t_t_section,
 .t_fi_section {
-  transform: translateX(-100px);
+  transform: translateX(-68px);
 }
 
 .t_fo_section {
-  transform: translateX(100px);
+  transform: translateX(68px);
+  background-color: red;
 }
 
 @keyframes h3_before {

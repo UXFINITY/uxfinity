@@ -78,7 +78,6 @@
 
 .t_fo_section {
   transform: translateX(68px);
-  background-color: red;
 }
 
 @keyframes h3_before {

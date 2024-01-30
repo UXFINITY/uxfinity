@@ -1,7 +1,7 @@
 @import '../../App.css';
 
 .nav-container {
-  background-color: #10100f;
+  background-color: #0d0d0d;
   width: 100%;
   max-width: 1140px;
   margin: 16px auto;
@@ -228,7 +228,7 @@
 
   .nav-container {
     /* position: fixed; */
-    /* background-color: #fff; */
+    background-color: #10100F;
     height: 100%;
     flex-wrap: nowrap;
     width: 100%;

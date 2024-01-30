@@ -136,8 +136,8 @@
   transition: width 1s ease, height 1s ease, opacity 1s ease, margin 2s ease; /* Transiciones suaves para revertir el estado */
 }
 
-.six_container:hover .six_rg_t_container h3:nth-child(1) {
-  animation: rightMargin 1s ease forwards;
+.six_rg_t_container h3:nth-child(1) {
+  animation: rightMargin 1.7s ease forwards;
 }
 
 .six_container:hover img {
@@ -147,10 +147,13 @@
 
 @keyframes rightMargin {
   0% {
-    margin-right: 0;
+    padding-right: 50px;
+  }
+  70% {
+    padding-right: 50px;
   }
   100% {
-    margin-right: 20px;
+    padding-right: 20px;
   }
 }
 

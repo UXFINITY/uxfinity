@@ -1,11 +1,5 @@
 .f_container {
-  padding: 0 10%;
-  padding-bottom: 100px;
   background-color: var(--bg-color);
-}
-
-.f_f_section {
-  height: 150px;
 }
 
 .f_s_section {
@@ -13,8 +7,10 @@
   font-style: normal;
   display: flex;
   justify-content: space-between;
-  max-width: 1280px;
-  margin: 0 auto 50px auto;
+  width: 100%;
+  max-width: 1140px; 
+  margin: 0 auto;
+  padding: 100px 0 150px;
 }
 
 .f_s_title {
@@ -25,10 +21,11 @@
 }
 
 .f_s_title h2 {
+  min-height: 88px;
   font-family: var(--t_family_2);
   font-size: 40px;
   font-weight: 600;
-  line-height: 1.5; /* Adjust line height to 1.2 */
+  line-height: 40px;
   background: linear-gradient(
     272deg,
     var(--t-color-1) 0%,
@@ -58,22 +55,19 @@
   cursor: pointer;
   font-size: inherit;
   color: inherit;
-}
-
-.button-text {
-  margin-right: 16px; /* Separación entre el texto y la flecha */
+  gap: 8px;
 }
 
 .arrow {
-  border: solid currentColor;
-  border-width: 0 2px 2px 0;
-  padding: 10px;
-  transform: rotate(45deg) translateY(-15px) translateX(5px); /* Flecha hacia abajo */
+  width: 24px;
+  height: 24px;
+  color: #fff;
+  transform: rotate(0deg) translateY(3px) translateX(0); /* Flecha hacia arriba */
   transition: transform 0.3s ease;
 }
 
 .arrow.up {
-  transform: rotate(-135deg) translateY(5px) translateX(-15px); /* Flecha hacia arriba */
+  transform: rotate(-180deg) translateY(-3px) translateX(0); /* Flecha hacia abajo */
 }
 
 .f_s_list {
@@ -103,6 +97,11 @@
 
 .f_s_list .f_s_item span {
   font-family: var(--t_family_2);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; /* 125% */
+  color: #cccccc;
 }
 
 .f_s_list .f_s_item .f_s_description {

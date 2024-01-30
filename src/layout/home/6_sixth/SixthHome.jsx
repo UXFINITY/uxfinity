@@ -25,7 +25,7 @@ function SixthHome() {
 
   return (
     <div className='sv_container' id='testimonial' ref={sevenRef.domRef}>
-      <section className={'sv_s_container'}>
+      <section className='sv_s_container'>
         <h3>{questions.title}</h3>
         {questions.questions.map((q, ind) => (
           <div

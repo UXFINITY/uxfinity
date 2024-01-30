@@ -4,6 +4,8 @@ import { useBodyContext } from '../../../helpers/BodyContext';
 import LazyLoad from '../../../helpers/LazyLoad';
 import NumberConter from '../../../components/NumberConter';
 import HelpersFunction from '../../../helpers/HelpersFunction';
+import arrow from '../../../assets/icons/simpleArrow.svg';
+
 function FirstHome() {
   //language
   const { AllData } = useBodyContext();
@@ -27,7 +29,7 @@ function FirstHome() {
 
   return (
     <div className='f_container' id='services' ref={firstSection.domRef}>
-      <section className='f_f_section'></section>
+      {/* <section className='f_f_section'></section> */}
       <section className='f_s_section'>
         <div className='f_s_title'>
           <h2>{homeFirstData.title}</h2>
@@ -44,9 +46,11 @@ function FirstHome() {
                 className='button-with-arrow'
               >
                 <span className='button-text'>{title}</span>
-                <span
+                <img
+                  src={arrow}
+                  alt='arrow'
                   className={`arrow ${activeIndex === index ? 'up' : 'down'}`}
-                ></span>
+                ></img>
               </button>
               <p
                 className={`f_s_description ${

@@ -47,21 +47,22 @@ function Nav() {
   };
 
   return (
-    <nav className="nav-container">
-      <div className="nav-logo">
-        <strong>UX</strong>finity
+    <nav className='nav-container'>
+      <div className='nav-logo'>
+        <p>UX</p>
+        <p>finity</p>
       </div>
-      <ul className="nav-sections">
-        <ButtonScroll smooth={true} duration={100} to="services">
+      <ul className='nav-sections'>
+        <ButtonScroll smooth={true} duration={100} to='services'>
           {navData[0]}
         </ButtonScroll>
-        <ButtonScroll smooth={true} duration={100} to="projects">
+        <ButtonScroll smooth={true} duration={100} to='projects'>
           {navData[1]}
         </ButtonScroll>
-        <ButtonScroll smooth={true} duration={100} to="about">
+        <ButtonScroll smooth={true} duration={100} to='about'>
           {navData[2]}
         </ButtonScroll>
-        <ButtonScroll smooth={true} duration={100} to="contact">
+        <ButtonScroll smooth={true} duration={100} to='contact'>
           {navData[3]}
         </ButtonScroll>
       </ul>
@@ -74,7 +75,7 @@ function Nav() {
       </button> */}
       {/* language section */}
 
-      <div className="nav_r_mobile">
+      <div className='nav_r_mobile'>
         {/* <ul
           className="language-selector"
           ref={languageRef}
@@ -108,9 +109,9 @@ function Nav() {
             <img src={Germanyimg} alt="" />
           </li>
         </ul> */}
-        <div className="nav_mobile" onClick={toggleMenu}>
+        <div className='nav_mobile' onClick={toggleMenu}>
           <picture>
-            <img src={menu} alt="menu icon" />
+            <img src={menu} alt='menu icon' />
           </picture>
         </div>
       </div>

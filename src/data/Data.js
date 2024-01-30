@@ -203,7 +203,7 @@ export const EnData = {
       },
       {
         id: 3,
-        question: "Q:Got any cool projects you've done?",
+        question: "Q: Got any cool projects you've done?",
         answer:
           "A: Absolutely! Our portfolio's packed with some epic work. From sleek websites to apps that users can't get enough of, we've done it all. Check out our portfolio on the site for a taste of our style. To protect our clients privacy, we reserve some details.",
       },

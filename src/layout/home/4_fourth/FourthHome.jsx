@@ -34,12 +34,14 @@ function FourthHome() {
               <img src={homeFourthData.img[4]} alt='' />
               <img src={homeFourthData.img[5]} alt='' />
             </div>
-            <span className='six_rg_t_span0'>
-              {homeFourthData.title_word[0]}
-            </span>
-            <span className='six_rg_t_span1'>
-              {homeFourthData.title_word[1]}
-            </span>
+            <div className='six_rg_t_span_group'>
+              <span className='six_rg_t_span0'>
+                {homeFourthData.title_word[0]}
+              </span>
+              <span className='six_rg_t_span1'>
+                {homeFourthData.title_word[1]}
+              </span>
+            </div>
           </div>
         </div>
       </section>

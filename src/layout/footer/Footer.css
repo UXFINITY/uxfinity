@@ -1,5 +1,6 @@
 .foot_container {
-  background: linear-gradient(359deg, #1C1C2A -1.15%, #0D0D12 63.63%);
+  background: linear-gradient(180deg, #0D0D0D 0%, #1C1C2A 100%);
+  /* background: linear-gradient(359deg, #1c1c2a -1.15%, #0d0d12 63.63%); */
   padding: 50px 0 25px;
 }
 
@@ -53,7 +54,7 @@
 }
 
 .foot_ff_column {
-  color: #FFF;
+  color: #fff;
   display: flex;
   gap: 24px;
   font-size: 16px;
@@ -104,7 +105,6 @@
   border: none;
   background: none;
   font-weight: 300;
-
 }
 
 .linkBtn::after {
@@ -145,7 +145,8 @@
 @media (min-width: 200px) and (max-width: 1024px) {
   .foot_container {
     padding: 66px 40px 25px;
-    background: linear-gradient(359deg, #1C1C2A -1.15%, #0D0D12 63.63%);
+    background: linear-gradient(180deg, #0D0D0D 0%, #1C1C2A 100%);
+    /* background: linear-gradient(359deg, #1c1c2a -1.15%, #0d0d12 63.63%); */
     font-family: var(--t_family_2);
     gap: 24px;
   }

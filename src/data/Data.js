@@ -45,6 +45,7 @@ import Luisa from '../assets/team/Luisa.png';
 import Jose from '../assets/team/Jose.png';
 import Angelica from '../assets/team/Angelica.png';
 import Masiel from '../assets/team/Masiel.png';
+import Orle from '../assets/team/Orle.png';
 import message from '../assets/icons/message.svg';
 
 export const EnData = {
@@ -172,7 +173,7 @@ export const EnData = {
   homeFourthData: {
     title: ['Our professionals were handpicked as', 'the best among'],
     title_word: ['HUNDERS.', 'THOUSANDS.'],
-    img: [Beja, Gabi, Axel, Luisa, Jose, Angelica],
+    img: [Beja, Gabi, Axel, Orle, Jose, Angelica],
   },
   homeFifthData: {
     f_title: [

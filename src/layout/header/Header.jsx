@@ -1,37 +1,29 @@
-import React, { useEffect, useState } from 'react'
-import './Header.css'
-import { useBodyContext } from '../../helpers/BodyContext'
-import ArrowDown from '../../assets/header/Group.svg'
+import React, { useEffect, useState } from 'react';
+import './Header.css';
+import { useBodyContext } from '../../helpers/BodyContext';
+import ArrowDown from '../../assets/header/Group.svg';
+import Spline from '@splinetool/react-spline';
+
 function Header() {
-  const { AllData } = useBodyContext()
-  const { headerData } = AllData
+  // const { AllData } = useBodyContext();
+  // const { headerData } = AllData;
+  const [loading, setLoading] = useState(true);
 
-  const [toggleBefore, setToggleBefore] = useState(false)
-
-  useEffect(() => {
-    setTimeout(() => {
-      setToggleBefore(true)
-    }, 1000)
-  }, [])
+  const handleOnLoad = () => {
+    setLoading(false);
+  };
 
   return (
     <div className='header_container'>
       <div className='header_box'>
-        <p>{headerData[0]}</p>
-        <h1>
-          {headerData[1]}
-          <span className={toggleBefore ? 'header_before' : ''}>
-            {headerData[2]}
-          </span>
-        </h1>
-        <button className='button_blue nav_button-change'>Lets make it happen</button>
+        {loading && <div className='spline_loading'></div>}
+        <Spline
+          scene='https://prod.spline.design/rcJCWqdjs37mdzhv/scene.splinecode'
+          onLoad={handleOnLoad}
+        />
       </div>
-      <i>
-        <img src={ArrowDown} alt='ArrowDown' />
-        <img src={ArrowDown} alt='ArrowDown' />
-      </i>
     </div>
-  )
+  );
 }
 
-export default Header
+export default Header;

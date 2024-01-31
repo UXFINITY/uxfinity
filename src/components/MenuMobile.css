@@ -1,34 +1,40 @@
 .tm_container {
   position: fixed;
-  background-color: #1e1f20;
+  background-color: #10100f;
   top: 0;
   height: 100vh;
-  width: 300px;
+  width: 50%;
+  max-width: 300px;
   right: 0;
   color: #fff;
-  padding: 5px 24px;
+  padding: 18px 18px;
   z-index: 999999;
   display: flex;
   flex-direction: column;
-  gap: 20px;
   overflow-y: hidden;
   transition: all 0.3s ease-in-out;
 }
 
 .tm_f_section {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
+
 .tm_s_section {
+  padding: 60px 20px;
   display: flex;
   flex-direction: column;
   gap: 24px;
   list-style: none;
+  text-align: center;
 }
 
 .tm_s_section *{
   cursor: pointer;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: normal;
 }
 
 .nav-logo-w strong {
